@@ -77,6 +77,9 @@ track one branch, and provenance is already recorded exactly in `SOURCE`.
 2. `build` — only if the SHA moved: sparse-clone, regenerate, commit and push. The commit message
    records the upstream SHA.
 
+The output is a pure function of the upstream commit and the generator version — no build timestamp
+anywhere — so a rebuild that finds nothing new leaves the tree byte-identical and pushes nothing.
+
 Pull requests run `check` (rebuild into a scratch tree and diff) plus `pytest`, `ruff` and `ty`
 instead of pushing.
 

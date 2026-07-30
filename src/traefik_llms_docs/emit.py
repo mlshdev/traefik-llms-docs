@@ -11,7 +11,6 @@ Output layout::
 
 from __future__ import annotations
 
-import datetime as dt
 import warnings
 from pathlib import Path
 
@@ -182,7 +181,14 @@ def render_llms_full(pages: list[Page], upstream: Upstream, summary: str) -> str
     return "\n".join(out) + "\n"
 
 
-def render_source(upstream: Upstream, page_count: int, built_at: dt.datetime) -> str:
+def render_source(upstream: Upstream, page_count: int) -> str:
+    """Provenance for one version.
+
+    Deliberately carries no build timestamp: the output is then a pure function of
+    the upstream commit and the generator version, so a rebuild that finds nothing
+    new produces a byte-identical tree and the automation commits nothing. When the
+    build happened is already recorded by the commit date.
+    """
     return (
         f"upstream_repo: https://github.com/{UPSTREAM_SLUG}\n"
         f"upstream_branch: {upstream.spec.branch}\n"
@@ -191,7 +197,6 @@ def render_source(upstream: Upstream, page_count: int, built_at: dt.datetime) ->
         f"traefik_version: {upstream.spec.label}\n"
         f"pages: {page_count}\n"
         f"generator: traefik-llms-docs {__version__}\n"
-        f"built_at: {built_at.strftime('%Y-%m-%dT%H:%M:%SZ')}\n"
     )
 
 
@@ -245,10 +250,7 @@ def build_version(upstream: Upstream, out_root: Path) -> BuildResult:
     for name, content in (
         ("llms.txt", render_llms_txt(pages, upstream, summary)),
         ("llms-full.txt", render_llms_full(pages, upstream, summary)),
-        (
-            "SOURCE",
-            render_source(upstream, len(pages), dt.datetime.now(dt.UTC)),
-        ),
+        ("SOURCE", render_source(upstream, len(pages))),
     ):
         target = version_dir / name
         target.parent.mkdir(parents=True, exist_ok=True)

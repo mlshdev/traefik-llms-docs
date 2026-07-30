@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 import textwrap
 from pathlib import Path
 
@@ -134,6 +135,26 @@ def test_build_version_writes_expected_tree(upstream: Upstream, tmp_path: Path):
     source = (version_dir / "SOURCE").read_text()
     assert f"upstream_commit: {upstream.commit}" in source
     assert "pages: 5" in source
+
+
+@pytest.mark.usefixtures("nav_tree")
+def test_build_is_byte_reproducible(upstream: Upstream, tmp_path: Path):
+    """No timestamps anywhere: a no-op rebuild must commit nothing in CI."""
+    first, second = tmp_path / "a", tmp_path / "b"
+    build_version(upstream, first)
+    build_version(upstream, second)
+
+    def tree(root: Path) -> dict[str, str]:
+        return {
+            str(p.relative_to(root)): p.read_text(encoding="utf-8")
+            for p in sorted(root.rglob("*"))
+            if p.is_file()
+        }
+
+    assert tree(first) == tree(second)
+    # Same-second builds would match even with a timestamp, so assert its absence.
+    source = (first / "traefik" / "v3.7" / "SOURCE").read_text()
+    assert not re.search(r"\d{4}-\d{2}-\d{2}", source)
 
 
 @pytest.mark.usefixtures("nav_tree")

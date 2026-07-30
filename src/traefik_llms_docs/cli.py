@@ -79,8 +79,8 @@ def cmd_build(args: argparse.Namespace) -> int:
 def cmd_check(args: argparse.Namespace) -> int:
     """Rebuild into a scratch tree and diff against the committed one.
 
-    SOURCE carries a build timestamp, so it is compared on its upstream_commit
-    line only -- otherwise every check would report a spurious difference.
+    The comparison is byte-for-byte: the build carries no timestamp, so an
+    unchanged upstream must reproduce the committed tree exactly.
     """
     committed = Path(args.out).resolve()
     with tempfile.TemporaryDirectory(prefix="traefik-llms-check-") as tmp:
@@ -96,14 +96,7 @@ def cmd_check(args: argparse.Namespace) -> int:
                 rel = str(path.relative_to(root))
                 if not (rel == ROOT_INDEX or rel.startswith("traefik/")):
                     continue
-                text = path.read_text(encoding="utf-8")
-                if path.name == "SOURCE":
-                    text = "\n".join(
-                        line
-                        for line in text.splitlines()
-                        if not line.startswith(("built_at:", "generator:"))
-                    )
-                files[rel] = text
+                files[rel] = path.read_text(encoding="utf-8")
             return files
 
         want, have = relevant(fresh), relevant(committed)
