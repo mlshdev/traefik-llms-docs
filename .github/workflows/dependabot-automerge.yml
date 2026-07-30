@@ -1,6 +1,15 @@
 name: Dependabot auto-merge
 
-on: pull_request
+# Triggered by CI finishing rather than by the PR opening, because the merge has
+# to be gated on CI actually passing. The usual `gh pr merge --auto` would need a
+# required status check on `main` to hold the merge back, and that is not
+# available here: a required check blocks direct pushes too, which would break
+# the auto-commit in build.yml -- and this being a user repo rather than an
+# organisation one, the Actions app cannot be given a ruleset bypass.
+on:
+  workflow_run:
+    workflows: ["CI"]
+    types: [completed]
 
 permissions:
   contents: write
@@ -8,15 +17,27 @@ permissions:
 
 jobs:
   automerge:
+    if: >-
+      github.event.workflow_run.event == 'pull_request'
+      && github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-slim
     timeout-minutes: 15
-    if: github.event.pull_request.user.login == 'dependabot[bot]'
     steps:
-      - uses: dependabot/fetch-metadata@v3.1.0
-        id: metadata
-        with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
-      - run: gh pr merge --auto --merge "$PR_URL"
+      - name: Merge if the PR is Dependabot's
         env:
-          PR_URL: ${{ github.event.pull_request.html_url }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          set -euo pipefail
+          number="$(gh api "repos/${REPO}/commits/${HEAD_SHA}/pulls" --jq '.[0].number // empty')"
+          if [ -z "$number" ]; then
+            echo "No pull request for ${HEAD_SHA}; nothing to do."
+            exit 0
+          fi
+          author="$(gh api "repos/${REPO}/pulls/${number}" --jq '.user.login')"
+          if [ "$author" != "dependabot[bot]" ]; then
+            echo "PR #${number} is by ${author}, not Dependabot; leaving it alone."
+            exit 0
+          fi
+          gh pr merge "$number" --repo "$REPO" --merge --delete-branch

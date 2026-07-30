@@ -84,7 +84,9 @@ Pull requests run `check` (rebuild into a scratch tree and diff) plus `pytest`, 
 instead of pushing.
 
 Dependabot covers the two ecosystems that have a manifest here, `github-actions` and `uv`, weekly and
-grouped; its PRs auto-merge once the required checks pass.
+grouped. Its PRs merge automatically once CI goes green — gated on the CI run finishing rather than
+on a required status check, since a required check on `main` would also block the build workflow's
+own commit, and a user-owned repository cannot grant the Actions app a ruleset bypass.
 
 ## Local use
 
