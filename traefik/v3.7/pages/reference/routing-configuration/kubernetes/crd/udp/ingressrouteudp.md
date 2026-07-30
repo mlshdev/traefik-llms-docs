@@ -1,0 +1,201 @@
+---
+title: "IngressRouteUDP"
+description: "Understand the routing configuration for the Kubernetes IngressRouteUDP & Traefik CRD"
+section: "Reference"
+breadcrumb: "Reference / Routing Configuration / Kubernetes / Kubernetes CRD / UDP / IngressRouteUDP"
+traefik_version: "v3.7"
+upstream_path: "docs/content/reference/routing-configuration/kubernetes/crd/udp/ingressrouteudp.md"
+source_url: "https://github.com/traefik/traefik/blob/e80aaab074b4cc5acee6e2bf516b52d8bf3cb3bf/docs/content/reference/routing-configuration/kubernetes/crd/udp/ingressrouteudp.md"
+---
+
+`IngressRouteUDP` is the CRD implementation of a [Traefik UDP router](../../../udp/routing/rules-priority.md).
+
+Before creating `IngressRouteUDP` objects, you need to apply the [Traefik Kubernetes CRDs](https://doc.traefik.io/traefik/reference/dynamic-configuration/kubernetes-crd/#definitions) to your Kubernetes cluster.
+
+This registers the `IngressRouteUDP` kind and other Traefik-specific resources.
+
+## Configuration Example
+
+**IngressRouteUDP**
+
+```yaml
+apiVersion: traefik.io/v1alpha1
+kind: IngressRouteUDP
+metadata:
+  name: ingressrouteudpfoo
+  namespace: apps
+spec:
+  ingressClassName: traefik-lb
+  entryPoints:
+    - fooudp  # The entry point where Traefik listens for incoming traffic.
+  routes:
+  - services:
+    - name: foo # The name of the Kubernetes Service to route to.
+      port: 8080
+      weight: 10
+      nativeLB: true # Enables native load balancing between pods.
+```
+
+## Configuration Options
+
+| Field  |  Description | Default  | Required |
+|------------------------------------|-----------------------------|-------------------------------------------|-----------------------|
+| <a id="opt-ingressClassName" href="#opt-ingressClassName" title="#opt-ingressClassName">`ingressClassName`</a> | Defines the [IngressClass](https://kubernetes.io/docs/concepts/services-networking/ingress/#ingress-class) cluster resource to use. It replaces the deprecated `kubernetes.io/ingress.class` annotation.<br />The spec field takes precedence over the annotation. | | No |
+| <a id="opt-entryPoints" href="#opt-entryPoints" title="#opt-entryPoints">`entryPoints`</a> | List of entrypoints names.  | | No |
+| <a id="opt-routes" href="#opt-routes" title="#opt-routes">` routes `</a> | List of routes.  | | Yes |
+| <a id="opt-routesn-services" href="#opt-routesn-services" title="#opt-routesn-services">`routes[n].services`</a> | List of [Kubernetes service](https://kubernetes.io/docs/concepts/services-networking/service/) definitions. See [here](#externalname-service) for `ExternalName Service` setup. | | No |
+| <a id="opt-routesn-servicesn-name" href="#opt-routesn-servicesn-name" title="#opt-routesn-servicesn-name">`routes[n].services[n].name`</a> | Defines the name of a [Kubernetes service](https://kubernetes.io/docs/concepts/services-networking/service/). |  | Yes |
+| <a id="opt-routesn-servicesn-port" href="#opt-routesn-servicesn-port" title="#opt-routesn-servicesn-port">`routes[n].services[n].port`</a> | Defines the port of a [Kubernetes service](https://kubernetes.io/docs/concepts/services-networking/service/). This can be a reference to a named port.|  | Yes |
+| <a id="opt-routesn-servicesn-weight" href="#opt-routesn-servicesn-weight" title="#opt-routesn-servicesn-weight">`routes[n].services[n].weight`</a> | Defines the weight to apply to the server load balancing. | 1 | No |
+| <a id="opt-routesn-servicesn-nativeLB" href="#opt-routesn-servicesn-nativeLB" title="#opt-routesn-servicesn-nativeLB">`routes[n].services[n].nativeLB`</a> | Controls, when creating the load-balancer, whether the LB's children are directly the pods IPs or if the only child is the Kubernetes Service clusterIP. | false | No |
+| <a id="opt-routesn-servicesn-nodePortLB" href="#opt-routesn-servicesn-nodePortLB" title="#opt-routesn-servicesn-nodePortLB">`routes[n].services[n].nodePortLB`</a> | Controls, when creating the load-balancer, whether the LB's children are directly the nodes internal IPs using the nodePort when the service type is NodePort. It allows services to be reachable when Traefik runs externally from the Kubernetes cluster but within the same network of the nodes. See [here](#nativelb) for more information. | false | No  |
+
+### ExternalName Service
+
+Traefik backends creation needs a port to be set, however Kubernetes [ExternalName Service](https://kubernetes.io/docs/concepts/services-networking/service/#externalname) could be defined without any port. Accordingly, Traefik supports defining a port in two ways:
+
+- only on `IngressRouteUDP` service
+- on both sides, you'll be warned if the ports don't match, and the `IngressRouteUDP` service port is used
+
+Thus, in case of two sides port definition, Traefik expects a match between ports.
+
+**Ports defined on Resource**
+
+**IngressRouteUDP**
+
+```yaml
+apiVersion: traefik.io/v1alpha1
+kind: IngressRouteUDP
+metadata:
+  name: test.route
+  namespace: apps
+
+spec:
+  entryPoints:
+    - foo
+  routes:
+  - services:
+    - name: external-svc
+      port: 80
+```
+
+**Service ExternalName**
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: external-svc
+  namespace: apps
+
+spec:
+  externalName: external.domain
+  type: ExternalName
+```
+
+**Port defined on the Service**
+
+**IngressRouteUDP**
+
+```yaml
+apiVersion: traefik.io/v1alpha1
+kind: IngressRouteUDP
+metadata:
+  name: test.route
+  namespace: apps
+
+spec:
+  entryPoints:
+    - foo
+  routes:
+  - services:
+    - name: external-svc
+```
+
+**Service ExternalName**
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: external-svc
+  namespace: apps
+
+spec:
+  externalName: external.domain
+  type: ExternalName
+  ports:
+    - port: 80
+```
+
+**Port defined on both sides**
+
+**IngressRouteUDP**
+
+```yaml
+apiVersion: traefik.io/v1alpha1
+kind: IngressRouteUDP
+metadata:
+  name: test.route
+  namespace: apps
+
+spec:
+  entryPoints:
+    - foo
+  routes:
+  - services:
+    - name: external-svc
+      port: 80
+```
+
+**Service ExternalName**
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: external-svc
+  namespace: apps
+
+spec:
+  externalName: external.domain
+  type: ExternalName
+  ports:
+    - port: 80
+```
+
+### NativeLB
+
+To avoid creating the server load-balancer with the pods IPs and use Kubernetes Service `clusterIP` directly, one should set the `NativeLB` option to true. By default, `NativeLB` is false.
+
+**IngressRouteUDP**
+
+```yaml
+apiVersion: traefik.io/v1alpha1
+kind: IngressRouteUDP
+metadata:
+  name: test.route
+  namespace: default
+spec:
+  entryPoints:
+    - foo
+routes:
+- services:
+  - name: svc
+    port: 80
+    # Here, nativeLB instructs to build the servers load balancer with the Kubernetes Service clusterIP only.
+    nativeLB: true
+```
+
+**Service**
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc
+  namespace: default
+spec:
+  type: ClusterIP
+  ...
+```

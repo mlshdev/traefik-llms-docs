@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ty_cache/
+dist/
+build/
+*.egg-info/
+.DS_Store
+
+# Transient upstream checkout created by the build; never committed.
+.upstream/
+
+# Local editor/agent tooling state.
+.claude/
+.serena/

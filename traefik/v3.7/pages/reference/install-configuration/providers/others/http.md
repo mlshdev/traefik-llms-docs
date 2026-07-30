@@ -1,0 +1,84 @@
+---
+title: "Traefik HTTP Documentation"
+description: "Provide your dynamic configuration via an HTTP(S) endpoint and let Traefik Proxy do the rest. Read the technical documentation."
+section: "Reference"
+breadcrumb: "Reference / Install Configuration / Configuration Discovery / Others / HTTP"
+traefik_version: "v3.7"
+upstream_path: "docs/content/reference/install-configuration/providers/others/http.md"
+source_url: "https://github.com/traefik/traefik/blob/e80aaab074b4cc5acee6e2bf516b52d8bf3cb3bf/docs/content/reference/install-configuration/providers/others/http.md"
+---
+
+# Traefik & HTTP
+
+Provide your [install configuration](../overview.md) via an HTTP(S) endpoint and let Traefik do the rest!
+
+## Configuration Example
+
+You can enable the HTTP provider as detailed below:
+
+**File (YAML)**
+
+```yaml
+providers:
+  http:
+    endpoint: "http://127.0.0.1:9000/api"
+```
+
+**File (TOML)**
+
+```toml
+[providers.http]
+  endpoint = "http://127.0.0.1:9000/api"
+```
+
+**CLI**
+
+```bash
+--providers.http.endpoint=http://127.0.0.1:9000/api
+```
+
+## Configuration Options
+
+| Field | Description                                               | Default              | Required |
+|:------|:----------------------------------------------------------|:---------------------|:---------|
+| <a id="opt-providers-providersThrottleDuration" href="#opt-providers-providersThrottleDuration" title="#opt-providers-providersThrottleDuration">`providers.providersThrottleDuration`</a> | Minimum amount of time to wait for, after a configuration reload, before taking into account any new configuration refresh event.<br />If multiple events occur within this time, only the most recent one is taken into account, and all others are discarded.<br />**This option cannot be set per provider, but the throttling algorithm applies to each of them independently.** | 2s  | No |
+| <a id="opt-providers-http-endpoint" href="#opt-providers-http-endpoint" title="#opt-providers-http-endpoint">`providers.http.endpoint`</a> | Defines the HTTP(S) endpoint to poll. |  ""    | Yes   |
+| <a id="opt-providers-http-pollInterval" href="#opt-providers-http-pollInterval" title="#opt-providers-http-pollInterval">`providers.http.pollInterval`</a> | Defines the polling interval. |  5s    | No   |
+| <a id="opt-providers-http-pollTimeout" href="#opt-providers-http-pollTimeout" title="#opt-providers-http-pollTimeout">`providers.http.pollTimeout`</a> | Defines the polling timeout when connecting to the endpoint. |  5s    | No   |
+| <a id="opt-providers-http-headers" href="#opt-providers-http-headers" title="#opt-providers-http-headers">`providers.http.headers`</a> | Defines custom headers to be sent to the endpoint. |  {}    | No   |
+| <a id="opt-providers-http-maxResponseBodySize" href="#opt-providers-http-maxResponseBodySize" title="#opt-providers-http-maxResponseBodySize">`providers.http.maxResponseBodySize`</a> | Defines the maximum size of the response body in bytes. A value of `-1` means unlimited. |  -1    | No   |
+| <a id="opt-providers-http-tls-ca" href="#opt-providers-http-tls-ca" title="#opt-providers-http-tls-ca">`providers.http.tls.ca`</a> | Defines the certificate authority used for the secure connection to the endpoint, it defaults to the system bundle. The value can be a file path or the PEM content directly.  |  ""   | No   |
+| <a id="opt-providers-http-tls-cert" href="#opt-providers-http-tls-cert" title="#opt-providers-http-tls-cert">`providers.http.tls.cert`</a> | Defines the public certificate used for the secure connection to the endpoint. The value can be a file path or the PEM content directly. When using this option, setting the `key` option is required. |  ""   | Yes   |
+| <a id="opt-providers-http-tls-key" href="#opt-providers-http-tls-key" title="#opt-providers-http-tls-key">`providers.http.tls.key`</a> | Defines the private key used for the secure connection to the endpoint. The value can be a file path or the PEM content directly. When using this option, setting the `cert` option is required. |  ""  | Yes   |
+| <a id="opt-providers-http-tls-insecureSkipVerify" href="#opt-providers-http-tls-insecureSkipVerify" title="#opt-providers-http-tls-insecureSkipVerify">`providers.http.tls.insecureSkipVerify`</a> | Instructs the provider to accept any certificate presented by endpoint when establishing a TLS connection, regardless of the hostnames the certificate covers. | false   | No   |
+
+### headers
+
+Defines custom headers to be sent to the endpoint.
+
+**File (YAML)**
+
+```yaml
+providers:
+  http:
+    headers:
+      name: value
+```
+
+**File (TOML)**
+
+```toml
+[providers.http.headers]
+  name = "value"
+```
+
+**CLI**
+
+```bash
+[providers.http.headers]
+--providers.http.headers.name=value
+```
+
+## Routing Configuration
+
+The HTTP provider uses the same configuration as the [File Provider](./file.md) in YAML or JSON format.

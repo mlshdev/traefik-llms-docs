@@ -1,0 +1,53 @@
+name: CI
+
+# Pull requests validate instead of pushing: the converter must stay clean, and
+# the committed tree must match what the converter currently produces.
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "pyproject.toml"
+      - "uv.lock"
+      - ".github/workflows/ci.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Lint, type-check, test
+    runs-on: ubuntu-slim
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: astral-sh/setup-uv@v9.0.0
+        with:
+          enable-cache: true
+
+      - name: Install
+        run: uv sync --locked
+
+      - name: Lint
+        run: uv run ruff check src tests
+
+      - name: Format
+        run: uv run ruff format --check src tests
+
+      - name: Type-check
+        run: uv run ty check
+
+      - name: Test
+        run: uv run pytest
+
+      # Rebuilds into a scratch tree and diffs it against the committed one, so a
+      # converter change that would alter the output cannot merge without the
+      # regenerated docs alongside it.
+      - name: Verify generated tree is current
+        run: uv run traefik-llms-docs check

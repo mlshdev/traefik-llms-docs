@@ -1,0 +1,79 @@
+name: Build LLM docs
+
+# Upstream cannot notify us, so we poll. The resolve job only runs `git ls-remote`
+# (no clone), which makes daily polling essentially free; the build job runs solely
+# when the upstream SHA has actually moved.
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "pyproject.toml"
+      - "uv.lock"
+      - ".github/workflows/build.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-llm-docs
+  cancel-in-progress: false
+
+jobs:
+  resolve:
+    name: Check upstream
+    runs-on: ubuntu-slim
+    timeout-minutes: 10
+    outputs:
+      changed: ${{ steps.resolve.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: astral-sh/setup-uv@v9.0.0
+        with:
+          enable-cache: true
+      - id: resolve
+        run: |
+          set -euo pipefail
+          uv run --locked traefik-llms-docs resolve | tee resolve.txt
+          grep -E '^changed=' resolve.txt >> "$GITHUB_OUTPUT"
+
+  build:
+    name: Rebuild and commit
+    needs: resolve
+    # Scheduled runs stop here unless upstream moved. Manual and push runs always
+    # build, so a change to the converter is reflected without waiting for upstream.
+    if: >-
+      needs.resolve.outputs.changed == 'true'
+      || github.event_name != 'schedule'
+    runs-on: ubuntu-slim
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: astral-sh/setup-uv@v9.0.0
+        with:
+          enable-cache: true
+
+      - name: Install
+        run: uv sync --locked
+
+      - name: Generate
+        run: uv run traefik-llms-docs build
+
+      - name: Commit and push
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Generated tree already matches upstream; nothing to commit."
+            exit 0
+          fi
+          sha="$(awk -F': ' '/^upstream_commit:/ {print $2; exit}' traefik/*/SOURCE)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit \
+            -m "docs: rebuild from traefik/traefik@${sha:0:12}" \
+            -m "Upstream: https://github.com/traefik/traefik/tree/${sha}/docs"
+          git push

@@ -1,0 +1,20 @@
+version: 2
+
+# Only ecosystems with a manifest in this repo are declared. There is no
+# Dockerfile, package.json, or bun.lockb here, and `uv` already owns
+# pyproject.toml + uv.lock -- adding `pip` alongside it would raise duplicate
+# PRs for the same dependency.
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule: {interval: "weekly", day: "monday", time: "00:00", timezone: "UTC"}
+    labels: ["dependencies", "github-actions"]
+    commit-message: {prefix: "deps", include: "scope"}
+    groups: {actions: {patterns: ["*"]}}
+
+  - package-ecosystem: "uv"
+    directory: "/"
+    schedule: {interval: "weekly", day: "monday", time: "00:00", timezone: "UTC"}
+    labels: ["dependencies", "python", "uv"]
+    commit-message: {prefix: "deps", include: "scope"}
+    groups: {uv-deps: {patterns: ["*"]}}
