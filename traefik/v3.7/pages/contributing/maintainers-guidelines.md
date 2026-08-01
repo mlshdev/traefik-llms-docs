@@ -5,12 +5,12 @@ section: "Contributing"
 breadcrumb: "Contributing / Maintainer's Guidelines"
 traefik_version: "v3.7"
 upstream_path: "docs/content/contributing/maintainers-guidelines.md"
-source_url: "https://github.com/traefik/traefik/blob/e80aaab074b4cc5acee6e2bf516b52d8bf3cb3bf/docs/content/contributing/maintainers-guidelines.md"
+source_url: "https://github.com/traefik/traefik/blob/2a2349356c01b1b1f7ecddb0c17b30c97f5241e7/docs/content/contributing/maintainers-guidelines.md"
 ---
 
 # Maintainer's Guidelines
 
-![Maintainer's Guidelines](https://raw.githubusercontent.com/traefik/traefik/e80aaab074b4cc5acee6e2bf516b52d8bf3cb3bf/docs/content/assets/img/maintainers-guidelines.png)
+![Maintainer's Guidelines](https://raw.githubusercontent.com/traefik/traefik/2a2349356c01b1b1f7ecddb0c17b30c97f5241e7/docs/content/assets/img/maintainers-guidelines.png)
 
 Welcome to the Traefik Community.
 

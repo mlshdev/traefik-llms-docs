@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Routing Configuration / File"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/routing-configuration/other-providers/file.md"
-source_url: "https://github.com/traefik/traefik/blob/e80aaab074b4cc5acee6e2bf516b52d8bf3cb3bf/docs/content/reference/routing-configuration/other-providers/file.md"
+source_url: "https://github.com/traefik/traefik/blob/2a2349356c01b1b1f7ecddb0c17b30c97f5241e7/docs/content/reference/routing-configuration/other-providers/file.md"
 ---
 
 # Traefik File Routing Configuration

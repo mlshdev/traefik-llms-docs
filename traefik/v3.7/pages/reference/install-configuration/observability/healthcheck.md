@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Install Configuration / Observability / Health Check (CLI & Ping)"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/install-configuration/observability/healthcheck.md"
-source_url: "https://github.com/traefik/traefik/blob/e80aaab074b4cc5acee6e2bf516b52d8bf3cb3bf/docs/content/reference/install-configuration/observability/healthcheck.md"
+source_url: "https://github.com/traefik/traefik/blob/2a2349356c01b1b1f7ecddb0c17b30c97f5241e7/docs/content/reference/install-configuration/observability/healthcheck.md"
 ---
 
 # CLI & Ping
