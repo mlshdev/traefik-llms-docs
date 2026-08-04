@@ -5,7 +5,7 @@ section: "Setup"
 breadcrumb: "Setup / Docker"
 traefik_version: "v3.7"
 upstream_path: "docs/content/setup/docker.md"
-source_url: "https://github.com/traefik/traefik/blob/2a2349356c01b1b1f7ecddb0c17b30c97f5241e7/docs/content/setup/docker.md"
+source_url: "https://github.com/traefik/traefik/blob/0258b3a756f9c31659bc3745e7b160bd92a46af2/docs/content/setup/docker.md"
 ---
 
 This guide provides an in-depth walkthrough for installing and configuring Traefik Proxy within a Docker container using the official Traefik Docker image & Docker Compose. In this guide, we'll cover the following:
@@ -167,7 +167,7 @@ Traefik will start, read its static configuration from the `command` arguments, 
 
 Now that Traefik is deployed, you can access the dashboard at [https://dashboard.docker.localhost](https://dashboard.docker.localhost) and it should prompt for the Basic Authentication credentials you configured:
 
-![Traefik Dashboard](https://raw.githubusercontent.com/traefik/traefik/2a2349356c01b1b1f7ecddb0c17b30c97f5241e7/docs/content/assets/img/setup/traefik-dashboard-docker.png)
+![Traefik Dashboard](https://raw.githubusercontent.com/traefik/traefik/0258b3a756f9c31659bc3745e7b160bd92a46af2/docs/content/assets/img/setup/traefik-dashboard-docker.png)
 
 ## Test the whoami Application
 
@@ -209,7 +209,7 @@ The above confirms that a redirection has taken place which means our setup work
 
 You can also open a browser and navigate to [https://whoami.docker.localhost](https://whoami.docker.localhost) to see a JSON dump from the service:
 
-![Whoami](https://raw.githubusercontent.com/traefik/traefik/2a2349356c01b1b1f7ecddb0c17b30c97f5241e7/docs/content/assets/img/setup/whoami-json-dump.png)
+![Whoami](https://raw.githubusercontent.com/traefik/traefik/0258b3a756f9c31659bc3745e7b160bd92a46af2/docs/content/assets/img/setup/whoami-json-dump.png)
 
 > **Info**
 >
