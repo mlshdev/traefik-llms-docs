@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / RedirectScheme"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/routing-configuration/http/middlewares/redirectscheme.md"
-source_url: "https://github.com/traefik/traefik/blob/0258b3a756f9c31659bc3745e7b160bd92a46af2/docs/content/reference/routing-configuration/http/middlewares/redirectscheme.md"
+source_url: "https://github.com/traefik/traefik/blob/ead8b92dba6eca8c19e40287f986dc54a57325f4/docs/content/reference/routing-configuration/http/middlewares/redirectscheme.md"
 ---
 
 The `RedirectScheme` middleware redirects the request if the request scheme is different from the configured scheme.

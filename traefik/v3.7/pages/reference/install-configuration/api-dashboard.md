@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Install Configuration / API & Dashboard"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/install-configuration/api-dashboard.md"
-source_url: "https://github.com/traefik/traefik/blob/0258b3a756f9c31659bc3745e7b160bd92a46af2/docs/content/reference/install-configuration/api-dashboard.md"
+source_url: "https://github.com/traefik/traefik/blob/ead8b92dba6eca8c19e40287f986dc54a57325f4/docs/content/reference/install-configuration/api-dashboard.md"
 ---
 
 Traefik exposes a number of information through API endpoints, such as the configuration of your routers, services, middlewares, etc.
@@ -13,7 +13,7 @@ Traefik exposes a number of information through API endpoints, such as the confi
 The dashboard, which is the central place that displays the current active routes handled by Traefik, fetches the data from this API.
 
 <figure>
-    <img src="https://raw.githubusercontent.com/traefik/traefik/0258b3a756f9c31659bc3745e7b160bd92a46af2/docs/content/assets/img/webui-dashboard.png" alt="Dashboard - Providers" />
+    <img src="https://raw.githubusercontent.com/traefik/traefik/ead8b92dba6eca8c19e40287f986dc54a57325f4/docs/content/assets/img/webui-dashboard.png" alt="Dashboard - Providers" />
     <figcaption>The dashboard in action</figcaption>
 </figure>
 

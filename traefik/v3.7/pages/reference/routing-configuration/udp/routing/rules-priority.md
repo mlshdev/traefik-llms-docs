@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Routing Configuration / Common Configuration / UDP / Routing / Rules & Priority"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/routing-configuration/udp/routing/rules-priority.md"
-source_url: "https://github.com/traefik/traefik/blob/0258b3a756f9c31659bc3745e7b160bd92a46af2/docs/content/reference/routing-configuration/udp/routing/rules-priority.md"
+source_url: "https://github.com/traefik/traefik/blob/ead8b92dba6eca8c19e40287f986dc54a57325f4/docs/content/reference/routing-configuration/udp/routing/rules-priority.md"
 ---
 
 A router is in charge of connecting incoming requests to the services that can handle them.
