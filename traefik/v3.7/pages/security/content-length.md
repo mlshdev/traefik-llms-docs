@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Security / Content-Length"
 traefik_version: "v3.7"
 upstream_path: "docs/content/security/content-length.md"
-source_url: "https://github.com/traefik/traefik/blob/ead8b92dba6eca8c19e40287f986dc54a57325f4/docs/content/security/content-length.md"
+source_url: "https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/security/content-length.md"
 ---
 
 Traefik acts as a streaming proxy. By default, it checks each chunk of data against the `Content-Length` header as it passes it on to the backend or client.

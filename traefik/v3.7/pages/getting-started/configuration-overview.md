@@ -5,7 +5,7 @@ section: "Getting Started"
 breadcrumb: "Getting Started / Configuration Introduction"
 traefik_version: "v3.7"
 upstream_path: "docs/content/getting-started/configuration-overview.md"
-source_url: "https://github.com/traefik/traefik/blob/ead8b92dba6eca8c19e40287f986dc54a57325f4/docs/content/getting-started/configuration-overview.md"
+source_url: "https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/getting-started/configuration-overview.md"
 ---
 
 # Configuration Introduction

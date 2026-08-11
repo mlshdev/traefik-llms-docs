@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / IPAllowList"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/routing-configuration/http/middlewares/ipallowlist.md"
-source_url: "https://github.com/traefik/traefik/blob/ead8b92dba6eca8c19e40287f986dc54a57325f4/docs/content/reference/routing-configuration/http/middlewares/ipallowlist.md"
+source_url: "https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/ipallowlist.md"
 ---
 
 `ipAllowList` accepts / refuses requests based on the client IP.
@@ -16,6 +16,7 @@ source_url: "https://github.com/traefik/traefik/blob/ead8b92dba6eca8c19e40287f98
 
 ```yaml
 # Accepts request from defined IP
+# and rejects other requests with a 404 rather than a 403
 http:
   middlewares:
     test-ipallowlist:
@@ -23,32 +24,39 @@ http:
         sourceRange:
           - "127.0.0.1/32"
           - "192.168.1.7"
+        rejectStatusCode: 404
 ```
 
 **Structured (TOML)**
 
 ```toml
 # Accepts request from defined IP
+# and rejects other requests with a 404 rather than a 403
 [http.middlewares]
   [http.middlewares.test-ipallowlist.ipAllowList]
     sourceRange = ["127.0.0.1/32", "192.168.1.7"]
+    rejectStatusCode = 404
 ```
 
 **Labels**
 
 ```yaml
 # Accepts request from defined IP
+# and rejects other requests with a 404 rather than a 403
 labels:
   - "traefik.http.middlewares.test-ipallowlist.ipallowlist.sourcerange=127.0.0.1/32, 192.168.1.7"
+  - "traefik.http.middlewares.test-ipallowlist.ipallowlist.rejectstatuscode=404"
 ```
 
 **Tags**
 
 ```json
 // Accepts request from defined IP
+// and rejects other requests with a 404 rather than a 403
 {
   "Tags" : [
-    "traefik.http.middlewares.test-ipallowlist.ipallowlist.sourcerange=127.0.0.1/32, 192.168.1.7"
+    "traefik.http.middlewares.test-ipallowlist.ipallowlist.sourcerange=127.0.0.1/32, 192.168.1.7",
+    "traefik.http.middlewares.test-ipallowlist.ipallowlist.rejectstatuscode=404"
   ]
 }
 ```
@@ -65,6 +73,7 @@ spec:
     sourceRange:
       - 127.0.0.1/32
       - 192.168.1.7
+    rejectStatusCode: 404
 ```
 
 ## Configuration Options

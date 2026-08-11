@@ -5,7 +5,7 @@ section: "Secure"
 breadcrumb: "Secure / Secure Access with OIDC"
 traefik_version: "v3.7"
 upstream_path: "docs/content/secure/secure-api-access-with-oidc.md"
-source_url: "https://github.com/traefik/traefik/blob/ead8b92dba6eca8c19e40287f986dc54a57325f4/docs/content/secure/secure-api-access-with-oidc.md"
+source_url: "https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/secure/secure-api-access-with-oidc.md"
 ---
 
 # Secure API Access with OIDC
@@ -21,7 +21,7 @@ and obtaining the end user's session claims and scopes for authorization purpose
 To authenticate the user, the middleware redirects through the authentication provider.
 Once the authentication is complete, users are redirected back to the middleware before being authorized to access the upstream application, as described in the diagram below:
 
-![OpenID Connect authentication flow](https://raw.githubusercontent.com/traefik/traefik/ead8b92dba6eca8c19e40287f986dc54a57325f4/docs/content/assets/img/secure/oidc-auth-flow.png)
+![OpenID Connect authentication flow](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/secure/oidc-auth-flow.png)
 
 <br />
 

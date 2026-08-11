@@ -5,7 +5,7 @@ section: "Getting Started"
 breadcrumb: "Getting Started / Quick Start / Kubernetes"
 traefik_version: "v3.7"
 upstream_path: "docs/content/getting-started/kubernetes.md"
-source_url: "https://github.com/traefik/traefik/blob/ead8b92dba6eca8c19e40287f986dc54a57325f4/docs/content/getting-started/kubernetes.md"
+source_url: "https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/getting-started/kubernetes.md"
 ---
 
 # Getting Started with Kubernetes and Traefik
@@ -135,7 +135,7 @@ Access it at:
 
 [http://dashboard.localhost/dashboard/](http://dashboard.localhost/dashboard/)
 
-![Traefik Dashboard Screenshot](https://raw.githubusercontent.com/traefik/traefik/ead8b92dba6eca8c19e40287f986dc54a57325f4/docs/content/assets/img/getting-started/traefik-dashboard.png)
+![Traefik Dashboard Screenshot](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/getting-started/traefik-dashboard.png)
 
 ## Deploy a Sample Application
 
@@ -241,7 +241,7 @@ X-Real-Ip: 127.0.0.1
 
 You can also visit [http://whoami.localhost](http://whoami.localhost) in a browser to verify that the application is exposed correctly:
 
-![whoami application Screenshot](https://raw.githubusercontent.com/traefik/traefik/ead8b92dba6eca8c19e40287f986dc54a57325f4/docs/content/assets/img/getting-started/whoami-localhost.png)
+![whoami application Screenshot](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/getting-started/whoami-localhost.png)
 
 ## Exposing the Application Using the Gateway API
 
@@ -249,7 +249,7 @@ Traefik supports the Kubernetes Gateway API specification, which provides a more
 When we installed Traefik earlier, we enabled the Gateway API provider. 
 You can verify this in the providers section of the Traefik dashboard.
 
-![Providers Section Screenshot](https://raw.githubusercontent.com/traefik/traefik/ead8b92dba6eca8c19e40287f986dc54a57325f4/docs/content/assets/img/getting-started/providers.png)
+![Providers Section Screenshot](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/getting-started/providers.png)
 
 To use the Gateway API:
 
@@ -321,11 +321,11 @@ X-Real-Ip: 127.0.0.1
 
 You can now visit [http://whoami.localhost](http://whoami.localhost) in your browser to verify that the application is exposed correctly:
 
-![whoami application Screenshot](https://raw.githubusercontent.com/traefik/traefik/ead8b92dba6eca8c19e40287f986dc54a57325f4/docs/content/assets/img/getting-started/whoami-localhost.png)
+![whoami application Screenshot](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/getting-started/whoami-localhost.png)
 
 If you navigate to the **HTTP Routes** section of the traefik dashboard, you can see that the `whoami.localhost` route is managed by the Traefik Kubernetes Gateway API provider:
 
-![Traefik Dashboard HTTP Routes Section Screenshot](https://raw.githubusercontent.com/traefik/traefik/ead8b92dba6eca8c19e40287f986dc54a57325f4/docs/content/assets/img/getting-started/kubernetes-gateway.png)
+![Traefik Dashboard HTTP Routes Section Screenshot](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/getting-started/kubernetes-gateway.png)
 
 That's it! You've successfully deployed Traefik and configured routing in a Kubernetes cluster.
 
