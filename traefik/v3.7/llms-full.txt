@@ -2,17 +2,17 @@
 
 > Traefik Documentation
 
-Source: traefik/traefik@8bd3bd277758ca6e70ce38b132039186a01812a9 (branch v3.7), docs/content. 160 pages.
+Source: traefik/traefik@21a4ca1fad46ceca9b7d7903eeaf3721325f3e50 (branch v3.7), docs/content. 160 pages.
 
 ---
 
 # What is Traefik
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/index.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/index.md*
 
 # What is Traefik?
 
-![Architecture](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/traefik-architecture.png)
+![Architecture](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/traefik-architecture.png)
 
 Traefik is an [open-source](https://github.com/traefik/traefik) Application Proxy and the core of the Traefik Hub Runtime Platform.
 
@@ -68,7 +68,7 @@ Use the sidebar to navigate to the section that is most appropriate for your nee
 
 # Features
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/features/index.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/features/index.md*
 
 # Traefik Product Features Comparison
 
@@ -218,7 +218,7 @@ All products share the same core configuration concepts, making migration straig
 
 # Getting Started / Overview
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/getting-started/index.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/getting-started/index.md*
 
 # Getting Started with Traefik
 
@@ -245,7 +245,7 @@ Make sure you have the necessary prerequisites for your chosen environment:
 
 # Getting Started / Configuration Introduction
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/getting-started/configuration-overview.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/getting-started/configuration-overview.md*
 
 # Configuration Introduction
 
@@ -351,7 +351,7 @@ You can browse the available features in the menu, the [providers](../reference/
 
 # Getting Started / Quick Start / Kubernetes
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/getting-started/kubernetes.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/getting-started/kubernetes.md*
 
 # Getting Started with Kubernetes and Traefik
 
@@ -480,7 +480,7 @@ Access it at:
 
 [http://dashboard.localhost/dashboard/](http://dashboard.localhost/dashboard/)
 
-![Traefik Dashboard Screenshot](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/getting-started/traefik-dashboard.png)
+![Traefik Dashboard Screenshot](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/getting-started/traefik-dashboard.png)
 
 ## Deploy a Sample Application
 
@@ -586,7 +586,7 @@ X-Real-Ip: 127.0.0.1
 
 You can also visit [http://whoami.localhost](http://whoami.localhost) in a browser to verify that the application is exposed correctly:
 
-![whoami application Screenshot](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/getting-started/whoami-localhost.png)
+![whoami application Screenshot](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/getting-started/whoami-localhost.png)
 
 ## Exposing the Application Using the Gateway API
 
@@ -594,7 +594,7 @@ Traefik supports the Kubernetes Gateway API specification, which provides a more
 When we installed Traefik earlier, we enabled the Gateway API provider. 
 You can verify this in the providers section of the Traefik dashboard.
 
-![Providers Section Screenshot](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/getting-started/providers.png)
+![Providers Section Screenshot](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/getting-started/providers.png)
 
 To use the Gateway API:
 
@@ -666,11 +666,11 @@ X-Real-Ip: 127.0.0.1
 
 You can now visit [http://whoami.localhost](http://whoami.localhost) in your browser to verify that the application is exposed correctly:
 
-![whoami application Screenshot](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/getting-started/whoami-localhost.png)
+![whoami application Screenshot](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/getting-started/whoami-localhost.png)
 
 If you navigate to the **HTTP Routes** section of the traefik dashboard, you can see that the `whoami.localhost` route is managed by the Traefik Kubernetes Gateway API provider:
 
-![Traefik Dashboard HTTP Routes Section Screenshot](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/getting-started/kubernetes-gateway.png)
+![Traefik Dashboard HTTP Routes Section Screenshot](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/getting-started/kubernetes-gateway.png)
 
 That's it! You've successfully deployed Traefik and configured routing in a Kubernetes cluster.
 
@@ -697,7 +697,7 @@ That's it! You've successfully deployed Traefik and configured routing in a Kube
 
 # Getting Started / Quick Start / Docker
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/getting-started/docker.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/getting-started/docker.md*
 
 # Getting Started with Docker and Traefik
 
@@ -792,7 +792,7 @@ You can access the dashboard at:
 
 [http://localhost:8080/dashboard/](http://localhost:8080/dashboard/)
 
-![Traefik Dashboard Screenshot](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/getting-started/traefik-dashboard.png)
+![Traefik Dashboard Screenshot](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/getting-started/traefik-dashboard.png)
 
 ## Deploy a Sample Application
 
@@ -840,11 +840,11 @@ X-Real-Ip: 192.168.147.1
 
 You can also open [http://whoami.localhost](http://whoami.localhost) in a browser to test the application:
 
-![whoami application Screenshot](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/getting-started/whoami-localhost.png)
+![whoami application Screenshot](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/getting-started/whoami-localhost.png)
 
 If you navigate to the **HTTP Routers** section of the Traefik dashboard, you can see that the `whoami.localhost` route is managed by the Traefik Docker provider:
 
-![Traefik Dashboard HTTP Routers Section Screenshot](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/getting-started/docker-router.png)
+![Traefik Dashboard HTTP Routers Section Screenshot](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/getting-started/docker-router.png)
 
 That's it! You've successfully deployed Traefik and configured routing in Docker.
 
@@ -870,7 +870,7 @@ That's it! You've successfully deployed Traefik and configured routing in Docker
 
 # Setup / Kubernetes
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/setup/kubernetes.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/setup/kubernetes.md*
 
 This guide provides an in-depth walkthrough for installing and configuring Traefik Proxy within a Kubernetes cluster using the official Helm chart. In this guide, we'll cover the following:
 
@@ -1082,7 +1082,7 @@ helm install traefik traefik/traefik \
 
 Now that Traefik is deployed, you can access its dashboard at [https://dashboard.docker.localhost/](https://dashboard.docker.localhost/). When you access this link, your browser will prompt for the username and password. Ensure you use the credentials set in the `values.yaml` file to log in. Upon successful login, the dashboard will be displayed as shown below:
 
-![Traefik Dashboard](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/setup/traefik-dashboard.png)
+![Traefik Dashboard](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/setup/traefik-dashboard.png)
 
 ## Deploy a Demo Application
 
@@ -1159,7 +1159,7 @@ kubectl apply -f whoami-route.yaml
 
 After you apply the manifest, navigate to the Routes in the Traefik Dashboard; you’ll see that the [https://whoami.docker.localhost](https://whoami.docker.localhost) route has been created.
 
-![Route](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/setup/route-in-dashboard.png)
+![Route](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/setup/route-in-dashboard.png)
 
 You can test the application using curl:
 
@@ -1189,7 +1189,7 @@ X-Real-Ip: 10.42.0.1
 
 You can also open a browser and navigate to [https://whoami.docker.localhost](https://whoami.docker.localhost) to see a JSON dump from the service.
 
-![Whoami](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/setup/whoami-json-dump.png)
+![Whoami](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/setup/whoami-json-dump.png)
 
 ## Other Key Configuration Areas
 
@@ -1283,7 +1283,7 @@ This setup establishes Traefik with secure dashboard access and HTTPS redirectio
 
 # Setup / Docker
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/setup/docker.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/setup/docker.md*
 
 This guide provides an in-depth walkthrough for installing and configuring Traefik Proxy within a Docker container using the official Traefik Docker image & Docker Compose. In this guide, we'll cover the following:
 
@@ -1362,7 +1362,7 @@ services:
       - "443:443"
 
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /var/run/docker.sock:/var/run/docker.sock
       - ./certs:/certs:ro
       - ./dynamic:/dynamic:ro
 
@@ -1444,7 +1444,7 @@ Traefik will start, read its static configuration from the `command` arguments, 
 
 Now that Traefik is deployed, you can access the dashboard at [https://dashboard.docker.localhost](https://dashboard.docker.localhost) and it should prompt for the Basic Authentication credentials you configured:
 
-![Traefik Dashboard](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/setup/traefik-dashboard-docker.png)
+![Traefik Dashboard](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/setup/traefik-dashboard-docker.png)
 
 ## Test the whoami Application
 
@@ -1486,7 +1486,7 @@ The above confirms that a redirection has taken place which means our setup work
 
 You can also open a browser and navigate to [https://whoami.docker.localhost](https://whoami.docker.localhost) to see a JSON dump from the service:
 
-![Whoami](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/setup/whoami-json-dump.png)
+![Whoami](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/setup/whoami-json-dump.png)
 
 > **Info**
 >
@@ -1596,7 +1596,7 @@ You now have a basic Traefik setup in Docker with secure dashboard access and HT
 
 # Setup / Swarm
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/setup/swarm.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/setup/swarm.md*
 
 This guide provides an in‑depth walkthrough for installing and configuring Traefik Proxy as a **Swarm service** using `docker stack deploy`. It follows the same structure as the standalone‑Docker tutorial and covers:
 
@@ -1798,7 +1798,7 @@ Swarm schedules the services on a manager node and binds ports 80/443.
 
 Open **https://dashboard.swarm.localhost/** in your browser — the dashboard should prompt for the basic‑auth credentials you configured.
 
-![Traefik Dashboard](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/setup/traefik-dashboard-swarm.png)
+![Traefik Dashboard](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/setup/traefik-dashboard-swarm.png)
 
 ## Test the whoami Application
 
@@ -1840,7 +1840,7 @@ Requesting the HTTP endpoint redirects to HTTPS, confirming the setup works.
 
 You can also open a browser and navigate to [https://whoami.swarm.localhost](https://whoami.swarm.localhost) to see a JSON dump from the service:
 
-![Whoami](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/setup/whoami-json-dump.png)
+![Whoami](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/setup/whoami-json-dump.png)
 
 ### Other Key Configuration Areas
 
@@ -1940,7 +1940,7 @@ You now have Traefik running on Docker Swarm with HTTPS, a secured dashboard, a
 
 # Expose / Overview
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/expose/overview.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/expose/overview.md*
 
 # Exposing Services with Traefik Proxy
 
@@ -2064,7 +2064,7 @@ Traefik Proxy supports WebSocket (WS) and WebSocket Secure (WSS) connections out
 
 # Expose / Kubernetes / Basic
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/expose/kubernetes/basic.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/expose/kubernetes/basic.md*
 
 # Exposing Services with Traefik on Kubernetes - Basic
 
@@ -2516,7 +2516,7 @@ Continue to the [Advanced Guide](advanced.md) to learn about:
 
 # Expose / Kubernetes / Advanced
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/expose/kubernetes/advanced.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/expose/kubernetes/advanced.md*
 
 # Exposing Services with Traefik on Kubernetes - Advanced
 
@@ -3539,7 +3539,7 @@ Now that you've mastered both basic and advanced Traefik features with Kubernete
 
 # Expose / Docker / Basic
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/expose/docker/basic.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/expose/docker/basic.md*
 
 # Exposing Services with Traefik on Docker - Basic
 
@@ -3796,7 +3796,7 @@ Continue to the [Advanced Guide](advanced.md) to learn about:
 
 # Expose / Docker / Advanced
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/expose/docker/advanced.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/expose/docker/advanced.md*
 
 # Exposing Services with Traefik on Docker - Advanced
 
@@ -4281,7 +4281,7 @@ Now that you've mastered both basic and advanced Traefik features with Docker, y
 
 # Expose / Swarm / Basic
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/expose/swarm/basic.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/expose/swarm/basic.md*
 
 # Exposing Services with Traefik on Docker Swarm - Basic
 
@@ -4478,7 +4478,7 @@ Continue to the [Advanced Guide](advanced.md) to learn about:
 
 # Expose / Swarm / Advanced
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/expose/swarm/advanced.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/expose/swarm/advanced.md*
 
 # Exposing Services with Traefik on Docker Swarm - Advanced
 
@@ -4964,7 +4964,7 @@ Now that you've mastered both basic and advanced Traefik features with Docker Sw
 
 # Secure / Secure Access with JWT
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/secure/secure-api-access-with-jwt.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/secure/secure-api-access-with-jwt.md*
 
 # Secure API Access with JWT
 
@@ -5199,7 +5199,7 @@ spec:
 
 # Secure / Secure Access with OIDC
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/secure/secure-api-access-with-oidc.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/secure/secure-api-access-with-oidc.md*
 
 # Secure API Access with OIDC
 
@@ -5214,7 +5214,7 @@ and obtaining the end user's session claims and scopes for authorization purpose
 To authenticate the user, the middleware redirects through the authentication provider.
 Once the authentication is complete, users are redirected back to the middleware before being authorized to access the upstream application, as described in the diagram below:
 
-![OpenID Connect authentication flow](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/secure/oidc-auth-flow.png)
+![OpenID Connect authentication flow](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/secure/oidc-auth-flow.png)
 
 <br />
 
@@ -5329,7 +5329,7 @@ spec:
 
 # Secure / Secure Access with a WAF
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/secure/secure-api-access-with-waf.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/secure/secure-api-access-with-waf.md*
 
 # Secure API Access with WAF
 
@@ -5545,7 +5545,7 @@ spec:
 
 # Observe / Overview
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/observe/overview.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/observe/overview.md*
 
 # Observability Overview
 
@@ -5649,7 +5649,7 @@ additionalArguments:
 
 # Observe / Logs & Access Logs
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/observe/logs-and-access-logs.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/observe/logs-and-access-logs.md*
 
 ## Logs
 
@@ -5827,6 +5827,26 @@ Traefik Proxy supports the following log formats:
 - `genericCLF` - Generic CLF format compatible with standard log analyzers
 - `json` - JSON format for structured logging
 
+## Origin vs. Downstream Status
+
+Access logs report two status codes, named relative to Traefik:
+
+```text
+Client <---- DownstreamStatus ---- Traefik <---- OriginStatus ---- Backend
+```
+
+- `OriginStatus` is the outcome of proxying the request to a backend. It is either the status returned by that backend or the computed status code, when the backend could not be reached or did not answer properly (`502`, `504`, ...).
+- `DownstreamStatus` is what Traefik returned to the client, after the middleware chain has run.
+
+Both are equal when the request is proxied unchanged.
+When both are set but differ, a middleware rewrote the response.
+When `OriginStatus` is empty (logged as `0`), the request was never proxied to a backend: the response comes from routing (no matching router) or from a middleware (authentication, rate limiting, redirection).
+
+> **Info**
+>
+> Both fields are only available with the `json` format.
+> The `common` and `genericCLF` formats, and the `statusCodes` filter, use the `DownstreamStatus` value.
+
 ## Access Log Filters
 
 You can configure Traefik Proxy to only record access logs for requests that match certain criteria. This is useful for reducing the volume of logs and focusing on specific events.
@@ -5853,7 +5873,7 @@ When using the `json` format, you can customize which fields are included in you
 
 # Observe / Metrics
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/observe/metrics.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/observe/metrics.md*
 
 # Metrics
 
@@ -5976,7 +5996,7 @@ When the `observability` options are not defined on a router, it inherits the be
 
 # Observe / Tracing
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/observe/tracing.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/observe/tracing.md*
 
 # Tracing
 
@@ -6088,7 +6108,7 @@ When the `observability` options are not defined on a router, it inherits the be
 
 # Extend
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/extend/extend-traefik.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/extend/extend-traefik.md*
 
 # Extend Traefik
 
@@ -6148,7 +6168,7 @@ Traefik users can create their own plugins and share them with the community usi
 
 # Govern
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/govern/index.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/govern/index.md*
 
 # Govern Your APIs with Traefik Hub
 
@@ -6209,7 +6229,7 @@ Ready to govern your APIs at scale? Explore [Traefik Hub API Management](https:/
 
 # Migrate / Ingress NGINX to Traefik
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/migrate/nginx-to-traefik.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/migrate/nginx-to-traefik.md*
 
 # Migrate from Ingress NGINX Controller to Traefik
 
@@ -7024,11 +7044,141 @@ We welcome contributions to improve this migration guide. See our [contribution 
 
 # Migrate / Traefik v3 minor migrations
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/migrate/v3.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/migrate/v3.md*
 
 # Migration: Steps needed between the versions
 
 This guide provides detailed migration steps for upgrading between different Traefik v3 versions. Each section covers breaking changes, deprecations, and configuration updates required for a smooth transition.
+
+---
+
+## v3.7.11
+
+### Conflicting TLS options
+
+The TLS options are configured on a router, but they are applied during the TLS handshake, before the routing occurs,
+and are therefore mapped to the host names found in the router rule rather than to the router itself.
+When several routers on the same entry point serve the same host name with different TLS options,
+Traefik cannot decide which options to apply, and falls back to the `default` TLS options for that host name.
+
+The `default` TLS options being the fallback of the conflict resolution, they should not be less secure than the options
+they can replace: a router relying on a mutual TLS authentication (`clientAuth`), for example, no longer enforces it
+if a conflict on its host name falls back to `default` TLS options that do not require it.
+See [GHSA-g55h-rg46-x9c5](https://github.com/traefik/traefik/security/advisories/GHSA-g55h-rg46-x9c5) for more details.
+
+Starting with `v3.7.11`, the new `core.strictTLSOptions` install configuration option disables this fallback:
+the routers involved in the conflict are marked in error and are not built at all.
+
+The option is disabled by default, to preserve the existing behavior, but enabling it is recommended:
+
+**File (YAML)**
+
+```yaml
+## Install configuration
+core:
+  strictTLSOptions: true
+```
+
+**File (TOML)**
+
+```toml
+## Install configuration
+[core]
+  strictTLSOptions = true
+```
+
+**CLI**
+
+```bash
+## Install configuration
+--core.strictTLSOptions=true
+```
+
+> **Warning — Disabled routers**
+>
+> This option fails closed: a conflict disables all the routers serving the conflicting host name
+> on the concerned entry point, until the conflict is resolved.
+
+Please check out the [Conflicting TLS Options](../reference/routing-configuration/http/tls/tls-options.md#conflicting-tls-options) documentation for more details.
+
+### Kubernetes CRD: generated router, middleware and service names
+
+Starting with `v3.7.11`, the Kubernetes CRD provider derives the names it generates from the identity of the
+object they come from, instead of joining its namespace and name, which could produce the same name for two
+distinct objects, one silently replacing the other.
+
+The generated names now embed a hash, and the ones generated for a route are derived from the route index
+instead of its rule:
+
+```text
+default-whoami-80                          ->    default-whoami-80-b08b5838443b99387085
+default-test-route-6b204d94623b3df4370c    ->    default-test-route-0-bfddf9467dc588639f54
+```
+
+The services generated for the Kubernetes Services referenced by a `TraefikService` (weighted, mirroring, failover
+or highest random weight), or by a route with several services, are named after the parent declaring the reference,
+followed by the index of the reference, and the namespace, the name and the port of the referenced Kubernetes Service:
+
+```text
+default-whoami-80    ->    default-wrr1-wrr-1-default-whoami-80-a9e95654da2bd86ee12d
+```
+
+Each of these references carries its own options (`serversTransport`, `scheme`, `sticky`, `healthCheck`, ...),
+which were not part of the generated name: two references to the same Kubernetes Service with different options
+were collapsed into a single service, and the last one built silently won. They are now distinct services,
+which also means that the servers of a Kubernetes Service referenced from several parents are health checked
+once per reference, instead of once for all of them.
+
+As they cannot be written by hand anymore, references using the flattened `namespace-name@kubernetescrd` form
+have to set the `namespace` attribute of the reference instead.
+
+> **Warning — Observability**
+>
+> These names are user-visible: they appear in the dashboard and API, in the access logs `RouterName` and `ServiceName` fields,
+> and in the `router` and `service` labels of the metrics.
+> Dashboards, alerting rules, and log queries that match on Kubernetes CRD router, middleware or service names must be updated accordingly.
+
+### Kubernetes CRD: cluster-wide default TLSOption and TLSStore
+
+In the Kubernetes CRD provider, the `TLSOption` and the `TLSStore` named `default` are cluster-wide, whatever
+the namespace they are defined in. Anyone allowed to create one in a single namespace can therefore replace the
+TLS policy, mutual TLS authentication included, of the routers that do not reference TLS options explicitly.
+
+Starting with `v3.7.11`, the new `defaultTLSResourcesNamespace` provider option reserves these resources
+to a namespace the cluster operator controls.
+
+The option is empty by default, to preserve the existing behavior, but setting it is recommended:
+
+**File (YAML)**
+
+```yaml
+## Install configuration
+providers:
+  kubernetesCRD:
+    defaultTLSResourcesNamespace: traefik
+```
+
+**File (TOML)**
+
+```toml
+## Install configuration
+[providers.kubernetesCRD]
+  defaultTLSResourcesNamespace = "traefik"
+```
+
+**CLI**
+
+```bash
+## Install configuration
+--providers.kubernetescrd.defaultTLSResourcesNamespace=traefik
+```
+
+> **Warning — Ignored resources**
+>
+> A `default` resource defined outside of the configured namespace is ignored, and cannot be referenced
+> under its namespaced name either. For a `TLSStore`, this also applies to the certificates it defines.
+
+Please check out the [Kubernetes CRD provider](../reference/install-configuration/providers/kubernetes/kubernetes-crd.md#defaulttlsresourcesnamespace) documentation for more details.
 
 ---
 
@@ -7276,7 +7426,7 @@ and [Kubernetes Gateway](../reference/install-configuration/providers/kubernetes
 
 Starting with `v3.7.0`, the Ingress NGINX provider now supports the `nginx.ingress.kubernetes.io/custom-headers` annotation to add custom headers to the response forwarded to the client.
 
-Therefore, in the corresponding RBACs (see [KubernetesIngressNGINX](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/dynamic-configuration/kubernetes-ingress-nginx-rbac.yml) provider RBACs) the `configmaps` right has been added.
+Therefore, in the corresponding RBACs (see [KubernetesIngressNGINX](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/dynamic-configuration/kubernetes-ingress-nginx-rbac.yml) provider RBACs) the `configmaps` right has been added.
 
 **Required RBAC Updates:**
 
@@ -7338,6 +7488,136 @@ This enables configuring different TLS options for wildcard domains.
 Previously, TLSOptions selection was limited to exact `Host` matches, and using `HostRegexp` or wildcards would fall back to the default TLS options with a warning message like: `No domain found in rule HostRegexp(...) the TLS option foo cannot be applied`.
 
 Note: TLSOptions for `HostRegexp` matchers remains unsupported. Use wildcard `Host` matchers as an alternative.
+
+---
+
+## v3.6.26
+
+### Conflicting TLS options
+
+The TLS options are configured on a router, but they are applied during the TLS handshake, before the routing occurs,
+and are therefore mapped to the host names found in the router rule rather than to the router itself.
+When several routers on the same entry point serve the same host name with different TLS options,
+Traefik cannot decide which options to apply, and falls back to the `default` TLS options for that host name.
+
+The `default` TLS options being the fallback of the conflict resolution, they should not be less secure than the options
+they can replace: a router relying on a mutual TLS authentication (`clientAuth`), for example, no longer enforces it
+if a conflict on its host name falls back to `default` TLS options that do not require it.
+See [GHSA-g55h-rg46-x9c5](https://github.com/traefik/traefik/security/advisories/GHSA-g55h-rg46-x9c5) for more details.
+
+Starting with `v3.6.26`, the new `core.strictTLSOptions` install configuration option disables this fallback:
+the routers involved in the conflict are marked in error and are not built at all.
+
+The option is disabled by default, to preserve the existing behavior, but enabling it is recommended:
+
+**File (YAML)**
+
+```yaml
+## Install configuration
+core:
+  strictTLSOptions: true
+```
+
+**File (TOML)**
+
+```toml
+## Install configuration
+[core]
+  strictTLSOptions = true
+```
+
+**CLI**
+
+```bash
+## Install configuration
+--core.strictTLSOptions=true
+```
+
+> **Warning — Disabled routers**
+>
+> This option fails closed: a conflict disables all the routers serving the conflicting host name
+> on the concerned entry point, until the conflict is resolved.
+
+Please check out the [Conflicting TLS Options](../reference/routing-configuration/http/tls/tls-options.md#conflicting-tls-options) documentation for more details.
+
+### Kubernetes CRD: generated router, middleware and service names
+
+Starting with `v3.6.26`, the Kubernetes CRD provider derives the names it generates from the identity of the
+object they come from, instead of joining its namespace and name, which could produce the same name for two
+distinct objects, one silently replacing the other.
+
+The generated names now embed a hash, and the ones generated for a route are derived from the route index
+instead of its rule:
+
+```text
+default-whoami-80                          ->    default-whoami-80-b08b5838443b99387085
+default-test-route-6b204d94623b3df4370c    ->    default-test-route-0-bfddf9467dc588639f54
+```
+
+The services generated for the Kubernetes Services referenced by a `TraefikService` (weighted, mirroring or
+highest random weight), or by a route with several services, are named after the parent declaring the reference,
+followed by the index of the reference, and the namespace, the name and the port of the referenced Kubernetes Service:
+
+```text
+default-whoami-80    ->    default-wrr1-wrr-1-default-whoami-80-a9e95654da2bd86ee12d
+```
+
+Each of these references carries its own options (`serversTransport`, `scheme`, `sticky`, `healthCheck`, ...),
+which were not part of the generated name: two references to the same Kubernetes Service with different options
+were collapsed into a single service, and the last one built silently won. They are now distinct services,
+which also means that the servers of a Kubernetes Service referenced from several parents are health checked
+once per reference, instead of once for all of them.
+
+As they cannot be written by hand anymore, references using the flattened `namespace-name@kubernetescrd` form
+have to set the `namespace` attribute of the reference instead.
+
+> **Warning — Observability**
+>
+> These names are user-visible: they appear in the dashboard and API, in the access logs `RouterName` and `ServiceName` fields,
+> and in the `router` and `service` labels of the metrics.
+> Dashboards, alerting rules, and log queries that match on Kubernetes CRD router, middleware or service names must be updated accordingly.
+
+### Kubernetes CRD: cluster-wide default TLSOption and TLSStore
+
+In the Kubernetes CRD provider, the `TLSOption` and the `TLSStore` named `default` are cluster-wide, whatever
+the namespace they are defined in. Anyone allowed to create one in a single namespace can therefore replace the
+TLS policy, mutual TLS authentication included, of the routers that do not reference TLS options explicitly.
+
+Starting with `v3.6.26`, the new `defaultTLSResourcesNamespace` provider option reserves these resources
+to a namespace the cluster operator controls.
+
+The option is empty by default, to preserve the existing behavior, but setting it is recommended:
+
+**File (YAML)**
+
+```yaml
+## Install configuration
+providers:
+  kubernetesCRD:
+    defaultTLSResourcesNamespace: traefik
+```
+
+**File (TOML)**
+
+```toml
+## Install configuration
+[providers.kubernetesCRD]
+  defaultTLSResourcesNamespace = "traefik"
+```
+
+**CLI**
+
+```bash
+## Install configuration
+--providers.kubernetescrd.defaultTLSResourcesNamespace=traefik
+```
+
+> **Warning — Ignored resources**
+>
+> A `default` resource defined outside of the configured namespace is ignored, and cannot be referenced
+> under its namespaced name either. For a `TLSStore`, this also applies to the certificates it defines.
+
+Please check out the [Kubernetes CRD provider](../reference/install-configuration/providers/kubernetes/kubernetes-crd.md#defaulttlsresourcesnamespace) documentation for more details.
 
 ---
 
@@ -8201,7 +8481,7 @@ The KubernetesGateway Provider is no longer experimental in v3.1 and can be enab
 
 # Migrate / Traefik v2 to v3 / Migration guide
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/migrate/v2-to-v3.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/migrate/v2-to-v3.md*
 
 # Migration Guide: From v2 to v3
 
@@ -8383,7 +8663,7 @@ core:
 
 # Migrate / Traefik v2 to v3 / Configuration changes for v3
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/migrate/v2-to-v3-details.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/migrate/v2-to-v3-details.md*
 
 # Configuration Details for Migrating from Traefik v2 to v3
 
@@ -9318,7 +9598,7 @@ Please use the CRD definition with the API Version `apiextensions.k8s.io/v1` ins
 
 # Migrate / Traefik v2 minor migrations
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/migrate/v2.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/migrate/v2.md*
 
 # Migration: Steps needed between the v2 versions
 
@@ -9331,7 +9611,7 @@ For more information about the changes between Traefik v2 minor versions, please
 
 # Migrate / Traefik v1 to v2
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/migrate/v1-to-v2.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/migrate/v1-to-v2.md*
 
 # Migration Guide: From v1 to v2
 
@@ -9356,7 +9636,7 @@ For more information about the changes in Traefik v2, please refer to the [v2 do
 
 # Reference / Install Configuration / Boot Environment
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/boot-environment.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/boot-environment.md*
 
 # Boot Environment
 
@@ -9505,7 +9785,7 @@ helm install traefik traefik/traefik -f values.yaml
 
 # Reference / Install Configuration / Configuration Discovery / Overview
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/overview.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/overview.md*
 
 # Overview
 
@@ -9759,7 +10039,7 @@ When `precedence` is not set, Traefik uses the following default order (highest 
 
 # Reference / Install Configuration / Configuration Discovery / Kubernetes / Kubernetes Gateway API
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/kubernetes/kubernetes-gateway.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/kubernetes/kubernetes-gateway.md*
 
 # Traefik & Kubernetes with Gateway API
 
@@ -9789,7 +10069,16 @@ General functionality cannot be guaranteed for older versions.
     kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.6.1/standard-install.yaml
     ```
 
-2. If you are not using the Helm Chart, install/update the Traefik [RBAC](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/dynamic-configuration/kubernetes-gateway-rbac.yml) for Gateway API.
+    > **Warning — `experimentalChannel` requires the Experimental channel CRDs**
+    >
+    > The `experimentalChannel` option makes Traefik watch `TCPRoute` and `TLSRoute` resources,
+    > which the Standard channel CRDs do not provide.
+    > Enabling it without installing the Experimental channel CRDs
+    > (`experimental-install.yaml`) prevents the Kubernetes Gateway provider from starting:
+    > no Gateway API resource is served at all, not only `TCPRoute` and `TLSRoute`.
+    > Traefik keeps running and the other providers are unaffected.
+
+2. If you are not using the Helm Chart, install/update the Traefik [RBAC](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/dynamic-configuration/kubernetes-gateway-rbac.yml) for Gateway API.
 
     ```bash
     # Install Traefik RBACs for Gateway API.
@@ -9838,7 +10127,7 @@ providers:
 |:----------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------|:---------|
 | <a id="opt-providers-providersThrottleDuration" href="#opt-providers-providersThrottleDuration" title="#opt-providers-providersThrottleDuration">`providers.providersThrottleDuration`</a> | Minimum amount of time to wait for, after a configuration reload, before taking into account any new configuration refresh event.<br />If multiple events occur within this time, only the most recent one is taken into account, and all others are discarded.<br />**This option cannot be set per provider, but the throttling algorithm applies to each of them independently.** | 2s      | No       |
 | <a id="opt-providers-kubernetesGateway-endpoint" href="#opt-providers-kubernetesGateway-endpoint" title="#opt-providers-kubernetesGateway-endpoint">`providers.kubernetesGateway.endpoint`</a> | Server endpoint URL.<br />More information [here](#endpoint).                                                                                                                                                                                                                                                                                                                        | ""      | No       |
-| <a id="opt-providers-kubernetesGateway-experimentalChannel" href="#opt-providers-kubernetesGateway-experimentalChannel" title="#opt-providers-kubernetesGateway-experimentalChannel">`providers.kubernetesGateway.experimentalChannel`</a> | Toggles support for the Experimental Channel resources ([Gateway API release channels documentation](https://gateway-api.sigs.k8s.io/concepts/versioning/#release-channels)).<br />(ex: `TCPRoute`)                                                                                                                                                                   | false   | No       |
+| <a id="opt-providers-kubernetesGateway-experimentalChannel" href="#opt-providers-kubernetesGateway-experimentalChannel" title="#opt-providers-kubernetesGateway-experimentalChannel">`providers.kubernetesGateway.experimentalChannel`</a> | Toggles support for the Experimental Channel resources ([Gateway API release channels documentation](https://gateway-api.sigs.k8s.io/concepts/versioning/#release-channels)).<br />(ex: `TCPRoute`)<br />Requires the Experimental channel CRDs to be installed in the cluster, see [Requirements](#requirements).                                                    | false   | No       |
 | <a id="opt-providers-kubernetesGateway-token" href="#opt-providers-kubernetesGateway-token" title="#opt-providers-kubernetesGateway-token">`providers.kubernetesGateway.token`</a> | Bearer token used for the Kubernetes client configuration. Accepts either the token value directly or a path to a file containing the token.                                                                                                                                                                                                                                         | ""      | No       |
 | <a id="opt-providers-kubernetesGateway-certAuthFilePath" href="#opt-providers-kubernetesGateway-certAuthFilePath" title="#opt-providers-kubernetesGateway-certAuthFilePath">`providers.kubernetesGateway.certAuthFilePath`</a> | Path to the certificate authority file.<br />Used for the Kubernetes client configuration.                                                                                                                                                                                                                                                                                           | ""      | No       |
 | <a id="opt-providers-kubernetesGateway-namespaces" href="#opt-providers-kubernetesGateway-namespaces" title="#opt-providers-kubernetesGateway-namespaces">`providers.kubernetesGateway.namespaces`</a> | Array of namespaces to watch.<br />If left empty, watch all namespaces.                                                                                                                                                                                                                                                                                                              | []      | No       |
@@ -9928,7 +10217,7 @@ See the dedicated section in [routing](../../../../reference/routing-configurati
 
 # Reference / Install Configuration / Configuration Discovery / Kubernetes / Kubernetes CRD
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/kubernetes/kubernetes-crd.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/kubernetes/kubernetes-crd.md*
 
 Traefik provides some Kubernetes Custom Resources, such as `IngressRoute`, `Middleware`, etc.
 
@@ -10003,6 +10292,7 @@ providers:
 | <a id="opt-providers-kubernetesCRD-crossProviderNamespaces" href="#opt-providers-kubernetesCRD-crossProviderNamespaces" title="#opt-providers-kubernetesCRD-crossProviderNamespaces">`providers.kubernetesCRD.crossProviderNamespaces`</a> | List of namespaces from which `IngressRoute`, `IngressRouteTCP`, `IngressRouteUDP`, and `TraefikService` are allowed to declare cross-provider references (e.g. `myservice@file`).<br />When unset, all namespaces are allowed. When set to `[]`, every cross-provider reference is rejected. | []      | No |
 | <a id="opt-providers-kubernetesCRD-nativeLBByDefault" href="#opt-providers-kubernetesCRD-nativeLBByDefault" title="#opt-providers-kubernetesCRD-nativeLBByDefault">`providers.kubernetesCRD.nativeLBByDefault`</a> | Allow using the Kubernetes Service load balancing between the pods instead of the one provided by Traefik for every `IngressRoute` by default.<br />It can be overridden in the [`Service`](../../../../reference/routing-configuration/kubernetes/crd/http/service.md#opt-nativeLB). | false   | No |
 | <a id="opt-providers-kubernetesCRD-disableClusterScopeResources" href="#opt-providers-kubernetesCRD-disableClusterScopeResources" title="#opt-providers-kubernetesCRD-disableClusterScopeResources">`providers.kubernetesCRD.disableClusterScopeResources`</a> | Prevent from discovering cluster scope resources (`IngressClass` and `Nodes`).<br />By doing so, it alleviates the requirement of giving Traefik the rights to look up for cluster resources.<br />Furthermore, Traefik will not handle IngressRoutes with IngressClass references, therefore such Ingresses will be ignored (please note that annotations are not affected by this option).<br />This will also prevent from using the `NodePortLB` options on services. | false   | No |
+| <a id="opt-providers-kubernetesCRD-defaultTLSResourcesNamespace" href="#opt-providers-kubernetesCRD-defaultTLSResourcesNamespace" title="#opt-providers-kubernetesCRD-defaultTLSResourcesNamespace">`providers.kubernetesCRD.defaultTLSResourcesNamespace`</a> | Restricts the namespace in which the `TLSOption` and the `TLSStore` named `default` can be defined.<br />More information [here](#defaulttlsresourcesnamespace). | ""      | No |
 
 ### endpoint
 
@@ -10040,6 +10330,46 @@ providers:
 
 ```bash
 --providers.kubernetesCRD.endpoint=http://localhost:8080
+```
+
+### defaultTLSResourcesNamespace
+
+The `TLSOption` and the `TLSStore` named `default` are cluster-wide, whatever the namespace they are defined in:
+the former holds the TLS enforcement policy of every router that does not reference a TLSOption explicitly,
+the latter holds the default certificate served by every entry point.
+This option allows the cluster operator to reserve their definition to a namespace they control.
+
+When the option is not set, a `TLSOption` or a `TLSStore` named `default` is taken into account whatever its namespace,
+which is the default and backward compatible behavior.
+When it is set to a namespace, only the resources named `default` in this namespace are taken into account.
+
+> **Warning — Ignored resources**
+>
+> A `TLSOption` or a `TLSStore` named `default` defined outside of the configured namespace is ignored,
+> and cannot be referenced under its namespaced name either.
+> For a `TLSStore`, this also applies to the certificates it defines.
+
+**File (YAML)**
+
+```yaml
+providers:
+  kubernetesCRD:
+    defaultTLSResourcesNamespace: traefik
+    # ...
+```
+
+**File (TOML)**
+
+```toml
+[providers.kubernetesCRD]
+  defaultTLSResourcesNamespace = "traefik"
+  # ...
+```
+
+**CLI**
+
+```bash
+--providers.kubernetesCRD.defaultTLSResourcesNamespace=traefik
 ```
 
 ## Routing Configuration
@@ -10087,7 +10417,7 @@ For additional information on exposing services with Kubernetes, refer to the [K
 
 # Reference / Install Configuration / Configuration Discovery / Kubernetes / Kubernetes Ingress
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/kubernetes/kubernetes-ingress.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/kubernetes/kubernetes-ingress.md*
 
 # Traefik & Kubernetes
 
@@ -10155,7 +10485,7 @@ which in turn creates the resulting routers, services, handlers, etc.
 | <a id="opt-providers-kubernetesIngress-throttleDuration" href="#opt-providers-kubernetesIngress-throttleDuration" title="#opt-providers-kubernetesIngress-throttleDuration">`providers.kubernetesIngress.throttleDuration`</a> | Minimum amount of time to wait between two Kubernetes events before producing a new configuration.<br />This prevents a Kubernetes cluster that updates many times per second from continuously changing your Traefik configuration.<br />If empty, every event is caught.                                                                                                                                                                                            | 0s      | No       |
 | <a id="opt-providers-kubernetesIngress-allowEmptyServices" href="#opt-providers-kubernetesIngress-allowEmptyServices" title="#opt-providers-kubernetesIngress-allowEmptyServices">`providers.kubernetesIngress.allowEmptyServices`</a> | Allows creating a route to reach a service that has no endpoint available.<br />It allows Traefik to handle the requests and responses targeting this service (applying middleware or observability operations) before returning a `503` HTTP Status.                                                                                                                                                                                                                 | false   | No       |
 | <a id="opt-providers-kubernetesIngress-allowExternalNameServices" href="#opt-providers-kubernetesIngress-allowExternalNameServices" title="#opt-providers-kubernetesIngress-allowExternalNameServices">`providers.kubernetesIngress.allowExternalNameServices`</a> | Allows the `Ingress` to reference ExternalName services.                                                                                                                                                                                                                                                                                                                                                                                                              | false   | No       |
-| <a id="opt-providers-kubernetesIngress-crossProviderNamespaces" href="#opt-providers-kubernetesIngress-crossProviderNamespaces" title="#opt-providers-kubernetesIngress-crossProviderNamespaces">`providers.kubernetesIngress.crossProviderNamespaces`</a> | List of namespaces from which Ingresses or Services are allowed to use `traefik.ingress.kubernetes.io/router.middlewares`, `traefik.ingress.kubernetes.io/router.tls.options`, or `traefik.ingress.kubernetes.io/service.serverstransport` annotations.<br />When unset, all namespaces are allowed. When set to `[]`, every cross-provider reference is rejected.                                                                                                          | []      | No       |
+| <a id="opt-providers-kubernetesIngress-crossProviderNamespaces" href="#opt-providers-kubernetesIngress-crossProviderNamespaces" title="#opt-providers-kubernetesIngress-crossProviderNamespaces">`providers.kubernetesIngress.crossProviderNamespaces`</a> | List of namespaces from which Ingresses or Services are allowed to use `traefik.ingress.kubernetes.io/router.middlewares`, `traefik.ingress.kubernetes.io/router.tls.options`, `traefik.ingress.kubernetes.io/service.middlewares`, or `traefik.ingress.kubernetes.io/service.serverstransport` annotations.<br />When unset, all namespaces are allowed. When set to `[]`, every cross-provider reference is rejected.                                                                                                          | []      | No       |
 | <a id="opt-providers-kubernetesIngress-nativeLBByDefault" href="#opt-providers-kubernetesIngress-nativeLBByDefault" title="#opt-providers-kubernetesIngress-nativeLBByDefault">`providers.kubernetesIngress.nativeLBByDefault`</a> | Allow using the Kubernetes Service load balancing between the pods instead of the one provided by Traefik for every `Ingress` by default.<br />It can be overridden in the [`Service`](../../../../reference/routing-configuration/kubernetes/crd/http/service.md#opt-nativeLB)                                                                                                                                                                                       | false   | No       |
 | <a id="opt-providers-kubernetesIngress-disableClusterScopeResources" href="#opt-providers-kubernetesIngress-disableClusterScopeResources" title="#opt-providers-kubernetesIngress-disableClusterScopeResources">`providers.kubernetesIngress.disableClusterScopeResources`</a> | Prevent from discovering cluster scope resources (`IngressClass` and `Nodes`).<br />By doing so, it alleviates the requirement of giving Traefik the rights to look up for cluster resources.<br />Furthermore, Traefik will not handle Ingresses with IngressClass references, therefore such Ingresses will be ignored (please note that annotations are not affected by this option).<br />This will also prevent from using the `NodePortLB` options on services. | false   | No       |
 | <a id="opt-providers-kubernetesIngress-strictPrefixMatching" href="#opt-providers-kubernetesIngress-strictPrefixMatching" title="#opt-providers-kubernetesIngress-strictPrefixMatching">`providers.kubernetesIngress.strictPrefixMatching`</a> | Make prefix matching strictly comply with the Kubernetes Ingress specification (path-element-wise matching instead of character-by-character string matching). For example, a PathPrefix of `/foo` will match `/foo`, `/foo/`, and `/foo/bar` but not `/foobar`.                                                                                                                                                                                                      | false   | No       |
@@ -10271,7 +10601,7 @@ of the Traefik repository.
 
 # Reference / Install Configuration / Configuration Discovery / Kubernetes / Kubernetes Ingress NGINX
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/kubernetes/kubernetes-ingress-nginx.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/kubernetes/kubernetes-ingress-nginx.md*
 
 # Traefik & Ingresses with NGINX Annotations
 
@@ -10563,7 +10893,7 @@ See the dedicated section in [routing](../../../routing-configuration/kubernetes
 
 # Reference / Install Configuration / Configuration Discovery / Kubernetes / Knative
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/kubernetes/knative.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/kubernetes/knative.md*
 
 # Traefik & Knative
 
@@ -10611,7 +10941,7 @@ General functionality cannot be guaranteed for older versions.
       -p='{"data":{"example.com":""}}'
     ```
 
-5. Install/update the Traefik [RBAC](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/dynamic-configuration/kubernetes-knative-rbac.yml).
+5. Install/update the Traefik [RBAC](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/dynamic-configuration/kubernetes-knative-rbac.yml).
 
     ```bash
     kubectl apply -f https://raw.githubusercontent.com/traefik/traefik/v3.7/docs/content/reference/dynamic-configuration/kubernetes-knative-rbac.yml
@@ -10730,7 +11060,7 @@ See the dedicated section in [routing](../../../routing-configuration/kubernetes
 
 # Reference / Install Configuration / Configuration Discovery / Docker
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/docker.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/docker.md*
 
 # Traefik & Docker
 
@@ -11225,7 +11555,7 @@ You can specify which Docker API Endpoint to use with the directive [`endpoint`]
 
 # Reference / Install Configuration / Configuration Discovery / Swarm
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/swarm.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/swarm.md*
 
 # Traefik & Docker Swarm
 
@@ -11764,7 +12094,7 @@ It allows different implementation levels of the [AAA (Authentication, Authoriza
 
 # Reference / Install Configuration / Configuration Discovery / Hashicorp / Nomad
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/hashicorp/nomad.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/hashicorp/nomad.md*
 
 # Traefik & Nomad Service Discovery
 
@@ -12055,7 +12385,7 @@ See the dedicated section in [routing](../../../../reference/routing-configurati
 
 # Reference / Install Configuration / Configuration Discovery / Hashicorp / Consul
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/hashicorp/consul.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/hashicorp/consul.md*
 
 # Traefik & Consul
 
@@ -12149,7 +12479,7 @@ See the dedicated section in [routing](../../../../reference/routing-configurati
 
 # Reference / Install Configuration / Configuration Discovery / Hashicorp / Consul Catalog
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/hashicorp/consul-catalog.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/hashicorp/consul-catalog.md*
 
 # Traefik & Consul Catalog
 
@@ -12384,7 +12714,7 @@ See the dedicated section in [routing](../../../../reference/routing-configurati
 
 # Reference / Install Configuration / Configuration Discovery / KV Stores / Redis
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/kv/redis.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/kv/redis.md*
 
 # Traefik & Redis
 
@@ -12443,7 +12773,7 @@ See the dedicated section in [routing](../../../../reference/routing-configurati
 
 # Reference / Install Configuration / Configuration Discovery / KV Stores / Consul
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/kv/consul.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/kv/consul.md*
 
 # Traefik & Consul
 
@@ -12537,7 +12867,7 @@ See the dedicated section in [routing](../../../../reference/routing-configurati
 
 # Reference / Install Configuration / Configuration Discovery / KV Stores / etcd
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/kv/etcd.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/kv/etcd.md*
 
 # Traefik & etcd
 
@@ -12587,7 +12917,7 @@ See the dedicated section in [routing](../../../../reference/routing-configurati
 
 # Reference / Install Configuration / Configuration Discovery / KV Stores / ZooKeeper
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/kv/zk.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/kv/zk.md*
 
 # Traefik & ZooKeeper
 
@@ -12632,7 +12962,7 @@ See the dedicated section in [routing](../../../../reference/routing-configurati
 
 # Reference / Install Configuration / Configuration Discovery / Others / File
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/others/file.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/others/file.md*
 
 # File
 
@@ -12778,7 +13108,7 @@ http:
 
 # Reference / Install Configuration / Configuration Discovery / Others / ECS
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/others/ecs.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/others/ecs.md*
 
 # Traefik & AWS ECS
 
@@ -13013,7 +13343,7 @@ Traefik needs the following policy to read ECS information:
 
 # Reference / Install Configuration / Configuration Discovery / Others / HTTP
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/others/http.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/others/http.md*
 
 # Traefik & HTTP
 
@@ -13094,7 +13424,7 @@ The HTTP provider uses the same configuration as the [File Provider](./file.md) 
 
 # Reference / Install Configuration / EntryPoints
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/entrypoints.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/entrypoints.md*
 
 Listening for Incoming Connections/Requests
 
@@ -13664,14 +13994,14 @@ Possible values are:
 
 # Reference / Install Configuration / API & Dashboard
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/api-dashboard.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/api-dashboard.md*
 
 Traefik exposes a number of information through API endpoints, such as the configuration of your routers, services, middlewares, etc.
 
 The dashboard, which is the central place that displays the current active routes handled by Traefik, fetches the data from this API.
 
 <figure>
-    <img src="https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/webui-dashboard.png" alt="Dashboard - Providers" />
+    <img src="https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/webui-dashboard.png" alt="Dashboard - Providers" />
     <figcaption>The dashboard in action</figcaption>
 </figure>
 
@@ -13904,7 +14234,7 @@ The dashboard is available by default on the path  `/dashboard/`.
 
 > **Note**
 >
-> - The trailing slash `/` in `/dashboard/` is mandatory. This limitation can be mitigated using the the [RedirectRegex Middleware](../../reference/routing-configuration/http/middlewares/redirectregex.md).
+> - The trailing slash `/` in `/dashboard/` is mandatory. This limitation can be mitigated using the [RedirectRegex Middleware](../../reference/routing-configuration/http/middlewares/redirectregex.md).
 > - There is also a redirect from the path `/` to `/dashboard/`, but you should not rely on this behavior, as it is subject to change and may complicate routing rules.
 
 As mentioned above in the [Security](#security) section, it is important to secure access to both the dashboard and the API.
@@ -13958,7 +14288,7 @@ rule = "Host(`traefik.example.com`) && (PathPrefix(`/api`) || PathPrefix(`/dashb
 
 # Reference / Install Configuration / TLS / Certificate Resolvers / Overview
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/tls/certificate-resolvers/overview.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/tls/certificate-resolvers/overview.md*
 
 In Traefik, TLS Certificates can be generated using Certificates Resolvers.
 
@@ -13989,7 +14319,7 @@ The Certificates resolvers are defined in the static configuration.
 
 # Reference / Install Configuration / TLS / Certificate Resolvers / ACME
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/tls/certificate-resolvers/acme.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/tls/certificate-resolvers/acme.md*
 
 ## Configuration Example
 
@@ -14365,7 +14695,7 @@ If Let's Encrypt is not reachable, the following certificates will apply:
 
 # Reference / Install Configuration / TLS / Certificate Resolvers / Tailscale
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/tls/certificate-resolvers/tailscale.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/tls/certificate-resolvers/tailscale.md*
 
 # Tailscale
 
@@ -14574,7 +14904,7 @@ Traefik automatically tracks the expiry date of each Tailscale certificate it fe
 
 # Reference / Install Configuration / TLS / SPIFFE
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/tls/spiffe.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/tls/spiffe.md*
 
 # SPIFFE
 
@@ -14666,7 +14996,7 @@ spec:
 
 # Reference / Install Configuration / TLS / OCSP
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/tls/ocsp.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/tls/ocsp.md*
 
 # OCSP
 
@@ -14750,7 +15080,7 @@ ocsp:
 
 # Reference / Install Configuration / Observability / Metrics
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/observability/metrics.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/observability/metrics.md*
 
 # Metrics
 
@@ -15425,7 +15755,7 @@ Here is a comprehensive list of labels that are provided by the metrics:
 
 # Reference / Install Configuration / Observability / Tracing
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/observability/tracing.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/observability/tracing.md*
 
 # Tracing
 
@@ -15523,7 +15853,7 @@ Traefik also supports the `OTEL_RESOURCE_ATTRIBUTES` env variable to set up the 
 
 # Reference / Install Configuration / Observability / Logs & AccessLogs
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/observability/logs-and-accesslogs.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/observability/logs-and-accesslogs.md*
 
 ## Logs
 
@@ -15906,6 +16236,11 @@ Below the fields displayed with the Traefik CLF format:
 "<Traefik_router_name>" "<Traefik_server_URL>" <request_duration_in_ms>ms
 ```
 
+> **Info — `<HTTP_status>` is the downstream status**
+>
+> In both CLF formats, `<HTTP_status>` is the `DownstreamStatus`, the status sent to the client.
+> The backend status (`OriginStatus`) is only available with the `json` format.
+
 ### Generic CLF format fields
 
 Below the fields displayed with the generic CLF format:
@@ -15918,42 +16253,42 @@ Below the fields displayed with the generic CLF format:
 
 ### JSON format fields
 
-| Field                   | Description   |
-|-------------------------|------------------|
-| <a id="opt-StartUTC" href="#opt-StartUTC" title="#opt-StartUTC">`StartUTC`</a> | The time at which request processing started.                                                                                                                       |
-| <a id="opt-StartLocal" href="#opt-StartLocal" title="#opt-StartLocal">`StartLocal`</a> | The local time at which request processing started.                                                                                                                 |
-| <a id="opt-Duration" href="#opt-Duration" title="#opt-Duration">`Duration`</a> | The total time taken (in nanoseconds) by processing the response, including the origin server's time but not the log writing time.                                  |
-| <a id="opt-RouterName" href="#opt-RouterName" title="#opt-RouterName">`RouterName`</a> | The name of the Traefik  router.                                                                                                                                    |
-| <a id="opt-ServiceName" href="#opt-ServiceName" title="#opt-ServiceName">`ServiceName`</a> | The name of the Traefik backend.          |
-| <a id="opt-ServiceURL" href="#opt-ServiceURL" title="#opt-ServiceURL">`ServiceURL`</a> | The URL of the Traefik backend.       |
-| <a id="opt-ServiceAddr" href="#opt-ServiceAddr" title="#opt-ServiceAddr">`ServiceAddr`</a> | The IP:port of the Traefik backend (extracted from `ServiceURL`). |
-| <a id="opt-ClientAddr" href="#opt-ClientAddr" title="#opt-ClientAddr">`ClientAddr`</a> | The remote address in its original form (usually IP:port).     |
-| <a id="opt-ClientHost" href="#opt-ClientHost" title="#opt-ClientHost">`ClientHost`</a> | The remote IP address from which the client request was received.     |
-| <a id="opt-ClientPort" href="#opt-ClientPort" title="#opt-ClientPort">`ClientPort`</a> | The remote TCP port from which the client request was received.   |
-| <a id="opt-ClientUsername" href="#opt-ClientUsername" title="#opt-ClientUsername">`ClientUsername`</a> | The username provided in the URL, if present.   |
-| <a id="opt-RequestAddr" href="#opt-RequestAddr" title="#opt-RequestAddr">`RequestAddr`</a> | The HTTP Host header (usually IP:port). This is treated as not a header by the Go API.   |
-| <a id="opt-RequestHost" href="#opt-RequestHost" title="#opt-RequestHost">`RequestHost`</a> | The HTTP Host server name (not including port).     |
-| <a id="opt-RequestPort" href="#opt-RequestPort" title="#opt-RequestPort">`RequestPort`</a> | The TCP port from the HTTP Host.    |
-| <a id="opt-RequestMethod" href="#opt-RequestMethod" title="#opt-RequestMethod">`RequestMethod`</a> | The HTTP method. |
-| <a id="opt-RequestPath" href="#opt-RequestPath" title="#opt-RequestPath">`RequestPath`</a> | The HTTP request URI, not including the scheme, host or port.   |
-| <a id="opt-RequestProtocol" href="#opt-RequestProtocol" title="#opt-RequestProtocol">`RequestProtocol`</a> | The version of HTTP requested.       |
-| <a id="opt-RequestScheme" href="#opt-RequestScheme" title="#opt-RequestScheme">`RequestScheme`</a> | The HTTP scheme requested `http` or `https`.   |
-| <a id="opt-RequestLine" href="#opt-RequestLine" title="#opt-RequestLine">`RequestLine`</a> | The `RequestMethod`, + `RequestPath` and `RequestProtocol`.   |
-| <a id="opt-RequestContentSize" href="#opt-RequestContentSize" title="#opt-RequestContentSize">`RequestContentSize`</a> | The number of bytes in the request entity (a.k.a. body) sent by the client.   |
-| <a id="opt-OriginDuration" href="#opt-OriginDuration" title="#opt-OriginDuration">`OriginDuration`</a> | The time taken (in nanoseconds) by the origin server ('upstream') to return its response. |
-| <a id="opt-OriginContentSize" href="#opt-OriginContentSize" title="#opt-OriginContentSize">`OriginContentSize`</a> | The content length specified by the origin server, or 0 if unspecified.    |
-| <a id="opt-OriginStatus" href="#opt-OriginStatus" title="#opt-OriginStatus">`OriginStatus`</a> | The HTTP status code returned by the origin server. If the request was handled by this Traefik instance (e.g. with a redirect), then this value will be absent (0). |
-| <a id="opt-OriginStatusLine" href="#opt-OriginStatusLine" title="#opt-OriginStatusLine">`OriginStatusLine`</a> | `OriginStatus` + Status code explanation   |
-| <a id="opt-DownstreamStatus" href="#opt-DownstreamStatus" title="#opt-DownstreamStatus">`DownstreamStatus`</a> | The HTTP status code returned to the client.    |
-| <a id="opt-DownstreamStatusLine" href="#opt-DownstreamStatusLine" title="#opt-DownstreamStatusLine">`DownstreamStatusLine`</a> | The `DownstreamStatus` and status code explanation.     |
-| <a id="opt-DownstreamContentSize" href="#opt-DownstreamContentSize" title="#opt-DownstreamContentSize">`DownstreamContentSize`</a> | The number of bytes in the response entity returned to the client. This is in addition to the "Content-Length" header, which may be present in the origin response. |
-| <a id="opt-RequestCount" href="#opt-RequestCount" title="#opt-RequestCount">`RequestCount`</a> | The number of requests received since the Traefik instance started.    |
-| <a id="opt-GzipRatio" href="#opt-GzipRatio" title="#opt-GzipRatio">`GzipRatio`</a> | The response body compression ratio achieved.   |
-| <a id="opt-Overhead" href="#opt-Overhead" title="#opt-Overhead">`Overhead`</a> | The processing time overhead (in nanoseconds) caused by Traefik.    |
-| <a id="opt-RetryAttempts" href="#opt-RetryAttempts" title="#opt-RetryAttempts">`RetryAttempts`</a> | The amount of attempts the request was retried.   |
-| <a id="opt-TLSVersion" href="#opt-TLSVersion" title="#opt-TLSVersion">`TLSVersion`</a> | The TLS version used by the connection (e.g. `1.2`) (if connection is TLS).   |
-| <a id="opt-TLSCipher" href="#opt-TLSCipher" title="#opt-TLSCipher">`TLSCipher`</a> | The TLS cipher used by the connection (e.g. `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`) (if connection is TLS).      |
-| <a id="opt-TLSClientSubject" href="#opt-TLSClientSubject" title="#opt-TLSClientSubject">`TLSClientSubject`</a> | The string representation of the TLS client certificate's Subject (e.g. `CN=username,O=organization`).  |
+| Field                   | Description                                                                                                                                                                                                                                                                                                                                                                           |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <a id="opt-StartUTC" href="#opt-StartUTC" title="#opt-StartUTC">`StartUTC`</a> | The time at which request processing started.                                                                                                                                                                                                                                                                                                                                         |
+| <a id="opt-StartLocal" href="#opt-StartLocal" title="#opt-StartLocal">`StartLocal`</a> | The local time at which request processing started.                                                                                                                                                                                                                                                                                                                                   |
+| <a id="opt-Duration" href="#opt-Duration" title="#opt-Duration">`Duration`</a> | The total time taken (in nanoseconds) by processing the response, including the origin server's time but not the log writing time.                                                                                                                                                                                                                                                    |
+| <a id="opt-RouterName" href="#opt-RouterName" title="#opt-RouterName">`RouterName`</a> | The name of the Traefik  router.                                                                                                                                                                                                                                                                                                                                                      |
+| <a id="opt-ServiceName" href="#opt-ServiceName" title="#opt-ServiceName">`ServiceName`</a> | The name of the Traefik backend.                                                                                                                                                                                                                                                                                                                                                      |
+| <a id="opt-ServiceURL" href="#opt-ServiceURL" title="#opt-ServiceURL">`ServiceURL`</a> | The URL of the Traefik backend.                                                                                                                                                                                                                                                                                                                                                       |
+| <a id="opt-ServiceAddr" href="#opt-ServiceAddr" title="#opt-ServiceAddr">`ServiceAddr`</a> | The IP:port of the Traefik backend (extracted from `ServiceURL`).                                                                                                                                                                                                                                                                                                                     |
+| <a id="opt-ClientAddr" href="#opt-ClientAddr" title="#opt-ClientAddr">`ClientAddr`</a> | The remote address in its original form (usually IP:port).                                                                                                                                                                                                                                                                                                                            |
+| <a id="opt-ClientHost" href="#opt-ClientHost" title="#opt-ClientHost">`ClientHost`</a> | The remote IP address from which the client request was received.                                                                                                                                                                                                                                                                                                                     |
+| <a id="opt-ClientPort" href="#opt-ClientPort" title="#opt-ClientPort">`ClientPort`</a> | The remote TCP port from which the client request was received.                                                                                                                                                                                                                                                                                                                       |
+| <a id="opt-ClientUsername" href="#opt-ClientUsername" title="#opt-ClientUsername">`ClientUsername`</a> | The username provided in the URL, if present.                                                                                                                                                                                                                                                                                                                                         |
+| <a id="opt-RequestAddr" href="#opt-RequestAddr" title="#opt-RequestAddr">`RequestAddr`</a> | The HTTP Host header (usually IP:port). This is treated as not a header by the Go API.                                                                                                                                                                                                                                                                                                |
+| <a id="opt-RequestHost" href="#opt-RequestHost" title="#opt-RequestHost">`RequestHost`</a> | The HTTP Host server name (not including port).                                                                                                                                                                                                                                                                                                                                       |
+| <a id="opt-RequestPort" href="#opt-RequestPort" title="#opt-RequestPort">`RequestPort`</a> | The TCP port from the HTTP Host.                                                                                                                                                                                                                                                                                                                                                      |
+| <a id="opt-RequestMethod" href="#opt-RequestMethod" title="#opt-RequestMethod">`RequestMethod`</a> | The HTTP method.                                                                                                                                                                                                                                                                                                                                                                      |
+| <a id="opt-RequestPath" href="#opt-RequestPath" title="#opt-RequestPath">`RequestPath`</a> | The HTTP request URI, not including the scheme, host or port.                                                                                                                                                                                                                                                                                                                         |
+| <a id="opt-RequestProtocol" href="#opt-RequestProtocol" title="#opt-RequestProtocol">`RequestProtocol`</a> | The version of HTTP requested.                                                                                                                                                                                                                                                                                                                                                        |
+| <a id="opt-RequestScheme" href="#opt-RequestScheme" title="#opt-RequestScheme">`RequestScheme`</a> | The HTTP scheme requested `http` or `https`.                                                                                                                                                                                                                                                                                                                                          |
+| <a id="opt-RequestLine" href="#opt-RequestLine" title="#opt-RequestLine">`RequestLine`</a> | The `RequestMethod`, + `RequestPath` and `RequestProtocol`.                                                                                                                                                                                                                                                                                                                           |
+| <a id="opt-RequestContentSize" href="#opt-RequestContentSize" title="#opt-RequestContentSize">`RequestContentSize`</a> | The number of bytes in the request entity (a.k.a. body) sent by the client.                                                                                                                                                                                                                                                                                                           |
+| <a id="opt-OriginDuration" href="#opt-OriginDuration" title="#opt-OriginDuration">`OriginDuration`</a> | The time taken (in nanoseconds) by the origin server ('upstream') to return its response.                                                                                                                                                                                                                                                                                             |
+| <a id="opt-OriginContentSize" href="#opt-OriginContentSize" title="#opt-OriginContentSize">`OriginContentSize`</a> | The content length specified by the origin server, or 0 if unspecified.                                                                                                                                                                                                                                                                                                               |
+| <a id="opt-OriginStatus" href="#opt-OriginStatus" title="#opt-OriginStatus">`OriginStatus`</a> | The HTTP status code resulting from proxying the request to a backend: either the one returned by that backend, or the one computed when the server could not be reached (`502`, `504`, ...). See [Origin vs. Downstream Status](../../../observe/logs-and-access-logs.md#origin-vs-downstream-status). |
+| <a id="opt-OriginStatusLine" href="#opt-OriginStatusLine" title="#opt-OriginStatusLine">`OriginStatusLine`</a> | `OriginStatus` + Status code explanation                                                                                                                                                                                                                                                                                                                                              |
+| <a id="opt-DownstreamStatus" href="#opt-DownstreamStatus" title="#opt-DownstreamStatus">`DownstreamStatus`</a> | The HTTP status code sent **to the client**, after the middleware chain has run. See [Origin vs. Downstream Status](../../../observe/logs-and-access-logs.md#origin-vs-downstream-status).                                                                                                                                                                         |
+| <a id="opt-DownstreamStatusLine" href="#opt-DownstreamStatusLine" title="#opt-DownstreamStatusLine">`DownstreamStatusLine`</a> | The `DownstreamStatus` and status code explanation.                                                                                                                                                                                                                                                                                                                                   |
+| <a id="opt-DownstreamContentSize" href="#opt-DownstreamContentSize" title="#opt-DownstreamContentSize">`DownstreamContentSize`</a> | The number of bytes in the response entity returned to the client. This is in addition to the "Content-Length" header, which may be present in the origin response.                                                                                                                                                                                                                   |
+| <a id="opt-RequestCount" href="#opt-RequestCount" title="#opt-RequestCount">`RequestCount`</a> | The number of requests received since the Traefik instance started.                                                                                                                                                                                                                                                                                                                   |
+| <a id="opt-GzipRatio" href="#opt-GzipRatio" title="#opt-GzipRatio">`GzipRatio`</a> | The response body compression ratio achieved.                                                                                                                                                                                                                                                                                                                                         |
+| <a id="opt-Overhead" href="#opt-Overhead" title="#opt-Overhead">`Overhead`</a> | The processing time overhead (in nanoseconds) caused by Traefik.                                                                                                                                                                                                                                                                                                                      |
+| <a id="opt-RetryAttempts" href="#opt-RetryAttempts" title="#opt-RetryAttempts">`RetryAttempts`</a> | The amount of attempts the request was retried.                                                                                                                                                                                                                                                                                                                                       |
+| <a id="opt-TLSVersion" href="#opt-TLSVersion" title="#opt-TLSVersion">`TLSVersion`</a> | The TLS version used by the connection (e.g. `1.2`) (if connection is TLS).                                                                                                                                                                                                                                                                                                           |
+| <a id="opt-TLSCipher" href="#opt-TLSCipher" title="#opt-TLSCipher">`TLSCipher`</a> | The TLS cipher used by the connection (e.g. `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`) (if connection is TLS).                                                                                                                                                                                                                                                                            |
+| <a id="opt-TLSClientSubject" href="#opt-TLSClientSubject" title="#opt-TLSClientSubject">`TLSClientSubject`</a> | The string representation of the TLS client certificate's Subject (e.g. `CN=username,O=organization`).                                                                                                                                                                                                                                                                                |
 | <a id="opt-KubernetesIngressNamespace" href="#opt-KubernetesIngressNamespace" title="#opt-KubernetesIngressNamespace">`KubernetesIngressNamespace`</a> | The namespace of the Kubernetes Ingress resource the router handles. Only available with the Kubernetes Ingress and Kubernetes Ingress Nginx providers. |
 | <a id="opt-KubernetesIngressName" href="#opt-KubernetesIngressName" title="#opt-KubernetesIngressName">`KubernetesIngressName`</a> | The name of the Kubernetes Ingress resource the router handles. Only available with the Kubernetes Ingress and Kubernetes Ingress Nginx providers. |
 | <a id="opt-KubernetesServiceName" href="#opt-KubernetesServiceName" title="#opt-KubernetesServiceName">`KubernetesServiceName`</a> | The name of the Kubernetes Service associated with the Ingress the router handles. Only available with the Kubernetes Ingress and Kubernetes Ingress Nginx providers. |
@@ -16009,7 +16344,7 @@ services:
 
 # Reference / Install Configuration / Observability / Health Check (CLI & Ping)
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/observability/healthcheck.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/observability/healthcheck.md*
 
 # CLI & Ping
 
@@ -16109,7 +16444,7 @@ ping:
 
 # Reference / Install Configuration / Experimental / FastProxy
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/experimental/fastproxy.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/experimental/fastproxy.md*
 
 # Traefik FastProxy Experimental Configuration
 
@@ -16163,7 +16498,7 @@ experimental:
 
 # Reference / Install Configuration / Experimental / Plugins
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/experimental/plugins.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/experimental/plugins.md*
 
 # Traefik Plugins Experimental Configuration
 
@@ -16264,7 +16599,7 @@ experimental:
 
 # Reference / Install Configuration / Options List
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/configuration-options.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/configuration-options.md*
 
 <!--
 CODE GENERATED AUTOMATICALLY
@@ -16349,6 +16684,7 @@ THIS FILE MUST NOT BE EDITED BY HAND
 | <a id="opt-certificatesresolvers-name-acme-tlschallenge-delay" href="#opt-certificatesresolvers-name-acme-tlschallenge-delay" title="#opt-certificatesresolvers-name-acme-tlschallenge-delay">certificatesresolvers._name_.acme.tlschallenge.delay</a> | Delay between the creation of the challenge and the validation. | 0 |
 | <a id="opt-certificatesresolvers-name-tailscale" href="#opt-certificatesresolvers-name-tailscale" title="#opt-certificatesresolvers-name-tailscale">certificatesresolvers._name_.tailscale</a> | Enables Tailscale certificate resolution. | true |
 | <a id="opt-core-defaultrulesyntax" href="#opt-core-defaultrulesyntax" title="#opt-core-defaultrulesyntax">core.defaultrulesyntax</a> | Defines the rule parser default syntax (v2 or v3) | v3 |
+| <a id="opt-core-stricttlsoptions" href="#opt-core-stricttlsoptions" title="#opt-core-stricttlsoptions">core.stricttlsoptions</a> | Disables the unsafe fallback to the default TLS options for the routers with conflicting TLS options. | false |
 | <a id="opt-entrypoints-name" href="#opt-entrypoints-name" title="#opt-entrypoints-name">entrypoints._name_</a> | Entry points definition. | false |
 | <a id="opt-entrypoints-name-address" href="#opt-entrypoints-name-address" title="#opt-entrypoints-name-address">entrypoints._name_.address</a> | Entry point address. | |
 | <a id="opt-entrypoints-name-allowacmebypass" href="#opt-entrypoints-name-allowacmebypass" title="#opt-entrypoints-name-allowacmebypass">entrypoints._name_.allowacmebypass</a> | Enables handling of ACME TLS and HTTP challenges with custom routers. | false |
@@ -16624,6 +16960,7 @@ THIS FILE MUST NOT BE EDITED BY HAND
 | <a id="opt-providers-kubernetescrd-allowexternalnameservices" href="#opt-providers-kubernetescrd-allowexternalnameservices" title="#opt-providers-kubernetescrd-allowexternalnameservices">providers.kubernetescrd.allowexternalnameservices</a> | Allow ExternalName services. | false |
 | <a id="opt-providers-kubernetescrd-certauthfilepath" href="#opt-providers-kubernetescrd-certauthfilepath" title="#opt-providers-kubernetescrd-certauthfilepath">providers.kubernetescrd.certauthfilepath</a> | Kubernetes certificate authority file path (not needed for in-cluster client). | |
 | <a id="opt-providers-kubernetescrd-crossprovidernamespaces" href="#opt-providers-kubernetescrd-crossprovidernamespaces" title="#opt-providers-kubernetescrd-crossprovidernamespaces">providers.kubernetescrd.crossprovidernamespaces</a> | List of namespaces from which IngressRoute, IngressRouteTCP, IngressRouteUDP, and TraefikService are allowed to declare cross-provider references. | |
+| <a id="opt-providers-kubernetescrd-defaulttlsresourcesnamespace" href="#opt-providers-kubernetescrd-defaulttlsresourcesnamespace" title="#opt-providers-kubernetescrd-defaulttlsresourcesnamespace">providers.kubernetescrd.defaulttlsresourcesnamespace</a> | Namespace allowed to define the default TLSOption and TLSStore resources. When empty, they can be defined in any namespace. | |
 | <a id="opt-providers-kubernetescrd-disableclusterscoperesources" href="#opt-providers-kubernetescrd-disableclusterscoperesources" title="#opt-providers-kubernetescrd-disableclusterscoperesources">providers.kubernetescrd.disableclusterscoperesources</a> | Disables the lookup of cluster scope resources (incompatible with IngressClasses and NodePortLB enabled services). | false |
 | <a id="opt-providers-kubernetescrd-endpoint" href="#opt-providers-kubernetescrd-endpoint" title="#opt-providers-kubernetescrd-endpoint">providers.kubernetescrd.endpoint</a> | Kubernetes server endpoint (required for external cluster client). | |
 | <a id="opt-providers-kubernetescrd-ingressclass" href="#opt-providers-kubernetescrd-ingressclass" title="#opt-providers-kubernetescrd-ingressclass">providers.kubernetescrd.ingressclass</a> | Value of ingressClassName field or kubernetes.io/ingress.class annotation to watch for. | |
@@ -16637,7 +16974,7 @@ THIS FILE MUST NOT BE EDITED BY HAND
 | <a id="opt-providers-kubernetesgateway-certauthfilepath" href="#opt-providers-kubernetesgateway-certauthfilepath" title="#opt-providers-kubernetesgateway-certauthfilepath">providers.kubernetesgateway.certauthfilepath</a> | Kubernetes certificate authority file path (not needed for in-cluster client). | |
 | <a id="opt-providers-kubernetesgateway-crossprovidernamespaces" href="#opt-providers-kubernetesgateway-crossprovidernamespaces" title="#opt-providers-kubernetesgateway-crossprovidernamespaces">providers.kubernetesgateway.crossprovidernamespaces</a> | List of namespaces from which Gateway API routes are allowed to declare TraefikService backendRef references. | |
 | <a id="opt-providers-kubernetesgateway-endpoint" href="#opt-providers-kubernetesgateway-endpoint" title="#opt-providers-kubernetesgateway-endpoint">providers.kubernetesgateway.endpoint</a> | Kubernetes server endpoint (required for external cluster client). | |
-| <a id="opt-providers-kubernetesgateway-experimentalchannel" href="#opt-providers-kubernetesgateway-experimentalchannel" title="#opt-providers-kubernetesgateway-experimentalchannel">providers.kubernetesgateway.experimentalchannel</a> | Toggles Experimental Channel resources support (TCPRoute, TLSRoute...). | false |
+| <a id="opt-providers-kubernetesgateway-experimentalchannel" href="#opt-providers-kubernetesgateway-experimentalchannel" title="#opt-providers-kubernetesgateway-experimentalchannel">providers.kubernetesgateway.experimentalchannel</a> | Toggles Experimental Channel resources support (TCPRoute, TLSRoute...). Requires the Experimental Channel CRDs. | false |
 | <a id="opt-providers-kubernetesgateway-labelselector" href="#opt-providers-kubernetesgateway-labelselector" title="#opt-providers-kubernetesgateway-labelselector">providers.kubernetesgateway.labelselector</a> | Kubernetes label selector to select specific GatewayClasses. | |
 | <a id="opt-providers-kubernetesgateway-namespaces" href="#opt-providers-kubernetesgateway-namespaces" title="#opt-providers-kubernetesgateway-namespaces">providers.kubernetesgateway.namespaces</a> | Kubernetes namespaces. | |
 | <a id="opt-providers-kubernetesgateway-nativelbbydefault" href="#opt-providers-kubernetesgateway-nativelbbydefault" title="#opt-providers-kubernetesgateway-nativelbbydefault">providers.kubernetesgateway.nativelbbydefault</a> | Defines whether to use Native Kubernetes load-balancing by default. | false |
@@ -16818,7 +17155,7 @@ THIS FILE MUST NOT BE EDITED BY HAND
 
 # Reference / Routing Configuration / Common Configuration / Configuration Methods
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/dynamic-configuration-methods.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/dynamic-configuration-methods.md*
 
 # Providing Dynamic (Routing) Configuration to Traefik
 
@@ -17020,7 +17357,7 @@ For providers that do not support labels, such as Consul & Nomad, you can use ta
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Routing / Router
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/routing/router.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/routing/router.md*
 
 ## HTTP Router
 
@@ -17134,7 +17471,7 @@ labels:
 | <a id="opt-middlewares" href="#opt-middlewares" title="#opt-middlewares">`middlewares`</a> | The list of middlewares that are applied to the router. Middlewares are applied in the order they are declared. See [Middlewares overview](../middlewares/overview.md) for available middlewares.                                                                                                                    |                             | No       |
 | <a id="opt-tls" href="#opt-tls" title="#opt-tls">`tls`</a> | TLS configuration for the router. When specified, the router will only handle HTTPS requests.                                                                                                                                                                                                                        |                             | No       |
 | <a id="opt-tls-certResolver" href="#opt-tls-certResolver" title="#opt-tls-certResolver">`tls.certResolver`</a> | The name of the certificate resolver to use for automatic certificate generation. See [Certificate Resolver](../tls/overview.md#certificate-resolver) for details.                                                                                                                                                   |                             | No       |
-| <a id="opt-tls-options" href="#opt-tls-options" title="#opt-tls-options">`tls.options`</a> | The name of the TLS options to use for configuring TLS parameters (cipher suites, min/max TLS version, client authentication, etc.). See [TLS Options](../tls/tls-options.md) for detailed configuration.                                                                                                            | `default`                   | No       |
+| <a id="opt-tls-options" href="#opt-tls-options" title="#opt-tls-options">`tls.options`</a> | The name of the TLS options to use for configuring TLS parameters (cipher suites, min/max TLS version, client authentication, etc.). They are mapped to the host names of the router rule, and not to the router itself, so all the routers serving the same host name on the same entry point must reference the same TLS options. See [TLS Options](../tls/tls-options.md) for detailed configuration, and [Conflicting TLS Options](../tls/tls-options.md#conflicting-tls-options) for the consequences of not doing so.                                                                                                            | `default`                   | No       |
 | <a id="opt-tls-domains" href="#opt-tls-domains" title="#opt-tls-domains">`tls.domains`</a> | List of domains and Subject Alternative Names (SANs) for explicit certificate domain specification. When using ACME certificate resolvers, domains are automatically extracted from router rules, making this option optional.                                                                                       |                             | No       |
 | <a id="opt-observability" href="#opt-observability" title="#opt-observability">`observability`</a> | Observability configuration for the router. Allows fine-grained control over access logs, metrics, and tracing per router. See [Observability](./observability.md) for details.                                                                                                                                      | Inherited from entry points | No       |
 | <a id="opt-observability-traceVerbosity" href="#opt-observability-traceVerbosity" title="#opt-observability-traceVerbosity">`observability.traceVerbosity`</a> | Defines the verbosity level of tracing for this router. Accepted values are `minimal` and `detailed`.                                                                                                                                                                                                               | `minimal`                   | No       |
@@ -17161,7 +17498,7 @@ labels:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Routing / Rules & Priority
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/routing/rules-and-priority.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/routing/rules-and-priority.md*
 
 An HTTP router is in charge of connecting incoming requests to the services that can handle them. Traefik allows you to define your matching rules and [prioritize](#priority-calculation) the routes.
 
@@ -17505,7 +17842,7 @@ In the example above, the priority is configured to allow `Router-2` to handle r
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Routing / Observability
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/routing/observability.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/routing/observability.md*
 
 Traefik's observability features include logs, access logs, metrics, and tracing. You can configure these options globally or at more specific levels, such as per router or per entry point.
 
@@ -17613,7 +17950,7 @@ Possible values are:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Routing / Multi-Layer Routing
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/routing/multi-layer-routing.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/routing/multi-layer-routing.md*
 
 # Multi-Layer Routing
 
@@ -17817,7 +18154,7 @@ Request → EntryPoint → Parent Router → Middleware → Child Router A → S
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Load Balancing / Service
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/load-balancing/service.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/load-balancing/service.md*
 
 Traefik services define how to distribute incoming traffic across your backend servers.
 This page covers two main concepts:
@@ -19081,7 +19418,7 @@ http:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Load Balancing / ServersTransport
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/load-balancing/serverstransport.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/load-balancing/serverstransport.md*
 
 ServersTransport allows you to configure the transport between Traefik and your HTTP servers.
 
@@ -19219,7 +19556,7 @@ labels:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / TLS / Overview
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/tls/overview.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/tls/overview.md*
 
 ## General
 
@@ -19341,7 +19678,7 @@ Every domain must have A/AAAA records pointing to Traefik.
 
 # Reference / Routing Configuration / Common Configuration / HTTP / TLS / TLS Certificates
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/tls/tls-certificates.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/tls/tls-certificates.md*
 
 > **Info**
 >
@@ -19408,6 +19745,13 @@ In Traefik, certificates are grouped together in certificates stores.
 >
 > Any store definition other than the default one (named `default`) will be ignored,
 > and there is therefore only one globally available TLS store.
+
+> **Important — TLSStore in Kubernetes**
+>
+> With the [TLSStore resource](../../kubernetes/crd/tls/tlsstore.md), the store named `default` applies to every entry point,
+> whatever the namespace it is defined in.
+> The [`defaultTLSResourcesNamespace`](../../../install-configuration/providers/kubernetes/kubernetes-crd.md#defaulttlsresourcesnamespace) provider option
+> restricts the namespace this cluster-wide store can be defined in.
 
 In the `tls.certificates` section, a list of stores can then be specified to indicate where the certificates should be stored:
 
@@ -19551,7 +19895,7 @@ labels:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / TLS / TLS Options
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/tls/tls-options.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/tls/tls-options.md*
 
 The TLS options allow one to configure some parameters of the TLS connection.
 
@@ -19567,6 +19911,119 @@ The TLS options allow one to configure some parameters of the TLS connection.
 > **Important — Providers**
 >
 > TLS options are not supported by label or tag-based providers. However, you can define them when using a [KV provider](../../other-providers/kv.md).
+
+> **Important — TLSOption in Kubernetes**
+>
+> With the [TLSOption resource](../../kubernetes/crd/tls/tlsoption.md), the option named `default` applies to every router
+> that does not reference a TLSOption explicitly, whatever the namespace it is defined in.
+> The [`defaultTLSResourcesNamespace`](../../../install-configuration/providers/kubernetes/kubernetes-crd.md#defaulttlsresourcesnamespace) provider option
+> restricts the namespace this cluster-wide default can be defined in.
+
+### Server Name Association
+
+The TLS options are configured on a router, but they are applied during the TLS handshake,
+that is to say before the routing occurs, when the server name (SNI) is the only information available.
+A TLS options reference is therefore always mapped to the host names found in the `Host` part of the router rule,
+and neither to the router nor to its rule.
+There could also be several `Host` parts in a rule, in which case the TLS options reference is mapped to as many host names.
+
+In the case of domain fronting, if the TLS options associated with the Host header and the SNI are different,
+Traefik responds with a `421 Misdirected Request` status code.
+
+### Conflicting TLS Options
+
+Since a TLS options reference is mapped to a host name, a conflict occurs when a configuration introduces a situation
+where the same host name, on the same entry point, is matched with two different TLS options references,
+such as in the example below:
+
+**Structured (YAML)**
+
+```yaml
+# Dynamic configuration
+
+http:
+  routers:
+    routerfoo:
+      rule: "Host(`example.com`) && Path(`/foo`)"
+      tls:
+        options: foo
+
+    routerbar:
+      rule: "Host(`example.com`) && Path(`/bar`)"
+      tls:
+        options: bar
+```
+
+**Structured (TOML)**
+
+```toml
+# Dynamic configuration
+
+[http.routers]
+  [http.routers.routerfoo]
+    rule = "Host(`example.com`) && Path(`/foo`)"
+    [http.routers.routerfoo.tls]
+      options = "foo"
+
+  [http.routers.routerbar]
+    rule = "Host(`example.com`) && Path(`/bar`)"
+    [http.routers.routerbar.tls]
+      options = "bar"
+```
+
+If that happens, both mappings are discarded, and the host name (`example.com` in this example)
+gets associated with the `default` TLS options instead.
+
+The conflict detection is not limited to a single provider:
+routers coming from different providers, for example a router defined with a container label
+and another one defined with the file provider, conflict with each other as soon as they serve
+the same host name on the same entry point.
+
+> **Important — Default TLS Options**
+>
+> The `default` TLS options are the fallback of the conflict resolution,
+> and should therefore not be less secure than the options they can replace.
+> A router relying on a mutual TLS authentication (`clientAuth`), for example,
+> no longer enforces it if a conflict on its host name falls back to `default`
+> TLS options that do not require it.
+>
+> The surest way to avoid this is to have all the routers serving the same host name,
+> on the same entry point, reference the same TLS options.
+
+#### Strict TLS Options
+
+The [`core.strictTLSOptions`](../../../install-configuration/configuration-options.md#opt-core-stricttlsoptions)
+install configuration option disables the fallback to the `default` TLS options.
+When it is enabled, the routers involved in the conflict are marked in error and are not built at all,
+and the host name is no longer mapped to any TLS options.
+
+> **Warning — Disabled routers**
+>
+> Enabling `strictTLSOptions` fails closed: a conflict disables all the routers serving the conflicting host name
+> on the concerned entry point, until the conflict is resolved.
+
+**File (YAML)**
+
+```yaml
+## Install configuration
+core:
+  strictTLSOptions: true
+```
+
+**File (TOML)**
+
+```toml
+## Install configuration
+[core]
+  strictTLSOptions = true
+```
+
+**CLI**
+
+```bash
+## Install configuration
+--core.strictTLSOptions=true
+```
 
 ### Minimum TLS Version
 
@@ -19858,7 +20315,7 @@ spec:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / Overview
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/overview.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/overview.md*
 
 # HTTP Middleware Overview
 
@@ -19928,7 +20385,7 @@ Please take a look at the community-contributed plugins in the [plugin catalog](
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / AddPrefix
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/addprefix.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/addprefix.md*
 
 The `addPrefix` middleware updates the path of a request before forwarding it.
 
@@ -19997,7 +20454,7 @@ spec:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / APIKey
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/apikey.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/apikey.md*
 
 > **Info — Traefik Hub Feature**
 >
@@ -20069,7 +20526,7 @@ stringData:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / BasicAuth
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/basicauth.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/basicauth.md*
 
 The `basicAuth` middleware grants access to services to authorized users only.
 
@@ -20185,7 +20642,7 @@ The option `users` supports Kubernetes secrets.
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / Buffering
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/buffering.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/buffering.md*
 
 The `buffering` middleware limits the size of requests that can be forwarded to services.
 
@@ -20276,7 +20733,7 @@ At least one function is required:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / Chain
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/chain.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/chain.md*
 
 The `chain` middleware enables you to define reusable combinations of other pieces of middleware.
 It makes it effortless to reuse the same groups.
@@ -20458,7 +20915,7 @@ spec:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / Circuit Breaker
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/circuitbreaker.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/circuitbreaker.md*
 
 The HTTP circuit breaker prevents stacking requests to unhealthy Services, resulting in cascading failures.
 
@@ -20611,7 +21068,7 @@ If the service operates normally during the entire recovery duration, then the c
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / Compress
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/compress.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/compress.md*
 
 The `compress` middleware compresses response. It supports Gzip, Brotli and Zstandard compression
 
@@ -20704,7 +21161,7 @@ Note that `application/grpc` is never compressed.
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / ContentType
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/contenttype.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/contenttype.md*
 
 The `contentType` middleware sets the `Content-Type` header value to the media type detected from the response content,
 when it is not set by the backend.
@@ -20769,7 +21226,7 @@ spec:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / DigestAuth
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/digestauth.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/digestauth.md*
 
 The `DigestAuth` middleware grants access to services to authorized users only.
 
@@ -20874,7 +21331,7 @@ On Kubernetes, you don’t use the `users` or `usersFile` fields. Instead, you r
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / Distributed RateLimit
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/distributed-ratelimit.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/distributed-ratelimit.md*
 
 > **Info — Traefik Hub Feature**
 >
@@ -21063,7 +21520,7 @@ For more information about Redis, we recommend the [official Redis documentation
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / EncodedCharacters
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/encodedcharacters.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/encodedcharacters.md*
 
 The EncodedCharacters middleware controls which ambiguous reserved encoded characters are allowed in the request path.
 
@@ -21137,7 +21594,7 @@ This helps avoid split-view situation, where Traefik and your backend interpret 
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / Errors
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/errorpages.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/errorpages.md*
 
 The `errors` middleware returns a custom page in lieu of the default, according to configured ranges of HTTP Status codes.
 
@@ -21291,7 +21748,7 @@ Set to an explicit list to forward only those headers, or set to an empty list (
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / ForwardAuth
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/forwardauth.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/forwardauth.md*
 
 The `forwardAuth` middleware delegates authentication to an external service.
 If the service answers with a 2XX code, access is granted, and the original request is performed.
@@ -21474,7 +21931,7 @@ The following request properties are provided to the forward-auth target endpoin
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / GrpcWeb
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/grpcweb.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/grpcweb.md*
 
 The `grpcWeb` middleware converts gRPC Web requests to HTTP/2 gRPC requests before forwarding them to the backends.
 
@@ -21553,7 +22010,7 @@ More information including how to use the settings can be found at:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / Headers
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/headers.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/headers.md*
 
 The Headers middleware manages the headers of requests and responses.
 
@@ -21931,7 +22388,7 @@ It allows all origins that contain any match of a regular expression in the `acc
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / HMAC
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/hmac.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/hmac.md*
 
 > **Info — Traefik Hub Feature**
 >
@@ -22162,7 +22619,7 @@ Only SHA-256 and SHA-512 checksums are supported for checksum computation.
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / IPAllowList
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/ipallowlist.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/ipallowlist.md*
 
 `ipAllowList` accepts / refuses requests based on the client IP.
 
@@ -22304,7 +22761,7 @@ If `depth` is set to 2, and the request `X-Forwarded-For` header is `"10.0.0.1,1
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / InFlightReq
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/inflightreq.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/inflightreq.md*
 
 The `inFlightReq` middleware proactively prevents services from being overwhelmed with high load.
 
@@ -22431,7 +22888,7 @@ If `depth` is set to 2, and the request `X-Forwarded-For` header is `"10.0.0.1,1
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / JWT
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/jwt.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/jwt.md*
 
 > **Info — Traefik Hub Feature**
 >
@@ -22690,7 +23147,7 @@ urn:k8s:secret:[name]:[valueKey]
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / LDAP
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/ldap.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/ldap.md*
 
 > **Info — Traefik Hub Feature**
 >
@@ -22813,7 +23270,7 @@ it tries to issue a bind request with this record, otherwise it aborts a `401 Un
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / Token Introspection
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/oauth2-token-introspection.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/oauth2-token-introspection.md*
 
 > **Info — Traefik Hub Feature**
 >
@@ -23048,7 +23505,7 @@ stringData:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / Client Credentials
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/oauth2-client-credentials.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/oauth2-client-credentials.md*
 
 > **Info — Traefik Hub Feature**
 >
@@ -23332,7 +23789,7 @@ For more information about Redis, we recommend the [official Redis documentation
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / OIDC
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/oidc.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/oidc.md*
 
 > **Info — Traefik Hub Feature**
 >
@@ -23801,7 +24258,7 @@ the CSRF token value (extracted from the cookie) have to be sent to the server i
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / OPA
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/opa.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/opa.md*
 
 > **Info — Traefik Hub Feature**
 >
@@ -23890,7 +24347,7 @@ spec:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / PassTLSClientCert
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/passtlsclientcert.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/passtlsclientcert.md*
 
 The `passTLSClientCert` middleware adds the selected data from the passed client TLS certificate to a header.
 
@@ -24175,7 +24632,7 @@ Subject="DC=org,DC=cheese,C=FR,C=US,ST=Cheese org state,ST=Cheese com state,L=TO
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / RateLimit
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/ratelimit.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/ratelimit.md*
 
 The `rateLimit` middleware ensures that services will receive a *fair* amount of requests, and allows you to define what fair is.
 
@@ -24469,7 +24926,7 @@ Example to group IPs together as same source:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / RedirectRegex
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/redirectregex.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/redirectregex.md*
 
 The `RedirectRegex` redirects a request using regex matching and replacement.
 
@@ -24578,7 +25035,7 @@ The `replacement` option defines how to modify the URL to have the new target UR
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / RedirectScheme
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/redirectscheme.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/redirectscheme.md*
 
 The `RedirectScheme` middleware redirects the request if the request scheme is different from the configured scheme.
 
@@ -24664,7 +25121,7 @@ spec:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / ReplacePath
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/replacepath.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/replacepath.md*
 
 The `replacePath` middleware will:
 
@@ -24736,7 +25193,7 @@ spec:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / ReplacePathRegex
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/replacepathregex.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/replacepathregex.md*
 
 The `replacePathRegex` middleware will:
 
@@ -24815,7 +25272,7 @@ labels:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / Retry
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/retry.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/retry.md*
 
 The `retry` middleware retries requests a given number of times to a backend server if that server does not reply.  
 As soon as the server answers, the middleware stops retrying, regardless of the response status.
@@ -24970,7 +25427,7 @@ If `disableRetryOnNetworkError` is set to `true`, you must define the `status` o
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / StripPrefix
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/stripprefix.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/stripprefix.md*
 
 The `stripPrefix` middleware strips the matching path prefix and stores it in an `X-Forwarded-Prefix` header.
 
@@ -25057,7 +25514,7 @@ spec:
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / StripPrefixRegex
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/stripprefixregex.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/stripprefixregex.md*
 
 The `stripPrefixRegex` middleware strips the matching path prefix and stores it in an `X-Forwarded-Prefix` header.
 
@@ -25139,7 +25596,7 @@ Using the previous example, the backend should return `/products/shoes/image.png
 
 # Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / WAF
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/waf.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/waf.md*
 
 > **Info — Traefik Hub Feature**
 >
@@ -25219,7 +25676,7 @@ spec:
 
 # Reference / Routing Configuration / Common Configuration / TCP / Routing / Router
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/tcp/routing/router.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/tcp/routing/router.md*
 
 ## TCP Router
 
@@ -25344,7 +25801,7 @@ labels:
 
 # Reference / Routing Configuration / Common Configuration / TCP / Routing / Rules & Priority
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/tcp/routing/rules-and-priority.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/tcp/routing/rules-and-priority.md*
 
 ## General 
 
@@ -25590,7 +26047,7 @@ Traefik reserves a range of priorities for its internal routers, the maximum use
 
 # Reference / Routing Configuration / Common Configuration / TCP / Service
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/tcp/service.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/tcp/service.md*
 
  
 
@@ -25841,7 +26298,7 @@ tcp:
 
 # Reference / Routing Configuration / Common Configuration / TCP / ServersTransport
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/tcp/serverstransport.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/tcp/serverstransport.md*
 
 ServersTransport allows to configure the transport between Traefik and your TCP servers.
 
@@ -25980,7 +26437,7 @@ The option specifies the version of the protocol to be used. Either 1 or 2.
 
 # Reference / Routing Configuration / Common Configuration / TCP / TLS
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/tcp/tls.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/tcp/tls.md*
 
 ## General
 
@@ -26084,9 +26541,55 @@ labels:
 | Field                                                                              | Description                                                                                                                                                                                                    | Default | Required |
 |:-----------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------|:---------|
 | <a id="opt-passthrough" href="#opt-passthrough" title="#opt-passthrough">`passthrough`</a> | Defines whether the requests should be forwarded "as is", keeping all data encrypted.                                                                                                                          | false   | No       |
-| <a id="opt-options" href="#opt-options" title="#opt-options">`options`</a> | enables fine-grained control of the TLS parameters. It refers to a [TLS Options](../http/tls/tls-options.md) and will be applied only if a `HostSNI` rule is defined.                                          | ""      | No       |
+| <a id="opt-options" href="#opt-options" title="#opt-options">`options`</a> | enables fine-grained control of the TLS parameters. It refers to a [TLS Options](../http/tls/tls-options.md) and will be applied only if a `HostSNI` rule is defined.<br/>Unlike HTTP routers, several TCP routers can serve the same `HostSNI` with different TLS options. See [TLS Options and HostSNI](#tls-options-and-hostsni) for more details.                                          | ""      | No       |
 | <a id="opt-certResolver" href="#opt-certResolver" title="#opt-certResolver">`certResolver`</a> | The name of the certificate resolver to use for automatic certificate generation via ACME providers (such as Let's Encrypt). See the [Certificate Resolver](tls.md#certificate-resolver) section for more details. | ""      | No       |
 | <a id="opt-domains" href="#opt-domains" title="#opt-domains">`domains`</a> | List of domains and Subject Alternative Names (SANs) for explicit certificate domain specification. See the [Custom Domains](tls.md#custom-domains) section for more details.                                      | []      | No       |
+
+## TLS Options and HostSNI
+
+Contrary to the [HTTP routers](../http/tls/tls-options.md#conflicting-tls-options),
+several TCP routers can serve the same `HostSNI` with different TLS options,
+and this is not a conflict.
+
+A TCP router rule is not limited to the `HostSNI` matcher, and the TCP muxer is able to
+decide which route matches a connection before the TLS handshake happens.
+The TLS options are therefore selected per route, and not per host name,
+which makes a configuration such as the following one valid:
+
+**Structured (YAML)**
+
+```yaml
+# Dynamic configuration
+
+tcp:
+  routers:
+    routerfoo:
+      rule: "HostSNI(`example.com`) && ClientIP(`192.168.0.11`)"
+      tls:
+        options: foo
+
+    routerbar:
+      rule: "HostSNI(`example.com`) && ClientIP(`192.168.0.12`)"
+      tls:
+        options: bar
+```
+
+**Structured (TOML)**
+
+```toml
+# Dynamic configuration
+
+[tcp.routers]
+  [tcp.routers.routerfoo]
+    rule = "HostSNI(`example.com`) && ClientIP(`192.168.0.11`)"
+    [tcp.routers.routerfoo.tls]
+      options = "foo"
+
+  [tcp.routers.routerbar]
+    rule = "HostSNI(`example.com`) && ClientIP(`192.168.0.12`)"
+    [tcp.routers.routerbar.tls]
+      options = "bar"
+```
 
 ## Certificate Resolver
 
@@ -26125,7 +26628,7 @@ Every domain must have A/AAAA records pointing to Traefik.
 
 # Reference / Routing Configuration / Common Configuration / TCP / Middlewares / Overview
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/tcp/middlewares/overview.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/tcp/middlewares/overview.md*
 
 # TCP Middleware Overview
 
@@ -26250,7 +26753,7 @@ spec:
 
 # Reference / Routing Configuration / Common Configuration / TCP / Middlewares / InFlightConn
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/tcp/middlewares/inflightconn.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/tcp/middlewares/inflightconn.md*
 
 To proactively prevent Services from being overwhelmed with high load, the number of allowed simultaneous connections by IP can be limited with the `inFlightConn` TCP middleware.
 
@@ -26317,7 +26820,7 @@ spec:
 
 # Reference / Routing Configuration / Common Configuration / TCP / Middlewares / IPAllowList
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/tcp/middlewares/ipallowlist.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/tcp/middlewares/ipallowlist.md*
 
 `iPAllowList` limits allowed requests based on the client IP.
 
@@ -26389,7 +26892,7 @@ spec:
 
 # Reference / Routing Configuration / Common Configuration / UDP / Routing / Router
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/udp/routing/router.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/udp/routing/router.md*
 
 ## UDP Router
 
@@ -26469,7 +26972,7 @@ Session timeout can be configured using the `entryPoints.name.udp.timeout` optio
 
 # Reference / Routing Configuration / Common Configuration / UDP / Routing / Rules & Priority
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/udp/routing/rules-priority.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/udp/routing/rules-priority.md*
 
 A router is in charge of connecting incoming requests to the services that can handle them.
 
@@ -26607,7 +27110,7 @@ labels:
 
 # Reference / Routing Configuration / Common Configuration / UDP / Service
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/udp/service.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/udp/service.md*
 
  
 
@@ -26734,7 +27237,7 @@ udp:
 
 # Reference / Routing Configuration / Kubernetes / Gateway API
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/kubernetes/gateway-api.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/kubernetes/gateway-api.md*
 
 # Traefik & Kubernetes with Gateway API
 
@@ -27673,11 +28176,11 @@ spec:
 
 # Reference / Routing Configuration / Kubernetes / Kubernetes CRD / HTTP / IngressRoute
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/kubernetes/crd/http/ingressroute.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/kubernetes/crd/http/ingressroute.md*
 
 `IngressRoute` is the CRD implementation of a [Traefik HTTP router](../../../http/routing/rules-and-priority.md).
 
-Before creating `IngressRoute` objects, you need to apply the Traefik Kubernetes CRDs such as [Definitions](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/dynamic-configuration/kubernetes-crd-definition-v1.yml) and [RBAC](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/dynamic-configuration/kubernetes-crd-rbac.yml) to your Kubernetes cluster.
+Before creating `IngressRoute` objects, you need to apply the Traefik Kubernetes CRDs such as [Definitions](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/dynamic-configuration/kubernetes-crd-definition-v1.yml) and [RBAC](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/dynamic-configuration/kubernetes-crd-rbac.yml) to your Kubernetes cluster.
 
 This registers the `IngressRoute` kind and other Traefik-specific resources.
 
@@ -27855,6 +28358,10 @@ Since a TLS options reference is mapped to a host name, if a configuration intro
 a situation where the same host name (from a `Host` rule) gets matched with two 
 TLS options references, a conflict occurs, such as in the example below.
 
+The conflict detection is not scoped to a namespace: an `IngressRoute` defined in any
+namespace, and even a router coming from another provider, conflicts with this one as
+soon as it serves the same host name on the same entry point.
+
 > **Example**
 >
 > **IngressRoute01**
@@ -27901,6 +28408,14 @@ TLS options references, a conflict occurs, such as in the example below.
 If that happens, both mappings are discarded, and the host name
 (`example.net` in the example) for these routers gets associated with
  the default TLS options instead.
+
+> **Important — Default TLS Options**
+>
+> The `default` TLS options are the fallback of the conflict resolution, and should
+> therefore not be less secure than the options they can replace.
+>
+> See [Conflicting TLS Options](../../../http/tls/tls-options.md#conflicting-tls-options)
+> for more information.
 
 ### Multi-Layer Routing with IngressRoutes
 
@@ -28068,7 +28583,7 @@ When a child IngressRoute references a parent IngressRoute with multiple routes,
 
 # Reference / Routing Configuration / Kubernetes / Kubernetes CRD / HTTP / Service
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/kubernetes/crd/http/service.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/kubernetes/crd/http/service.md*
 
 `Service` is the implementation of a [Traefik HTTP service](../../../http/load-balancing/service.md). 
 
@@ -28595,7 +29110,7 @@ If you do not configure the above, Traefik will assume an http connection.
 
 # Reference / Routing Configuration / Kubernetes / Kubernetes CRD / HTTP / TraefikService
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/kubernetes/crd/http/traefikservice.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/kubernetes/crd/http/traefikservice.md*
 
  
 
@@ -29286,7 +29801,7 @@ The exhaustive list of the service options is described in the [`Service`](./ser
 
 # Reference / Routing Configuration / Kubernetes / Kubernetes CRD / HTTP / ServersTransport
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/kubernetes/crd/http/serverstransport.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/kubernetes/crd/http/serverstransport.md*
 
 A `ServersTransport` allows you to configure the connection between Traefik and the HTTP servers in Kubernetes.
 
@@ -29370,7 +29885,7 @@ spec:
 
 # Reference / Routing Configuration / Kubernetes / Kubernetes CRD / HTTP / Middleware
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/kubernetes/crd/http/middleware.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/kubernetes/crd/http/middleware.md*
 
 `Middleware` is the CRD implementation of a [Traefik middleware](../../../http/middlewares/overview.md).
 
@@ -29431,7 +29946,7 @@ For more information about the available middlewares, navigate to the dedicated 
 
 # Reference / Routing Configuration / Kubernetes / Kubernetes CRD / HTTP / TLSOption
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/kubernetes/crd/tls/tlsoption.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/kubernetes/crd/tls/tlsoption.md*
 
 The TLS options allow you to configure some parameters of the TLS connection in Traefik.
 
@@ -29452,6 +29967,11 @@ Before creating `TLSOption` objects or referencing TLS options in the [`IngressR
 > To explicitly use a different `TLSOption` (and using the Kubernetes Ingress resources)
 > you'll have to add an annotation to the Ingress in the following form:
 > `traefik.ingress.kubernetes.io/router.tls.options: <resource-namespace>-<resource-name>@kubernetescrd`
+>
+> This `default` TLSOption carries the TLS enforcement policy (client authentication, TLS versions, cipher suites, SNI strictness)
+> of every router that does not reference a TLSOption explicitly.
+> The [`defaultTLSResourcesNamespace`](../../../../install-configuration/providers/kubernetes/kubernetes-crd.md#defaulttlsresourcesnamespace) provider option
+> restricts the namespace this cluster-wide default can be defined in.
 
 ## Configuration Example
 
@@ -29520,7 +30040,7 @@ The default behavior is summed up in the table below:
 
 # Reference / Routing Configuration / Kubernetes / Kubernetes CRD / HTTP / TLSStore
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/kubernetes/crd/tls/tlsstore.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/kubernetes/crd/tls/tlsstore.md*
 
 In Traefik, certificates are grouped together in certificates stores. 
 
@@ -29530,7 +30050,7 @@ Before creating `TLSStore` objects, you need to apply the [Traefik Kubernetes CR
 
 > **Tip — Default TLS Store**
 >
-> Traefik currently only uses the TLS Store named "default". This default `TLSStore` should be in a namespace discoverable by Traefik. Since it is used by default on `IngressRoute` and `IngressRouteTCP` objects, there never is a need to actually reference it. This means that you cannot have two stores that are named default in different Kubernetes namespaces. As a consequence, with respect to TLS stores, the only change that makes sense (and only if needed) is to configure the default `TLSStore`.
+> Traefik currently only uses the TLS Store named "default". This default `TLSStore` should be in a namespace discoverable by Traefik. Since it is used by default on `IngressRoute` and `IngressRouteTCP` objects, there never is a need to actually reference it. This means that you cannot have two stores that are named default in different Kubernetes namespaces. As a consequence, with respect to TLS stores, the only change that makes sense (and only if needed) is to configure the default `TLSStore`. The [`defaultTLSResourcesNamespace`](../../../../install-configuration/providers/kubernetes/kubernetes-crd.md#defaulttlsresourcesnamespace) provider option restricts the namespace this cluster-wide store can be defined in.
 
 ## Configuration Example
 
@@ -29565,7 +30085,7 @@ spec:
 
 # Reference / Routing Configuration / Kubernetes / Kubernetes CRD / TCP / IngressRouteTCP
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/kubernetes/crd/tcp/ingressroutetcp.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/kubernetes/crd/tcp/ingressroutetcp.md*
 
 `IngressRouteTCP` is the CRD implementation of a [Traefik TCP router](../../../tcp/routing/rules-and-priority.md).
 
@@ -29814,7 +30334,7 @@ spec:
 
 # Reference / Routing Configuration / Kubernetes / Kubernetes CRD / TCP / ServersTransportTCP
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/kubernetes/crd/tcp/serverstransporttcp.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/kubernetes/crd/tcp/serverstransporttcp.md*
 
 `ServersTransportTCP` is the CRD implementation of [ServersTransportTCP](../../../tcp/serverstransport.md).
 
@@ -29877,7 +30397,7 @@ spec:
 
 # Reference / Routing Configuration / Kubernetes / Kubernetes CRD / TCP / MiddlewareTCP
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/kubernetes/crd/tcp/middlewaretcp.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/kubernetes/crd/tcp/middlewaretcp.md*
 
 `MiddlewareTCP` is the CRD implementation of a [Traefik TCP middleware](../../../tcp/middlewares/overview.md).
 
@@ -29933,7 +30453,7 @@ More information about available TCP middlewares in the dedicated [middlewares s
 
 # Reference / Routing Configuration / Kubernetes / Kubernetes CRD / UDP / IngressRouteUDP
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/kubernetes/crd/udp/ingressrouteudp.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/kubernetes/crd/udp/ingressrouteudp.md*
 
 `IngressRouteUDP` is the CRD implementation of a [Traefik UDP router](../../../udp/routing/rules-priority.md).
 
@@ -30131,7 +30651,7 @@ spec:
 
 # Reference / Routing Configuration / Kubernetes / Ingress
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/kubernetes/ingress.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/kubernetes/ingress.md*
 
 # Traefik & Kubernetes with Ingress
 
@@ -30194,7 +30714,7 @@ spec:
 | <a id="opt-traefik-ingress-kubernetes-iorouter-tls-certresolver" href="#opt-traefik-ingress-kubernetes-iorouter-tls-certresolver" title="#opt-traefik-ingress-kubernetes-iorouter-tls-certresolver">`traefik.ingress.kubernetes.io/router.tls.certresolver`</a> | Specifies the certificate resolver to use for TLS certificates. | `myresolver` |
 | <a id="opt-traefik-ingress-kubernetes-iorouter-tls-domains-n-main" href="#opt-traefik-ingress-kubernetes-iorouter-tls-domains-n-main" title="#opt-traefik-ingress-kubernetes-iorouter-tls-domains-n-main">`traefik.ingress.kubernetes.io/router.tls.domains.n.main`</a> | Defines the main domain for TLS certificate (where n is the domain index). | `example.org` |
 | <a id="opt-traefik-ingress-kubernetes-iorouter-tls-domains-n-sans" href="#opt-traefik-ingress-kubernetes-iorouter-tls-domains-n-sans" title="#opt-traefik-ingress-kubernetes-iorouter-tls-domains-n-sans">`traefik.ingress.kubernetes.io/router.tls.domains.n.sans`</a> | Defines the Subject Alternative Names (SANs) for TLS certificate (where n is the domain index). | `test.example.org,dev.example.org` |
-| <a id="opt-traefik-ingress-kubernetes-iorouter-tls-options" href="#opt-traefik-ingress-kubernetes-iorouter-tls-options" title="#opt-traefik-ingress-kubernetes-iorouter-tls-options">`traefik.ingress.kubernetes.io/router.tls.options`</a> | See [TLS options](../kubernetes/crd/tls/tlsoption.md) for more information. | `foobar@file` |
+| <a id="opt-traefik-ingress-kubernetes-iorouter-tls-options" href="#opt-traefik-ingress-kubernetes-iorouter-tls-options" title="#opt-traefik-ingress-kubernetes-iorouter-tls-options">`traefik.ingress.kubernetes.io/router.tls.options`</a> | See [TLS options](../kubernetes/crd/tls/tlsoption.md) for more information.<br/>The TLS options are mapped to the host names of the Ingress rules, and not to the Ingress itself, so an Ingress serving a host name already served with different TLS options, in any namespace, makes them conflict.<br/>See [Conflicting TLS Options](../http/tls/tls-options.md#conflicting-tls-options) for more information. | `foobar@file` |
 | <a id="opt-traefik-ingress-kubernetes-iorouter-observability-accesslogs" href="#opt-traefik-ingress-kubernetes-iorouter-observability-accesslogs" title="#opt-traefik-ingress-kubernetes-iorouter-observability-accesslogs">`traefik.ingress.kubernetes.io/router.observability.accesslogs`</a> | Controls whether the router produces access logs.<br/>See [observability](../http/routing/observability.md) for more information. | `true` |
 | <a id="opt-traefik-ingress-kubernetes-iorouter-observability-metrics" href="#opt-traefik-ingress-kubernetes-iorouter-observability-metrics" title="#opt-traefik-ingress-kubernetes-iorouter-observability-metrics">`traefik.ingress.kubernetes.io/router.observability.metrics`</a> | Controls whether the router produces metrics.<br/>See [observability](../http/routing/observability.md) for more information. | `true` |
 | <a id="opt-traefik-ingress-kubernetes-iorouter-observability-tracing" href="#opt-traefik-ingress-kubernetes-iorouter-observability-tracing" title="#opt-traefik-ingress-kubernetes-iorouter-observability-tracing">`traefik.ingress.kubernetes.io/router.observability.tracing`</a> | Controls whether the router produces traces.<br/>See [observability](../http/routing/observability.md) for more information. | `true` |
@@ -30626,7 +31146,7 @@ This will allow users to create a "default router" that will match all unmatched
 
 # Reference / Routing Configuration / Kubernetes / Ingress NGINX
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/kubernetes/ingress-nginx.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/kubernetes/ingress-nginx.md*
 
 # Traefik & Ingresses with NGINX Annotations
 
@@ -31136,7 +31656,7 @@ Some behaviors that are globally configurable in NGINX (such as default SSL redi
 
 # Reference / Routing Configuration / Kubernetes / Knative
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/kubernetes/knative.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/kubernetes/knative.md*
 
 # Traefik & Knative
 
@@ -31243,7 +31763,7 @@ Check out the Knative documentation for [HTTP/HTTPS configuration](https://knati
 
 # Reference / Routing Configuration / Label & Tag Providers / Docker
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/other-providers/docker.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/other-providers/docker.md*
 
 # Traefik & Docker
 
@@ -31423,7 +31943,7 @@ For example, to change the rule, you could add the label ```traefik.http.routers
 | <a id="opt-traefik-http-routers-router-name-tls-certresolver" href="#opt-traefik-http-routers-router-name-tls-certresolver" title="#opt-traefik-http-routers-router-name-tls-certresolver">`traefik.http.routers.<router_name>.tls.certresolver`</a> | See [certResolver](../../install-configuration/tls/certificate-resolvers/overview.md) for more information. | `myresolver` |
 | <a id="opt-traefik-http-routers-router-name-tls-domainsn-main" href="#opt-traefik-http-routers-router-name-tls-domainsn-main" title="#opt-traefik-http-routers-router-name-tls-domainsn-main">`traefik.http.routers.<router_name>.tls.domains[n].main`</a> | See [domains](../../install-configuration/tls/certificate-resolvers/acme.md#domain-definition) for more information. | `example.org` |
 | <a id="opt-traefik-http-routers-router-name-tls-domainsn-sans" href="#opt-traefik-http-routers-router-name-tls-domainsn-sans" title="#opt-traefik-http-routers-router-name-tls-domainsn-sans">`traefik.http.routers.<router_name>.tls.domains[n].sans`</a> | See [domains](../../install-configuration/tls/certificate-resolvers/acme.md#domain-definition) for more information. | `test.example.org,dev.example.org` |
-| <a id="opt-traefik-http-routers-router-name-tls-options" href="#opt-traefik-http-routers-router-name-tls-options" title="#opt-traefik-http-routers-router-name-tls-options">`traefik.http.routers.<router_name>.tls.options`</a> |  | `foobar` |
+| <a id="opt-traefik-http-routers-router-name-tls-options" href="#opt-traefik-http-routers-router-name-tls-options" title="#opt-traefik-http-routers-router-name-tls-options">`traefik.http.routers.<router_name>.tls.options`</a> | See [TLS Options](../http/tls/tls-options.md) for more information, and [Conflicting TLS Options](../http/tls/tls-options.md#conflicting-tls-options) when several routers serve the same host name. | `foobar` |
 | <a id="opt-traefik-http-routers-router-name-observability-accesslogs" href="#opt-traefik-http-routers-router-name-observability-accesslogs" title="#opt-traefik-http-routers-router-name-observability-accesslogs">`traefik.http.routers.<router_name>.observability.accesslogs`</a> | The accessLogs option controls whether the router will produce access-logs. | `true` |
 | <a id="opt-traefik-http-routers-router-name-observability-metrics" href="#opt-traefik-http-routers-router-name-observability-metrics" title="#opt-traefik-http-routers-router-name-observability-metrics">`traefik.http.routers.<router_name>.observability.metrics`</a> | The metrics option controls whether the router will produce metrics. | `true` |
 | <a id="opt-traefik-http-routers-router-name-observability-tracing" href="#opt-traefik-http-routers-router-name-observability-tracing" title="#opt-traefik-http-routers-router-name-observability-tracing">`traefik.http.routers.<router_name>.observability.tracing`</a> | The tracing option controls whether the router will produce traces. | `true` |
@@ -31532,7 +32052,7 @@ You can declare TCP Routers and/or Services using labels.
 | <a id="opt-traefik-tcp-routers-router-name-tls-certresolver" href="#opt-traefik-tcp-routers-router-name-tls-certresolver" title="#opt-traefik-tcp-routers-router-name-tls-certresolver">`traefik.tcp.routers.<router_name>.tls.certresolver`</a> | See [certResolver](../tcp/tls.md#configuration-options) for more information. | `myresolver` |
 | <a id="opt-traefik-tcp-routers-router-name-tls-domainsn-main" href="#opt-traefik-tcp-routers-router-name-tls-domainsn-main" title="#opt-traefik-tcp-routers-router-name-tls-domainsn-main">`traefik.tcp.routers.<router_name>.tls.domains[n].main`</a> | See [TLS](../tcp/tls.md) for more information. | `example.org` |
 | <a id="opt-traefik-tcp-routers-router-name-tls-domainsn-sans" href="#opt-traefik-tcp-routers-router-name-tls-domainsn-sans" title="#opt-traefik-tcp-routers-router-name-tls-domainsn-sans">`traefik.tcp.routers.<router_name>.tls.domains[n].sans`</a> | See [TLS](../tcp/tls.md) for more information. | `test.example.org,dev.example.org` |
-| <a id="opt-traefik-tcp-routers-router-name-tls-options" href="#opt-traefik-tcp-routers-router-name-tls-options" title="#opt-traefik-tcp-routers-router-name-tls-options">`traefik.tcp.routers.<router_name>.tls.options`</a> |  | `mysoptions` |
+| <a id="opt-traefik-tcp-routers-router-name-tls-options" href="#opt-traefik-tcp-routers-router-name-tls-options" title="#opt-traefik-tcp-routers-router-name-tls-options">`traefik.tcp.routers.<router_name>.tls.options`</a> | See [TLS](../tcp/tls.md) for more information. | `mysoptions` |
 | <a id="opt-traefik-tcp-routers-router-name-tls-passthrough" href="#opt-traefik-tcp-routers-router-name-tls-passthrough" title="#opt-traefik-tcp-routers-router-name-tls-passthrough">`traefik.tcp.routers.<router_name>.tls.passthrough`</a> | See [Passthrough](../tcp/tls.md#opt-passthrough) for more information. | `true` |
 | <a id="opt-traefik-tcp-routers-router-name-priority" href="#opt-traefik-tcp-routers-router-name-priority" title="#opt-traefik-tcp-routers-router-name-priority">`traefik.tcp.routers.<router_name>.priority`</a> | See [priority](../tcp/routing/rules-and-priority.md#priority-calculation) for more information. | `42` |
 
@@ -31617,7 +32137,7 @@ You can declare UDP Routers and/or Services using labels.
 
 # Reference / Routing Configuration / Label & Tag Providers / Swarm
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/other-providers/swarm.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/other-providers/swarm.md*
 
 # Traefik & Docker Swarm
 
@@ -31809,7 +32329,7 @@ For example, to change the rule, you could add the label ```traefik.http.routers
 | <a id="opt-traefik-http-routers-router-name-tls-certresolver" href="#opt-traefik-http-routers-router-name-tls-certresolver" title="#opt-traefik-http-routers-router-name-tls-certresolver">`traefik.http.routers.<router_name>.tls.certresolver`</a> | See [certResolver](../../install-configuration/tls/certificate-resolvers/overview.md) for more information. | `myresolver` |
 | <a id="opt-traefik-http-routers-router-name-tls-domainsn-main" href="#opt-traefik-http-routers-router-name-tls-domainsn-main" title="#opt-traefik-http-routers-router-name-tls-domainsn-main">`traefik.http.routers.<router_name>.tls.domains[n].main`</a> | See [domains](../../install-configuration/tls/certificate-resolvers/acme.md#domain-definition) for more information. | `example.org` |
 | <a id="opt-traefik-http-routers-router-name-tls-domainsn-sans" href="#opt-traefik-http-routers-router-name-tls-domainsn-sans" title="#opt-traefik-http-routers-router-name-tls-domainsn-sans">`traefik.http.routers.<router_name>.tls.domains[n].sans`</a> | See [domains](../../install-configuration/tls/certificate-resolvers/acme.md#domain-definition) for more information. | `test.example.org,dev.example.org` |
-| <a id="opt-traefik-http-routers-router-name-tls-options" href="#opt-traefik-http-routers-router-name-tls-options" title="#opt-traefik-http-routers-router-name-tls-options">`traefik.http.routers.<router_name>.tls.options`</a> |  | `foobar` |
+| <a id="opt-traefik-http-routers-router-name-tls-options" href="#opt-traefik-http-routers-router-name-tls-options" title="#opt-traefik-http-routers-router-name-tls-options">`traefik.http.routers.<router_name>.tls.options`</a> | See [TLS Options](../http/tls/tls-options.md) for more information, and [Conflicting TLS Options](../http/tls/tls-options.md#conflicting-tls-options) when several routers serve the same host name. | `foobar` |
 | <a id="opt-traefik-http-routers-router-name-observability-accesslogs" href="#opt-traefik-http-routers-router-name-observability-accesslogs" title="#opt-traefik-http-routers-router-name-observability-accesslogs">`traefik.http.routers.<router_name>.observability.accesslogs`</a> | The accessLogs option controls whether the router will produce access-logs. | `true` |
 | <a id="opt-traefik-http-routers-router-name-observability-metrics" href="#opt-traefik-http-routers-router-name-observability-metrics" title="#opt-traefik-http-routers-router-name-observability-metrics">`traefik.http.routers.<router_name>.observability.metrics`</a> | The metrics option controls whether the router will produce metrics. | `true` |
 | <a id="opt-traefik-http-routers-router-name-observability-tracing" href="#opt-traefik-http-routers-router-name-observability-tracing" title="#opt-traefik-http-routers-router-name-observability-tracing">`traefik.http.routers.<router_name>.observability.tracing`</a> | The tracing option controls whether the router will produce traces. | `true` |
@@ -32006,7 +32526,7 @@ You can declare UDP Routers and/or Services using labels.
 
 # Reference / Routing Configuration / Label & Tag Providers / Consul Catalog
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/other-providers/consul-catalog.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/other-providers/consul-catalog.md*
 
 # Traefik & Consul Catalog
 
@@ -32144,7 +32664,7 @@ For example, to change the rule, you could add the tag ```traefik.http.routers.m
 | <a id="opt-traefik-http-routers-router-name-tls-certresolver" href="#opt-traefik-http-routers-router-name-tls-certresolver" title="#opt-traefik-http-routers-router-name-tls-certresolver">`traefik.http.routers.<router_name>.tls.certresolver`</a> | See [certResolver](../../install-configuration/tls/certificate-resolvers/overview.md) for more information. | `myresolver` |
 | <a id="opt-traefik-http-routers-router-name-tls-domainsn-main" href="#opt-traefik-http-routers-router-name-tls-domainsn-main" title="#opt-traefik-http-routers-router-name-tls-domainsn-main">`traefik.http.routers.<router_name>.tls.domains[n].main`</a> | See [domains](../../install-configuration/tls/certificate-resolvers/acme.md#domain-definition) for more information. | `example.org` |
 | <a id="opt-traefik-http-routers-router-name-tls-domainsn-sans" href="#opt-traefik-http-routers-router-name-tls-domainsn-sans" title="#opt-traefik-http-routers-router-name-tls-domainsn-sans">`traefik.http.routers.<router_name>.tls.domains[n].sans`</a> | See [domains](../../install-configuration/tls/certificate-resolvers/acme.md#domain-definition) for more information. | `test.example.org,dev.example.org` |
-| <a id="opt-traefik-http-routers-router-name-tls-options" href="#opt-traefik-http-routers-router-name-tls-options" title="#opt-traefik-http-routers-router-name-tls-options">`traefik.http.routers.<router_name>.tls.options`</a> |  | `foobar` |
+| <a id="opt-traefik-http-routers-router-name-tls-options" href="#opt-traefik-http-routers-router-name-tls-options" title="#opt-traefik-http-routers-router-name-tls-options">`traefik.http.routers.<router_name>.tls.options`</a> | See [TLS Options](../http/tls/tls-options.md) for more information, and [Conflicting TLS Options](../http/tls/tls-options.md#conflicting-tls-options) when several routers serve the same host name. | `foobar` |
 | <a id="opt-traefik-http-routers-router-name-observability-accesslogs" href="#opt-traefik-http-routers-router-name-observability-accesslogs" title="#opt-traefik-http-routers-router-name-observability-accesslogs">`traefik.http.routers.<router_name>.observability.accesslogs`</a> | The accessLogs option controls whether the router will produce access-logs. | `true` |
 | <a id="opt-traefik-http-routers-router-name-observability-metrics" href="#opt-traefik-http-routers-router-name-observability-metrics" title="#opt-traefik-http-routers-router-name-observability-metrics">`traefik.http.routers.<router_name>.observability.metrics`</a> | The metrics option controls whether the router will produce metrics. | `true` |
 | <a id="opt-traefik-http-routers-router-name-observability-tracing" href="#opt-traefik-http-routers-router-name-observability-tracing" title="#opt-traefik-http-routers-router-name-observability-tracing">`traefik.http.routers.<router_name>.observability.tracing`</a> | The tracing option controls whether the router will produce traces. | `true` |
@@ -32326,7 +32846,7 @@ That means, if you just expose lets say port `:1337` on the consul Catalog ui, t
 
 # Reference / Routing Configuration / Label & Tag Providers / Nomad
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/other-providers/nomad.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/other-providers/nomad.md*
 
 # Traefik and Nomad Service Discovery
 
@@ -32481,7 +33001,7 @@ For example, to change the rule, you could add the tag ```traefik.http.routers.m
 | <a id="opt-traefik-http-routers-router-name-tls-certresolver" href="#opt-traefik-http-routers-router-name-tls-certresolver" title="#opt-traefik-http-routers-router-name-tls-certresolver">`traefik.http.routers.<router_name>.tls.certresolver`</a> | See [certResolver](../../install-configuration/tls/certificate-resolvers/overview.md) for more information. | `myresolver` |
 | <a id="opt-traefik-http-routers-router-name-tls-domainsn-main" href="#opt-traefik-http-routers-router-name-tls-domainsn-main" title="#opt-traefik-http-routers-router-name-tls-domainsn-main">`traefik.http.routers.<router_name>.tls.domains[n].main`</a> | See [domains](../../install-configuration/tls/certificate-resolvers/acme.md#domain-definition) for more information. | `example.org` |
 | <a id="opt-traefik-http-routers-router-name-tls-domainsn-sans" href="#opt-traefik-http-routers-router-name-tls-domainsn-sans" title="#opt-traefik-http-routers-router-name-tls-domainsn-sans">`traefik.http.routers.<router_name>.tls.domains[n].sans`</a> | See [domains](../../install-configuration/tls/certificate-resolvers/acme.md#domain-definition) for more information. | `test.example.org,dev.example.org` |
-| <a id="opt-traefik-http-routers-router-name-tls-options" href="#opt-traefik-http-routers-router-name-tls-options" title="#opt-traefik-http-routers-router-name-tls-options">`traefik.http.routers.<router_name>.tls.options`</a> |  | `foobar` |
+| <a id="opt-traefik-http-routers-router-name-tls-options" href="#opt-traefik-http-routers-router-name-tls-options" title="#opt-traefik-http-routers-router-name-tls-options">`traefik.http.routers.<router_name>.tls.options`</a> | See [TLS Options](../http/tls/tls-options.md) for more information, and [Conflicting TLS Options](../http/tls/tls-options.md#conflicting-tls-options) when several routers serve the same host name. | `foobar` |
 | <a id="opt-traefik-http-routers-router-name-priority" href="#opt-traefik-http-routers-router-name-priority" title="#opt-traefik-http-routers-router-name-priority">`traefik.http.routers.<router_name>.priority`</a> | See [priority](../http/routing/rules-and-priority.md#priority-calculation) for more information. | `42` |
 | <a id="opt-traefik-http-routers-router-name-observability-accesslogs" href="#opt-traefik-http-routers-router-name-observability-accesslogs" title="#opt-traefik-http-routers-router-name-observability-accesslogs">`traefik.http.routers.<router_name>.observability.accesslogs`</a> | The accessLogs option controls whether the router will produce access-logs. | `true` |
 | <a id="opt-traefik-http-routers-router-name-observability-metrics" href="#opt-traefik-http-routers-router-name-observability-metrics" title="#opt-traefik-http-routers-router-name-observability-metrics">`traefik.http.routers.<router_name>.observability.metrics`</a> | The metrics option controls whether the router will produce metrics. | `true` |
@@ -32661,7 +33181,7 @@ That means, if you just expose lets say port `:1337` on the Nomad job, traefik w
 
 # Reference / Routing Configuration / Label & Tag Providers / ECS
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/other-providers/ecs.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/other-providers/ecs.md*
 
 # Traefik & ECS
 
@@ -32806,7 +33326,7 @@ For example, to change the rule, you could add the label ```traefik.http.routers
 | <a id="opt-traefik-http-routers-router-name-tls-certresolver" href="#opt-traefik-http-routers-router-name-tls-certresolver" title="#opt-traefik-http-routers-router-name-tls-certresolver">`traefik.http.routers.<router_name>.tls.certresolver`</a> | See [certResolver](../../install-configuration/tls/certificate-resolvers/overview.md) for more information. | `myresolver` |
 | <a id="opt-traefik-http-routers-router-name-tls-domainsn-main" href="#opt-traefik-http-routers-router-name-tls-domainsn-main" title="#opt-traefik-http-routers-router-name-tls-domainsn-main">`traefik.http.routers.<router_name>.tls.domains[n].main`</a> | See [domains](../../install-configuration/tls/certificate-resolvers/acme.md#domain-definition) for more information. | `example.org` |
 | <a id="opt-traefik-http-routers-router-name-tls-domainsn-sans" href="#opt-traefik-http-routers-router-name-tls-domainsn-sans" title="#opt-traefik-http-routers-router-name-tls-domainsn-sans">`traefik.http.routers.<router_name>.tls.domains[n].sans`</a> | See [domains](../../install-configuration/tls/certificate-resolvers/acme.md#domain-definition) for more information. | `test.example.org,dev.example.org` |
-| <a id="opt-traefik-http-routers-router-name-tls-options" href="#opt-traefik-http-routers-router-name-tls-options" title="#opt-traefik-http-routers-router-name-tls-options">`traefik.http.routers.<router_name>.tls.options`</a> |  | `foobar` |
+| <a id="opt-traefik-http-routers-router-name-tls-options" href="#opt-traefik-http-routers-router-name-tls-options" title="#opt-traefik-http-routers-router-name-tls-options">`traefik.http.routers.<router_name>.tls.options`</a> | See [TLS Options](../http/tls/tls-options.md) for more information, and [Conflicting TLS Options](../http/tls/tls-options.md#conflicting-tls-options) when several routers serve the same host name. | `foobar` |
 | <a id="opt-traefik-http-routers-router-name-observability-accesslogs" href="#opt-traefik-http-routers-router-name-observability-accesslogs" title="#opt-traefik-http-routers-router-name-observability-accesslogs">`traefik.http.routers.<router_name>.observability.accesslogs`</a> | The accessLogs option controls whether the router will produce access-logs. | `true` |
 | <a id="opt-traefik-http-routers-router-name-observability-metrics" href="#opt-traefik-http-routers-router-name-observability-metrics" title="#opt-traefik-http-routers-router-name-observability-metrics">`traefik.http.routers.<router_name>.observability.metrics`</a> | The metrics option controls whether the router will produce metrics. | `true` |
 | <a id="opt-traefik-http-routers-router-name-observability-tracing" href="#opt-traefik-http-routers-router-name-observability-tracing" title="#opt-traefik-http-routers-router-name-observability-tracing">`traefik.http.routers.<router_name>.observability.tracing`</a> | The tracing option controls whether the router will produce traces. | `true` |
@@ -32986,7 +33506,7 @@ More information about available middlewares in the dedicated [middlewares secti
 
 # Reference / Routing Configuration / Label & Tag Providers / KV
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/other-providers/kv.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/other-providers/kv.md*
 
 # Traefik & KV Stores
 
@@ -33256,7 +33776,7 @@ The configuration to resolve the default certificate should be defined in a TLS 
 
 # Reference / Routing Configuration / File
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/other-providers/file.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/other-providers/file.md*
 
 # Traefik File Routing Configuration
 
@@ -33831,7 +34351,7 @@ To illustrate, it is possible to easily define multiple routers, services, and T
 
 # Reference / Security / Request Path
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/security/request-path.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/security/request-path.md*
 
 # Request Path
 
@@ -33984,7 +34504,7 @@ entryPoints:
 
 # Reference / Security / Content-Length
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/security/content-length.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/security/content-length.md*
 
 Traefik acts as a streaming proxy. By default, it checks each chunk of data against the `Content-Length` header as it passes it on to the backend or client.
 This live check blocks truncated or over‑long streams without holding the entire message.
@@ -34013,7 +34533,7 @@ With buffering enabled, Traefik will:
 
 # Reference / Security / HTTP/2 Header Memory
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/security/http2-header-memory.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/security/http2-header-memory.md*
 
 # HTTP/2 Header Memory Exhaustion
 
@@ -34098,7 +34618,7 @@ entryPoints:
 
 # Reference / Security / Headers with Underscores
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/security/header-underscores.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/security/header-underscores.md*
 
 # Headers with Underscores
 
@@ -34158,7 +34678,7 @@ entryPoints:
 
 # Reference / Security / Multi-Tenant Kubernetes
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/security/multi-tenant-kubernetes.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/security/multi-tenant-kubernetes.md*
 
 # Traefik in Multi-Tenant Kubernetes Clusters
 
@@ -34222,7 +34742,7 @@ For new deployments in multi-tenant environments, adopting Gateway API is the re
 
 # Reference / Deprecation Notices / Releases
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/deprecation/releases.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/deprecation/releases.md*
 
 # Releases
 
@@ -34233,7 +34753,7 @@ Below is a non-exhaustive list of versions and their maintenance status:
 | Version | Release Date | Active Support     | Security Support   |
 |---------|--------------|--------------------|--------------------|
 | 3.7     | May 05, 2026 | Yes                | Yes                |
-| 3.6     | Nov 07, 2025 | Ended May 05, 2026 | No                 |
+| 3.6     | Nov 07, 2025 | Ended May 07, 2026 | Ends Aug 16, 2026  |
 | 3.5     | Jul 23, 2025 | Ended Nov 07, 2025 | No                 |
 | 3.4     | May 05, 2025 | Ended Jul 23, 2025 | No                 |
 | 3.3     | Jan 06, 2025 | Ended May 05, 2025 | No                 |
@@ -34258,17 +34778,21 @@ Please refer to our migration guides for specific instructions on upgrading betw
 
 The Traefik Proxy project follows the [semantic versioning](https://semver.org/) scheme and maintains a separate branch for each minor version. The main branch always represents the next upcoming minor or major version.
 
-And these are our guiding rules for version support:
+And these are our guiding rules for version support, as of Traefik v3.6:
 
-- **Only the latest `minor`** will be on active support at any given time
-- **The last `minor` after releasing a new `major`** will be supported for 1 year following the `major` release
+- **Every `minor`** is supported for 6 months from its GA release date, which means several `minor` versions can be supported at the same time
+- **The last `minor` after releasing a new `major`** is supported for 2 years following the `major` release (starting with v3)
 - **Previous rules are subject to change** and in such cases an announcement will be made publicly, [here](https://traefik.io/blog/traefik-2-1-in-the-wild/) is an example extending v1.x branch support.
+
+> **Note — Versions released before v3.6**
+>
+> These rules apply starting with Traefik v3.6. Before that, only the latest `minor` was on active support at any given time, and support for a `minor` ended as soon as the next one was released.
 
 ---
 
 # Reference / Deprecation Notices / Features
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/deprecation/features.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/deprecation/features.md*
 
 # Feature Deprecation Notices
 
@@ -34295,7 +34819,7 @@ Please use the API Group `apiextensions.k8s.io/v1` instead.
 
 # Contributing / Thank You!
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/contributing/thank-you.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/contributing/thank-you.md*
 
 # Thank You!
 
@@ -34329,7 +34853,7 @@ So once again, thank you for your invaluable help in making Traefik such a good 
 
 # Contributing / Submitting Issues
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/contributing/submitting-issues.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/contributing/submitting-issues.md*
 
 # Submitting Issues
 
@@ -34393,7 +34917,7 @@ Every maintainer / Traefik user is not a native English speaker, so if you somet
 
 # Contributing / Submitting PRs
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/contributing/submitting-pull-requests.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/contributing/submitting-pull-requests.md*
 
 # Before You Submit a Pull Request
 
@@ -34649,7 +35173,7 @@ If you do these things, your pull requests will get merged with less friction.
 
 # Contributing / Security
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/contributing/submitting-security-issues.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/contributing/submitting-security-issues.md*
 
 # Security
 
@@ -34730,7 +35254,7 @@ Quality over quantity helps keep Traefik safe for everyone.
 
 # Contributing / Building and Testing
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/contributing/building-testing.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/contributing/building-testing.md*
 
 # Building and Testing
 
@@ -34848,7 +35372,7 @@ TESTFLAGS="-test.run TestAccessLogSuite -testify.m ^TestAccessLog$" make test-in
 
 # Contributing / Documentation
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/contributing/documentation.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/contributing/documentation.md*
 
 # Documentation
 
@@ -34963,7 +35487,7 @@ Running ["HtmlCheck", "ImageCheck", "ScriptCheck", "LinkCheck"] on /app/site/bas
 
 # Contributing / Data Collection
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/contributing/data-collection.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/contributing/data-collection.md*
 
 # Data Collection
 
@@ -35121,7 +35645,7 @@ Traefik anonymizes all configuration fields by default, except those explicitly 
 
 # Contributing / Advocating
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/contributing/advocating.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/contributing/advocating.md*
 
 # Advocating
 
@@ -35153,7 +35677,7 @@ Top contributors get unique swag to celebrate.
 
 # Contributing / Maintainers
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/contributing/maintainers.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/contributing/maintainers.md*
 
 # Maintainers
 
@@ -35199,11 +35723,11 @@ Please read the [maintainer's guidelines](./maintainers-guidelines.md).
 
 # Contributing / Maintainer's Guidelines
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/contributing/maintainers-guidelines.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/contributing/maintainers-guidelines.md*
 
 # Maintainer's Guidelines
 
-![Maintainer's Guidelines](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/maintainers-guidelines.png)
+![Maintainer's Guidelines](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/maintainers-guidelines.png)
 
 Welcome to the Traefik Community.
 
@@ -35328,7 +35852,7 @@ maintainers' activity and involvement will be reviewed on a regular basis.
 
 # FAQ
 
-*Source: https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/getting-started/faq.md*
+*Source: https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/getting-started/faq.md*
 
 # FAQ
 

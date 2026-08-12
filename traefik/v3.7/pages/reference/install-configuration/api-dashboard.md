@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Install Configuration / API & Dashboard"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/install-configuration/api-dashboard.md"
-source_url: "https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/api-dashboard.md"
+source_url: "https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/api-dashboard.md"
 ---
 
 Traefik exposes a number of information through API endpoints, such as the configuration of your routers, services, middlewares, etc.
@@ -13,7 +13,7 @@ Traefik exposes a number of information through API endpoints, such as the confi
 The dashboard, which is the central place that displays the current active routes handled by Traefik, fetches the data from this API.
 
 <figure>
-    <img src="https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/assets/img/webui-dashboard.png" alt="Dashboard - Providers" />
+    <img src="https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/assets/img/webui-dashboard.png" alt="Dashboard - Providers" />
     <figcaption>The dashboard in action</figcaption>
 </figure>
 
@@ -246,7 +246,7 @@ The dashboard is available by default on the path  `/dashboard/`.
 
 > **Note**
 >
-> - The trailing slash `/` in `/dashboard/` is mandatory. This limitation can be mitigated using the the [RedirectRegex Middleware](../../reference/routing-configuration/http/middlewares/redirectregex.md).
+> - The trailing slash `/` in `/dashboard/` is mandatory. This limitation can be mitigated using the [RedirectRegex Middleware](../../reference/routing-configuration/http/middlewares/redirectregex.md).
 > - There is also a redirect from the path `/` to `/dashboard/`, but you should not rely on this behavior, as it is subject to change and may complicate routing rules.
 
 As mentioned above in the [Security](#security) section, it is important to secure access to both the dashboard and the API.

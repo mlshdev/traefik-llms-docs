@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / Circuit Breaker"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/routing-configuration/http/middlewares/circuitbreaker.md"
-source_url: "https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/middlewares/circuitbreaker.md"
+source_url: "https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/middlewares/circuitbreaker.md"
 ---
 
 The HTTP circuit breaker prevents stacking requests to unhealthy Services, resulting in cascading failures.

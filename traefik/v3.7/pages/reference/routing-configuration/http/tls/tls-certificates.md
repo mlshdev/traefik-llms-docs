@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Routing Configuration / Common Configuration / HTTP / TLS / TLS Certificates"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/routing-configuration/http/tls/tls-certificates.md"
-source_url: "https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/http/tls/tls-certificates.md"
+source_url: "https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/tls/tls-certificates.md"
 ---
 
 > **Info**
@@ -73,6 +73,13 @@ In Traefik, certificates are grouped together in certificates stores.
 >
 > Any store definition other than the default one (named `default`) will be ignored,
 > and there is therefore only one globally available TLS store.
+
+> **Important — TLSStore in Kubernetes**
+>
+> With the [TLSStore resource](../../kubernetes/crd/tls/tlsstore.md), the store named `default` applies to every entry point,
+> whatever the namespace it is defined in.
+> The [`defaultTLSResourcesNamespace`](../../../install-configuration/providers/kubernetes/kubernetes-crd.md#defaulttlsresourcesnamespace) provider option
+> restricts the namespace this cluster-wide store can be defined in.
 
 In the `tls.certificates` section, a list of stores can then be specified to indicate where the certificates should be stored:
 

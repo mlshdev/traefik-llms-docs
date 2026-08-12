@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Routing Configuration / Kubernetes / Kubernetes CRD / HTTP / TLSStore"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/routing-configuration/kubernetes/crd/tls/tlsstore.md"
-source_url: "https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/routing-configuration/kubernetes/crd/tls/tlsstore.md"
+source_url: "https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/kubernetes/crd/tls/tlsstore.md"
 ---
 
 In Traefik, certificates are grouped together in certificates stores. 
@@ -16,7 +16,7 @@ Before creating `TLSStore` objects, you need to apply the [Traefik Kubernetes CR
 
 > **Tip — Default TLS Store**
 >
-> Traefik currently only uses the TLS Store named "default". This default `TLSStore` should be in a namespace discoverable by Traefik. Since it is used by default on `IngressRoute` and `IngressRouteTCP` objects, there never is a need to actually reference it. This means that you cannot have two stores that are named default in different Kubernetes namespaces. As a consequence, with respect to TLS stores, the only change that makes sense (and only if needed) is to configure the default `TLSStore`.
+> Traefik currently only uses the TLS Store named "default". This default `TLSStore` should be in a namespace discoverable by Traefik. Since it is used by default on `IngressRoute` and `IngressRouteTCP` objects, there never is a need to actually reference it. This means that you cannot have two stores that are named default in different Kubernetes namespaces. As a consequence, with respect to TLS stores, the only change that makes sense (and only if needed) is to configure the default `TLSStore`. The [`defaultTLSResourcesNamespace`](../../../../install-configuration/providers/kubernetes/kubernetes-crd.md#defaulttlsresourcesnamespace) provider option restricts the namespace this cluster-wide store can be defined in.
 
 ## Configuration Example
 

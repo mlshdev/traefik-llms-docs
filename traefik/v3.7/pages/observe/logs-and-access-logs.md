@@ -5,7 +5,7 @@ section: "Observe"
 breadcrumb: "Observe / Logs & Access Logs"
 traefik_version: "v3.7"
 upstream_path: "docs/content/observe/logs-and-access-logs.md"
-source_url: "https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/observe/logs-and-access-logs.md"
+source_url: "https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/observe/logs-and-access-logs.md"
 ---
 
 ## Logs
@@ -183,6 +183,26 @@ Traefik Proxy supports the following log formats:
 - `common` - Traefik's extended CLF format (default)
 - `genericCLF` - Generic CLF format compatible with standard log analyzers
 - `json` - JSON format for structured logging
+
+## Origin vs. Downstream Status
+
+Access logs report two status codes, named relative to Traefik:
+
+```text
+Client <---- DownstreamStatus ---- Traefik <---- OriginStatus ---- Backend
+```
+
+- `OriginStatus` is the outcome of proxying the request to a backend. It is either the status returned by that backend or the computed status code, when the backend could not be reached or did not answer properly (`502`, `504`, ...).
+- `DownstreamStatus` is what Traefik returned to the client, after the middleware chain has run.
+
+Both are equal when the request is proxied unchanged.
+When both are set but differ, a middleware rewrote the response.
+When `OriginStatus` is empty (logged as `0`), the request was never proxied to a backend: the response comes from routing (no matching router) or from a middleware (authentication, rate limiting, redirection).
+
+> **Info**
+>
+> Both fields are only available with the `json` format.
+> The `common` and `genericCLF` formats, and the `statusCodes` filter, use the `DownstreamStatus` value.
 
 ## Access Log Filters
 

@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Install Configuration / Configuration Discovery / Kubernetes / Kubernetes Gateway API"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/install-configuration/providers/kubernetes/kubernetes-gateway.md"
-source_url: "https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/kubernetes/kubernetes-gateway.md"
+source_url: "https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/kubernetes/kubernetes-gateway.md"
 ---
 
 # Traefik & Kubernetes with Gateway API
@@ -36,7 +36,16 @@ General functionality cannot be guaranteed for older versions.
     kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.6.1/standard-install.yaml
     ```
 
-2. If you are not using the Helm Chart, install/update the Traefik [RBAC](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/dynamic-configuration/kubernetes-gateway-rbac.yml) for Gateway API.
+    > **Warning — `experimentalChannel` requires the Experimental channel CRDs**
+    >
+    > The `experimentalChannel` option makes Traefik watch `TCPRoute` and `TLSRoute` resources,
+    > which the Standard channel CRDs do not provide.
+    > Enabling it without installing the Experimental channel CRDs
+    > (`experimental-install.yaml`) prevents the Kubernetes Gateway provider from starting:
+    > no Gateway API resource is served at all, not only `TCPRoute` and `TLSRoute`.
+    > Traefik keeps running and the other providers are unaffected.
+
+2. If you are not using the Helm Chart, install/update the Traefik [RBAC](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/dynamic-configuration/kubernetes-gateway-rbac.yml) for Gateway API.
 
     ```bash
     # Install Traefik RBACs for Gateway API.
@@ -85,7 +94,7 @@ providers:
 |:----------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------|:---------|
 | <a id="opt-providers-providersThrottleDuration" href="#opt-providers-providersThrottleDuration" title="#opt-providers-providersThrottleDuration">`providers.providersThrottleDuration`</a> | Minimum amount of time to wait for, after a configuration reload, before taking into account any new configuration refresh event.<br />If multiple events occur within this time, only the most recent one is taken into account, and all others are discarded.<br />**This option cannot be set per provider, but the throttling algorithm applies to each of them independently.** | 2s      | No       |
 | <a id="opt-providers-kubernetesGateway-endpoint" href="#opt-providers-kubernetesGateway-endpoint" title="#opt-providers-kubernetesGateway-endpoint">`providers.kubernetesGateway.endpoint`</a> | Server endpoint URL.<br />More information [here](#endpoint).                                                                                                                                                                                                                                                                                                                        | ""      | No       |
-| <a id="opt-providers-kubernetesGateway-experimentalChannel" href="#opt-providers-kubernetesGateway-experimentalChannel" title="#opt-providers-kubernetesGateway-experimentalChannel">`providers.kubernetesGateway.experimentalChannel`</a> | Toggles support for the Experimental Channel resources ([Gateway API release channels documentation](https://gateway-api.sigs.k8s.io/concepts/versioning/#release-channels)).<br />(ex: `TCPRoute`)                                                                                                                                                                   | false   | No       |
+| <a id="opt-providers-kubernetesGateway-experimentalChannel" href="#opt-providers-kubernetesGateway-experimentalChannel" title="#opt-providers-kubernetesGateway-experimentalChannel">`providers.kubernetesGateway.experimentalChannel`</a> | Toggles support for the Experimental Channel resources ([Gateway API release channels documentation](https://gateway-api.sigs.k8s.io/concepts/versioning/#release-channels)).<br />(ex: `TCPRoute`)<br />Requires the Experimental channel CRDs to be installed in the cluster, see [Requirements](#requirements).                                                    | false   | No       |
 | <a id="opt-providers-kubernetesGateway-token" href="#opt-providers-kubernetesGateway-token" title="#opt-providers-kubernetesGateway-token">`providers.kubernetesGateway.token`</a> | Bearer token used for the Kubernetes client configuration. Accepts either the token value directly or a path to a file containing the token.                                                                                                                                                                                                                                         | ""      | No       |
 | <a id="opt-providers-kubernetesGateway-certAuthFilePath" href="#opt-providers-kubernetesGateway-certAuthFilePath" title="#opt-providers-kubernetesGateway-certAuthFilePath">`providers.kubernetesGateway.certAuthFilePath`</a> | Path to the certificate authority file.<br />Used for the Kubernetes client configuration.                                                                                                                                                                                                                                                                                           | ""      | No       |
 | <a id="opt-providers-kubernetesGateway-namespaces" href="#opt-providers-kubernetesGateway-namespaces" title="#opt-providers-kubernetesGateway-namespaces">`providers.kubernetesGateway.namespaces`</a> | Array of namespaces to watch.<br />If left empty, watch all namespaces.                                                                                                                                                                                                                                                                                                              | []      | No       |

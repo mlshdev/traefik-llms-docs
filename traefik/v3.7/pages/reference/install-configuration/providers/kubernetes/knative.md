@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Install Configuration / Configuration Discovery / Kubernetes / Knative"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/install-configuration/providers/kubernetes/knative.md"
-source_url: "https://github.com/traefik/traefik/blob/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/install-configuration/providers/kubernetes/knative.md"
+source_url: "https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/providers/kubernetes/knative.md"
 ---
 
 # Traefik & Knative
@@ -54,7 +54,7 @@ General functionality cannot be guaranteed for older versions.
       -p='{"data":{"example.com":""}}'
     ```
 
-5. Install/update the Traefik [RBAC](https://raw.githubusercontent.com/traefik/traefik/8bd3bd277758ca6e70ce38b132039186a01812a9/docs/content/reference/dynamic-configuration/kubernetes-knative-rbac.yml).
+5. Install/update the Traefik [RBAC](https://raw.githubusercontent.com/traefik/traefik/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/dynamic-configuration/kubernetes-knative-rbac.yml).
 
     ```bash
     kubectl apply -f https://raw.githubusercontent.com/traefik/traefik/v3.7/docs/content/reference/dynamic-configuration/kubernetes-knative-rbac.yml
