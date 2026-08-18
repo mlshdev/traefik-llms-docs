@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Routing Configuration / Common Configuration / HTTP / Routing / Rules & Priority"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/routing-configuration/http/routing/rules-and-priority.md"
-source_url: "https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/routing/rules-and-priority.md"
+source_url: "https://github.com/traefik/traefik/blob/f762508e1763968c4c4ac19595124bb3b5a75cef/docs/content/reference/routing-configuration/http/routing/rules-and-priority.md"
 ---
 
 An HTTP router is in charge of connecting incoming requests to the services that can handle them. Traefik allows you to define your matching rules and [prioritize](#priority-calculation) the routes.

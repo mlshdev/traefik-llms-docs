@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Routing Configuration / Common Configuration / HTTP / Load Balancing / ServersTransport"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/routing-configuration/http/load-balancing/serverstransport.md"
-source_url: "https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/routing-configuration/http/load-balancing/serverstransport.md"
+source_url: "https://github.com/traefik/traefik/blob/f762508e1763968c4c4ac19595124bb3b5a75cef/docs/content/reference/routing-configuration/http/load-balancing/serverstransport.md"
 ---
 
 ServersTransport allows you to configure the transport between Traefik and your HTTP servers.

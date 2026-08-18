@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Install Configuration / EntryPoints"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/install-configuration/entrypoints.md"
-source_url: "https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/reference/install-configuration/entrypoints.md"
+source_url: "https://github.com/traefik/traefik/blob/f762508e1763968c4c4ac19595124bb3b5a75cef/docs/content/reference/install-configuration/entrypoints.md"
 ---
 
 Listening for Incoming Connections/Requests
@@ -571,3 +571,25 @@ Possible values are:
 
 - `minimal`: produces a single server span and one client span for each request processed by a router.
 - `detailed`: enables the creation of additional spans for each middleware executed for each request processed by a router.
+
+## Systemd Socket Activation
+
+Traefik supports [systemd socket activation](https://www.freedesktop.org/software/systemd/man/latest/systemd-socket-activate.html).
+
+When a socket activation file descriptor name matches an EntryPoint name, the corresponding file descriptor will be used as the TCP/UDP listener for the matching EntryPoint.
+
+```bash
+systemd-socket-activate -l 80 -l 443 --fdname web:websecure  ./traefik --entrypoints.web --entrypoints.websecure
+```
+
+> **Warning — EntryPoint Address**
+>
+> When a socket activation file descriptor name matches an EntryPoint name, its address configuration is ignored. To support UDP routing, the address must have the `/udp` suffix (`--entrypoints.my-udp-entrypoint.address=/udp`).
+
+> **Warning — Docker Support**
+>
+> Socket activation is not supported by Docker but works with Podman containers.
+
+> **Warning — Multiple listeners in socket file**
+>
+> Each systemd socket file must contain only one Listen directive, except in the case of HTTP/3, where the file must include both ListenStream and ListenDatagram directives. To set up TCP and UDP listeners on the same port, use multiple socket files with different entrypoints names.

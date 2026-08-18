@@ -5,7 +5,7 @@ section: "Migrate"
 breadcrumb: "Migrate / Ingress NGINX to Traefik"
 traefik_version: "v3.7"
 upstream_path: "docs/content/migrate/nginx-to-traefik.md"
-source_url: "https://github.com/traefik/traefik/blob/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs/content/migrate/nginx-to-traefik.md"
+source_url: "https://github.com/traefik/traefik/blob/f762508e1763968c4c4ac19595124bb3b5a75cef/docs/content/migrate/nginx-to-traefik.md"
 ---
 
 # Migrate from Ingress NGINX Controller to Traefik

@@ -1,7 +1,7 @@
 upstream_repo: https://github.com/traefik/traefik
 upstream_branch: v3.7
-upstream_commit: 21a4ca1fad46ceca9b7d7903eeaf3721325f3e50
-upstream_tree: https://github.com/traefik/traefik/tree/21a4ca1fad46ceca9b7d7903eeaf3721325f3e50/docs
+upstream_commit: f762508e1763968c4c4ac19595124bb3b5a75cef
+upstream_tree: https://github.com/traefik/traefik/tree/f762508e1763968c4c4ac19595124bb3b5a75cef/docs
 traefik_version: v3.7
 pages: 160
 generator: traefik-llms-docs 1.0.0
