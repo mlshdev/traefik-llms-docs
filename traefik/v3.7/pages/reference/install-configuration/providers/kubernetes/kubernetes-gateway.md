@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Install Configuration / Configuration Discovery / Kubernetes / Kubernetes Gateway API"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/install-configuration/providers/kubernetes/kubernetes-gateway.md"
-source_url: "https://github.com/traefik/traefik/blob/f762508e1763968c4c4ac19595124bb3b5a75cef/docs/content/reference/install-configuration/providers/kubernetes/kubernetes-gateway.md"
+source_url: "https://github.com/traefik/traefik/blob/faa1eb590646aed94e561e24a59be0c47353ae95/docs/content/reference/install-configuration/providers/kubernetes/kubernetes-gateway.md"
 ---
 
 # Traefik & Kubernetes with Gateway API
@@ -45,7 +45,7 @@ General functionality cannot be guaranteed for older versions.
     > no Gateway API resource is served at all, not only `TCPRoute` and `TLSRoute`.
     > Traefik keeps running and the other providers are unaffected.
 
-2. If you are not using the Helm Chart, install/update the Traefik [RBAC](https://raw.githubusercontent.com/traefik/traefik/f762508e1763968c4c4ac19595124bb3b5a75cef/docs/content/reference/dynamic-configuration/kubernetes-gateway-rbac.yml) for Gateway API.
+2. If you are not using the Helm Chart, install/update the Traefik [RBAC](https://raw.githubusercontent.com/traefik/traefik/faa1eb590646aed94e561e24a59be0c47353ae95/docs/content/reference/dynamic-configuration/kubernetes-gateway-rbac.yml) for Gateway API.
 
     ```bash
     # Install Traefik RBACs for Gateway API.

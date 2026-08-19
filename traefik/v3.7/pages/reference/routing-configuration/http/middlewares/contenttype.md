@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / ContentType"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/routing-configuration/http/middlewares/contenttype.md"
-source_url: "https://github.com/traefik/traefik/blob/f762508e1763968c4c4ac19595124bb3b5a75cef/docs/content/reference/routing-configuration/http/middlewares/contenttype.md"
+source_url: "https://github.com/traefik/traefik/blob/faa1eb590646aed94e561e24a59be0c47353ae95/docs/content/reference/routing-configuration/http/middlewares/contenttype.md"
 ---
 
 The `contentType` middleware sets the `Content-Type` header value to the media type detected from the response content,

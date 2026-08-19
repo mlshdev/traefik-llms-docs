@@ -4,7 +4,7 @@ section: "Expose"
 breadcrumb: "Expose / Docker / Basic"
 traefik_version: "v3.7"
 upstream_path: "docs/content/expose/docker/basic.md"
-source_url: "https://github.com/traefik/traefik/blob/f762508e1763968c4c4ac19595124bb3b5a75cef/docs/content/expose/docker/basic.md"
+source_url: "https://github.com/traefik/traefik/blob/faa1eb590646aed94e561e24a59be0c47353ae95/docs/content/expose/docker/basic.md"
 ---
 
 # Exposing Services with Traefik on Docker - Basic

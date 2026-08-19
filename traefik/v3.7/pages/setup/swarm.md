@@ -5,7 +5,7 @@ section: "Setup"
 breadcrumb: "Setup / Swarm"
 traefik_version: "v3.7"
 upstream_path: "docs/content/setup/swarm.md"
-source_url: "https://github.com/traefik/traefik/blob/f762508e1763968c4c4ac19595124bb3b5a75cef/docs/content/setup/swarm.md"
+source_url: "https://github.com/traefik/traefik/blob/faa1eb590646aed94e561e24a59be0c47353ae95/docs/content/setup/swarm.md"
 ---
 
 This guide provides an in‑depth walkthrough for installing and configuring Traefik Proxy as a **Swarm service** using `docker stack deploy`. It follows the same structure as the standalone‑Docker tutorial and covers:
@@ -208,7 +208,7 @@ Swarm schedules the services on a manager node and binds ports 80/443.
 
 Open **https://dashboard.swarm.localhost/** in your browser — the dashboard should prompt for the basic‑auth credentials you configured.
 
-![Traefik Dashboard](https://raw.githubusercontent.com/traefik/traefik/f762508e1763968c4c4ac19595124bb3b5a75cef/docs/content/assets/img/setup/traefik-dashboard-swarm.png)
+![Traefik Dashboard](https://raw.githubusercontent.com/traefik/traefik/faa1eb590646aed94e561e24a59be0c47353ae95/docs/content/assets/img/setup/traefik-dashboard-swarm.png)
 
 ## Test the whoami Application
 
@@ -250,7 +250,7 @@ Requesting the HTTP endpoint redirects to HTTPS, confirming the setup works.
 
 You can also open a browser and navigate to [https://whoami.swarm.localhost](https://whoami.swarm.localhost) to see a JSON dump from the service:
 
-![Whoami](https://raw.githubusercontent.com/traefik/traefik/f762508e1763968c4c4ac19595124bb3b5a75cef/docs/content/assets/img/setup/whoami-json-dump.png)
+![Whoami](https://raw.githubusercontent.com/traefik/traefik/faa1eb590646aed94e561e24a59be0c47353ae95/docs/content/assets/img/setup/whoami-json-dump.png)
 
 ### Other Key Configuration Areas
 

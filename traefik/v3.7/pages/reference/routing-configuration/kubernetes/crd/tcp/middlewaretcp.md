@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Routing Configuration / Kubernetes / Kubernetes CRD / TCP / MiddlewareTCP"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/routing-configuration/kubernetes/crd/tcp/middlewaretcp.md"
-source_url: "https://github.com/traefik/traefik/blob/f762508e1763968c4c4ac19595124bb3b5a75cef/docs/content/reference/routing-configuration/kubernetes/crd/tcp/middlewaretcp.md"
+source_url: "https://github.com/traefik/traefik/blob/faa1eb590646aed94e561e24a59be0c47353ae95/docs/content/reference/routing-configuration/kubernetes/crd/tcp/middlewaretcp.md"
 ---
 
 `MiddlewareTCP` is the CRD implementation of a [Traefik TCP middleware](../../../tcp/middlewares/overview.md).
