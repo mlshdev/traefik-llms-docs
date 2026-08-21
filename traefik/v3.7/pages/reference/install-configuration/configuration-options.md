@@ -4,7 +4,7 @@ section: "Reference"
 breadcrumb: "Reference / Install Configuration / Options List"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/install-configuration/configuration-options.md"
-source_url: "https://github.com/traefik/traefik/blob/faa1eb590646aed94e561e24a59be0c47353ae95/docs/content/reference/install-configuration/configuration-options.md"
+source_url: "https://github.com/traefik/traefik/blob/b78307590625ada3e430d358b7947f11a0aef226/docs/content/reference/install-configuration/configuration-options.md"
 ---
 
 <!--

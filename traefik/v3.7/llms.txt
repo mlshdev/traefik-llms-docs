@@ -2,7 +2,7 @@
 
 > Traefik Documentation
 
-Generated from [traefik/traefik](https://github.com/traefik/traefik) branch `v3.7` at commit [`faa1eb590646`](https://github.com/traefik/traefik/tree/faa1eb590646aed94e561e24a59be0c47353ae95/docs). MkDocs-specific syntax (tabbed code fences, admonitions, includes) has been converted to plain Markdown.
+Generated from [traefik/traefik](https://github.com/traefik/traefik) branch `v3.7` at commit [`b78307590625`](https://github.com/traefik/traefik/tree/b78307590625ada3e430d358b7947f11a0aef226/docs). MkDocs-specific syntax (tabbed code fences, admonitions, includes) has been converted to plain Markdown.
 
 ## Overview
 

@@ -5,7 +5,7 @@ section: "Contributing"
 breadcrumb: "Contributing / Submitting PRs"
 traefik_version: "v3.7"
 upstream_path: "docs/content/contributing/submitting-pull-requests.md"
-source_url: "https://github.com/traefik/traefik/blob/faa1eb590646aed94e561e24a59be0c47353ae95/docs/content/contributing/submitting-pull-requests.md"
+source_url: "https://github.com/traefik/traefik/blob/b78307590625ada3e430d358b7947f11a0aef226/docs/content/contributing/submitting-pull-requests.md"
 ---
 
 # Before You Submit a Pull Request

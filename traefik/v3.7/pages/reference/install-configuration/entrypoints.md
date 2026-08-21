@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Install Configuration / EntryPoints"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/install-configuration/entrypoints.md"
-source_url: "https://github.com/traefik/traefik/blob/faa1eb590646aed94e561e24a59be0c47353ae95/docs/content/reference/install-configuration/entrypoints.md"
+source_url: "https://github.com/traefik/traefik/blob/b78307590625ada3e430d358b7947f11a0aef226/docs/content/reference/install-configuration/entrypoints.md"
 ---
 
 Listening for Incoming Connections/Requests
@@ -353,7 +353,7 @@ By default, Traefik do not reject requests with path containing certain encoded 
 
 > **Info — Security Considerations**
 >
-> When your backend is not fully compliant with [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986) and notably decode encoded reserved characters in the requets path,
+> When your backend is not fully compliant with [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986) and notably decode encoded reserved characters in the request path,
 > it is recommended to set these options to `false` to avoid split-view situation and helps prevent path traversal attacks or other malicious attempts to bypass security controls.
 
 Here is the list of the encoded characters that are allowed by default:

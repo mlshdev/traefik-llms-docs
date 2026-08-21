@@ -5,7 +5,7 @@ section: "Migrate"
 breadcrumb: "Migrate / Traefik v2 to v3 / Configuration changes for v3"
 traefik_version: "v3.7"
 upstream_path: "docs/content/migrate/v2-to-v3-details.md"
-source_url: "https://github.com/traefik/traefik/blob/faa1eb590646aed94e561e24a59be0c47353ae95/docs/content/migrate/v2-to-v3-details.md"
+source_url: "https://github.com/traefik/traefik/blob/b78307590625ada3e430d358b7947f11a0aef226/docs/content/migrate/v2-to-v3-details.md"
 ---
 
 # Configuration Details for Migrating from Traefik v2 to v3

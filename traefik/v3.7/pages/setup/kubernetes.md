@@ -5,7 +5,7 @@ section: "Setup"
 breadcrumb: "Setup / Kubernetes"
 traefik_version: "v3.7"
 upstream_path: "docs/content/setup/kubernetes.md"
-source_url: "https://github.com/traefik/traefik/blob/faa1eb590646aed94e561e24a59be0c47353ae95/docs/content/setup/kubernetes.md"
+source_url: "https://github.com/traefik/traefik/blob/b78307590625ada3e430d358b7947f11a0aef226/docs/content/setup/kubernetes.md"
 ---
 
 This guide provides an in-depth walkthrough for installing and configuring Traefik Proxy within a Kubernetes cluster using the official Helm chart. In this guide, we'll cover the following:
@@ -218,7 +218,7 @@ helm install traefik traefik/traefik \
 
 Now that Traefik is deployed, you can access its dashboard at [https://dashboard.docker.localhost/](https://dashboard.docker.localhost/). When you access this link, your browser will prompt for the username and password. Ensure you use the credentials set in the `values.yaml` file to log in. Upon successful login, the dashboard will be displayed as shown below:
 
-![Traefik Dashboard](https://raw.githubusercontent.com/traefik/traefik/faa1eb590646aed94e561e24a59be0c47353ae95/docs/content/assets/img/setup/traefik-dashboard.png)
+![Traefik Dashboard](https://raw.githubusercontent.com/traefik/traefik/b78307590625ada3e430d358b7947f11a0aef226/docs/content/assets/img/setup/traefik-dashboard.png)
 
 ## Deploy a Demo Application
 
@@ -295,7 +295,7 @@ kubectl apply -f whoami-route.yaml
 
 After you apply the manifest, navigate to the Routes in the Traefik Dashboard; you’ll see that the [https://whoami.docker.localhost](https://whoami.docker.localhost) route has been created.
 
-![Route](https://raw.githubusercontent.com/traefik/traefik/faa1eb590646aed94e561e24a59be0c47353ae95/docs/content/assets/img/setup/route-in-dashboard.png)
+![Route](https://raw.githubusercontent.com/traefik/traefik/b78307590625ada3e430d358b7947f11a0aef226/docs/content/assets/img/setup/route-in-dashboard.png)
 
 You can test the application using curl:
 
@@ -325,7 +325,7 @@ X-Real-Ip: 10.42.0.1
 
 You can also open a browser and navigate to [https://whoami.docker.localhost](https://whoami.docker.localhost) to see a JSON dump from the service.
 
-![Whoami](https://raw.githubusercontent.com/traefik/traefik/faa1eb590646aed94e561e24a59be0c47353ae95/docs/content/assets/img/setup/whoami-json-dump.png)
+![Whoami](https://raw.githubusercontent.com/traefik/traefik/b78307590625ada3e430d358b7947f11a0aef226/docs/content/assets/img/setup/whoami-json-dump.png)
 
 ## Other Key Configuration Areas
 

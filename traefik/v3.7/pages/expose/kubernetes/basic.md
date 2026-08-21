@@ -4,7 +4,7 @@ section: "Expose"
 breadcrumb: "Expose / Kubernetes / Basic"
 traefik_version: "v3.7"
 upstream_path: "docs/content/expose/kubernetes/basic.md"
-source_url: "https://github.com/traefik/traefik/blob/faa1eb590646aed94e561e24a59be0c47353ae95/docs/content/expose/kubernetes/basic.md"
+source_url: "https://github.com/traefik/traefik/blob/b78307590625ada3e430d358b7947f11a0aef226/docs/content/expose/kubernetes/basic.md"
 ---
 
 # Exposing Services with Traefik on Kubernetes - Basic
@@ -136,7 +136,7 @@ curl -H "Host: whoami.docker.localhost" http://localhost/
 
 > **Info**
 >
-> Make sure to remove the `ports.web.redirections` block from the `values.yaml` file if you followed the Kubernetes Setup Guide to install Traefik otherwise you will be redirected to the HTTPS entrypoint:
+> Make sure to remove the `ports.web.http.redirections` block from the `values.yaml` file if you followed the Kubernetes Setup Guide to install Traefik otherwise you will be redirected to the HTTPS entrypoint:
 >
 > ```yaml
 > redirections:
