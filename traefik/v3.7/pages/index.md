@@ -5,12 +5,12 @@ section: "Overview"
 breadcrumb: "What is Traefik"
 traefik_version: "v3.7"
 upstream_path: "docs/content/index.md"
-source_url: "https://github.com/traefik/traefik/blob/b78307590625ada3e430d358b7947f11a0aef226/docs/content/index.md"
+source_url: "https://github.com/traefik/traefik/blob/473e27980fe40f447ada70783ae28aabae86107d/docs/content/index.md"
 ---
 
 # What is Traefik?
 
-![Architecture](https://raw.githubusercontent.com/traefik/traefik/b78307590625ada3e430d358b7947f11a0aef226/docs/content/assets/img/traefik-architecture.png)
+![Architecture](https://raw.githubusercontent.com/traefik/traefik/473e27980fe40f447ada70783ae28aabae86107d/docs/content/assets/img/traefik-architecture.png)
 
 Traefik is an [open-source](https://github.com/traefik/traefik) Application Proxy and the core of the Traefik Hub Runtime Platform.
 

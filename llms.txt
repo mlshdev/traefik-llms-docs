@@ -6,6 +6,6 @@ Upstream publishes no llms.txt; this repository generates one and keeps it in sy
 
 ## Documentation
 
-- [Traefik v3.7 — index](https://raw.githubusercontent.com/mlshdev/traefik-llms-docs/main/traefik/v3.7/llms.txt): nav-ordered list of all 160 pages with descriptions (latest stable).
+- [Traefik v3.7 — index](https://raw.githubusercontent.com/mlshdev/traefik-llms-docs/main/traefik/v3.7/llms.txt): nav-ordered list of all 161 pages with descriptions (latest stable).
 - [Traefik v3.7 — full corpus](https://raw.githubusercontent.com/mlshdev/traefik-llms-docs/main/traefik/v3.7/llms-full.txt): every page concatenated into one file.
 - [Traefik v3.7 — provenance](https://raw.githubusercontent.com/mlshdev/traefik-llms-docs/main/traefik/v3.7/SOURCE): upstream commit this build was generated from.

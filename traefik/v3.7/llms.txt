@@ -2,7 +2,7 @@
 
 > Traefik Documentation
 
-Generated from [traefik/traefik](https://github.com/traefik/traefik) branch `v3.7` at commit [`b78307590625`](https://github.com/traefik/traefik/tree/b78307590625ada3e430d358b7947f11a0aef226/docs). MkDocs-specific syntax (tabbed code fences, admonitions, includes) has been converted to plain Markdown.
+Generated from [traefik/traefik](https://github.com/traefik/traefik) branch `v3.7` at commit [`473e27980fe4`](https://github.com/traefik/traefik/tree/473e27980fe40f447ada70783ae28aabae86107d/docs). MkDocs-specific syntax (tabbed code fences, admonitions, includes) has been converted to plain Markdown.
 
 ## Overview
 
@@ -184,6 +184,7 @@ Generated from [traefik/traefik](https://github.com/traefik/traefik) branch `v3.
 - [Contributing / Submitting Issues](https://raw.githubusercontent.com/mlshdev/traefik-llms-docs/main/traefik/v3.7/pages/contributing/submitting-issues.md): Help us help you! Learn how to submit an issue, following the guidelines, so the Traefik Proxy team can help. Read the technical documentation.
 - [Contributing / Submitting PRs](https://raw.githubusercontent.com/mlshdev/traefik-llms-docs/main/traefik/v3.7/pages/contributing/submitting-pull-requests.md): Looking to contribute to Traefik Proxy? This guide will show you the guidelines for submitting a PR in our contributors guide repository.
 - [Contributing / Security](https://raw.githubusercontent.com/mlshdev/traefik-llms-docs/main/traefik/v3.7/pages/contributing/submitting-security-issues.md): Security is a key part of Traefik Proxy. Read the technical documentation to learn about security advisories, CVE, and how to report a vulnerability.
+- [Contributing / Security Decisions](https://raw.githubusercontent.com/mlshdev/traefik-llms-docs/main/traefik/v3.7/pages/contributing/security-decisions.md): Positions the Traefik security team has already settled, grouped by the surface a report touches, with the published CVEs that mark where each line falls.
 - [Contributing / Building and Testing](https://raw.githubusercontent.com/mlshdev/traefik-llms-docs/main/traefik/v3.7/pages/contributing/building-testing.md): Compile and test your own Traefik Proxy! Learn how to build your own Traefik binary from the sources, and read the technical documentation.
 - [Contributing / Documentation](https://raw.githubusercontent.com/mlshdev/traefik-llms-docs/main/traefik/v3.7/pages/contributing/documentation.md): Found something unclear in the Traefik Proxy documentation and want to give a try at explaining it better? Read the guide to building documentation.
 - [Contributing / Data Collection](https://raw.githubusercontent.com/mlshdev/traefik-llms-docs/main/traefik/v3.7/pages/contributing/data-collection.md): Learn what data Traefik shares, how it is used, and how you can control it. This documentation explains both version check and anonymous usage statistics data. Read the technical documentation.

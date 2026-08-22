@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / PassTLSClientCert"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/routing-configuration/http/middlewares/passtlsclientcert.md"
-source_url: "https://github.com/traefik/traefik/blob/b78307590625ada3e430d358b7947f11a0aef226/docs/content/reference/routing-configuration/http/middlewares/passtlsclientcert.md"
+source_url: "https://github.com/traefik/traefik/blob/473e27980fe40f447ada70783ae28aabae86107d/docs/content/reference/routing-configuration/http/middlewares/passtlsclientcert.md"
 ---
 
 The `passTLSClientCert` middleware adds the selected data from the passed client TLS certificate to a header.

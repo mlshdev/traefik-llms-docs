@@ -5,7 +5,7 @@ section: "Reference"
 breadcrumb: "Reference / Routing Configuration / Common Configuration / HTTP / Middlewares / RedirectRegex"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/routing-configuration/http/middlewares/redirectregex.md"
-source_url: "https://github.com/traefik/traefik/blob/b78307590625ada3e430d358b7947f11a0aef226/docs/content/reference/routing-configuration/http/middlewares/redirectregex.md"
+source_url: "https://github.com/traefik/traefik/blob/473e27980fe40f447ada70783ae28aabae86107d/docs/content/reference/routing-configuration/http/middlewares/redirectregex.md"
 ---
 
 The `RedirectRegex` redirects a request using regex matching and replacement.

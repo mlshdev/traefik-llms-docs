@@ -5,12 +5,12 @@ section: "Reference"
 breadcrumb: "Reference / Routing Configuration / Kubernetes / Kubernetes CRD / HTTP / IngressRoute"
 traefik_version: "v3.7"
 upstream_path: "docs/content/reference/routing-configuration/kubernetes/crd/http/ingressroute.md"
-source_url: "https://github.com/traefik/traefik/blob/b78307590625ada3e430d358b7947f11a0aef226/docs/content/reference/routing-configuration/kubernetes/crd/http/ingressroute.md"
+source_url: "https://github.com/traefik/traefik/blob/473e27980fe40f447ada70783ae28aabae86107d/docs/content/reference/routing-configuration/kubernetes/crd/http/ingressroute.md"
 ---
 
 `IngressRoute` is the CRD implementation of a [Traefik HTTP router](../../../http/routing/rules-and-priority.md).
 
-Before creating `IngressRoute` objects, you need to apply the Traefik Kubernetes CRDs such as [Definitions](https://raw.githubusercontent.com/traefik/traefik/b78307590625ada3e430d358b7947f11a0aef226/docs/content/reference/dynamic-configuration/kubernetes-crd-definition-v1.yml) and [RBAC](https://raw.githubusercontent.com/traefik/traefik/b78307590625ada3e430d358b7947f11a0aef226/docs/content/reference/dynamic-configuration/kubernetes-crd-rbac.yml) to your Kubernetes cluster.
+Before creating `IngressRoute` objects, you need to apply the Traefik Kubernetes CRDs such as [Definitions](https://raw.githubusercontent.com/traefik/traefik/473e27980fe40f447ada70783ae28aabae86107d/docs/content/reference/dynamic-configuration/kubernetes-crd-definition-v1.yml) and [RBAC](https://raw.githubusercontent.com/traefik/traefik/473e27980fe40f447ada70783ae28aabae86107d/docs/content/reference/dynamic-configuration/kubernetes-crd-rbac.yml) to your Kubernetes cluster.
 
 This registers the `IngressRoute` kind and other Traefik-specific resources.
 
